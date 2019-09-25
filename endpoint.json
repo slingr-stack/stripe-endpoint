@@ -1,0 +1,58 @@
+{
+    "label": "Stripe",
+    "name": "stripe",
+    "apiVersion": "v1",
+    "internal": false,
+    "configurationType": "GLOBAL",
+    "deployment": {
+        "profiles":[
+            {
+                "name": "default",
+                "label": "Default",
+                "memory": 256,
+                "description": "Default configuration"
+            }
+        ],
+        "allowMultipleInstances": true
+    },
+    "icon48": "https://storage.googleapis.com/static.slingrs.io/platform/endpoints/stripe.png",
+    "status": "ACTIVE",
+    "stores": [],
+    "events": [],
+    "functions": [
+        {
+            "label": "HTTP GET",
+            "name": "_httpGet"
+        },
+        {
+            "label": "HTTP DELETE",
+            "name": "_httpDelete"
+        },
+        {
+            "label": "HTTP POST",
+            "name": "_httpPost"
+        },
+        {
+            "label": "HTTP PUT",
+            "name": "_httpPut"
+        }
+    ],
+    "scripts":[
+        "functions.js",
+        "stripe-helpers.js"
+    ],
+    "configuration":[
+        {
+            "name": "Publishable key",
+            "label": "publishableKey",
+            "type": "text",
+            "required": true
+        },
+        {
+            "name": "Secret key",
+            "label": "secretKey",
+            "type": "password",
+            "required": true
+        }
+    ]
+}
