@@ -18,23 +18,33 @@
     "icon48": "https://storage.googleapis.com/static.slingrs.io/platform/endpoints/stripe.png",
     "status": "ACTIVE",
     "stores": [],
-    "events": [],
+    "events": [
+        {
+            "label": "Webhook",
+            "name": "webhook",
+            "description": "Happens when a Stripe hits the endpoint URL."
+        }
+    ],
     "functions": [
         {
-            "label": "HTTP GET",
-            "name": "_httpGet"
+            "label": "GET",
+            "name": "_get"
         },
         {
-            "label": "HTTP DELETE",
-            "name": "_httpDelete"
+            "label": "POST",
+            "name": "_post"
         },
         {
-            "label": "HTTP POST",
-            "name": "_httpPost"
+            "label": "PATCH",
+            "name": "_patch"
         },
         {
-            "label": "HTTP PUT",
-            "name": "_httpPut"
+            "label": "PUT",
+            "name": "_put"
+        },
+        {
+            "label": "DELETE",
+            "name": "_delete"
         }
     ],
     "scripts":[
@@ -53,6 +63,12 @@
             "label": "secretKey",
             "type": "password",
             "required": true
+        },
+        {
+            "name": "webhook",
+            "label": "Webhook URL",
+            "type": "label",
+            "value": "@config.WEBHOOK_URL"
         }
     ]
 }
