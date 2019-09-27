@@ -1,8 +1,13 @@
 # Stripe endpoint
 
 ## Overview
-The Stripe endpoint has the following features:
-- 
+
+Stripe helps you create any type of payments flow—from e-commerce to 
+recurring billing and everything in between. The Stripe endpoint has the following features:
+
+- Interact with Stripe API
+- Shortcuts to access the REST API
+- Support for webhooks
 
 For more information please refer to [docs](https://slingr-stack.github.io/platform/endpoints_stripe.html).
 
