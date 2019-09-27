@@ -4,9 +4,14 @@ import io.slingr.endpoints.HttpEndpoint;
 import io.slingr.endpoints.exceptions.EndpointException;
 import io.slingr.endpoints.framework.annotations.EndpointFunction;
 import io.slingr.endpoints.framework.annotations.EndpointProperty;
+import io.slingr.endpoints.framework.annotations.EndpointWebService;
 import io.slingr.endpoints.framework.annotations.SlingrEndpoint;
+import io.slingr.endpoints.services.HttpService;
+import io.slingr.endpoints.services.rest.RestMethod;
 import io.slingr.endpoints.utils.Json;
 import io.slingr.endpoints.ws.exchange.FunctionRequest;
+import io.slingr.endpoints.ws.exchange.WebServiceRequest;
+import io.slingr.endpoints.ws.exchange.WebServiceResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -36,6 +41,21 @@ public class StripeEndpoint extends HttpEndpoint {
     @Override
     public String getApiUri() {
         return API_URL;
+    }
+
+    @EndpointWebService
+    public WebServiceResponse webhooks(WebServiceRequest request) {
+        final Json json = HttpService.defaultWebhookConverter(request);
+        if (request.getMethod().equals(RestMethod.POST)) {
+            if (request.getBody() != null) {
+                json.set("body", request.getBody());
+            }
+
+            // send the webhook event
+            events().send(HttpService.WEBHOOK_EVENT, json);
+
+        }
+        return HttpService.defaultWebhookResponse();
     }
 
     @EndpointFunction(name = "_get")
