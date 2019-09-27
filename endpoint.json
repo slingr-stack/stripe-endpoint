@@ -53,14 +53,14 @@
     ],
     "configuration":[
         {
-            "name": "Publishable key",
-            "label": "publishableKey",
+            "label": "Publishable key",
+            "name": "publishableKey",
             "type": "text",
             "required": true
         },
         {
-            "name": "Secret key",
-            "label": "secretKey",
+            "label": "Secret key",
+            "name": "secretKey",
             "type": "password",
             "required": true
         },
