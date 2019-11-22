@@ -8,8 +8,8 @@ endpoint.testing = function (url) {
 // Public API - Generic Functions
 /////////////////////////////////////
 
-endpoint.get = function (url) {
-    var options = checkHttpOptions(url, {});
+endpoint.get = function (url, options) {
+    var options = checkHttpOptions(url, options);
     return endpoint._get(options);
 };
 
