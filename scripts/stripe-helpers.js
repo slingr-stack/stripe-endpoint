@@ -2,7 +2,7 @@
 //                                                                      //
 //    This file is generated with stripe/gen/gen-stripe-helpers.js      //
 //                                                                      //
-//            Fri Sep 27 2019 10:47:29 GMT-0300 (-03)                   //
+//            Fri Nov 22 2019 10:44:08 GMT-0300 (Argentina Standard Time)                   //
 //                                                                      //
 //////////////////////////////////////////////////////////////////////////
 
@@ -620,16 +620,26 @@ endpoint.coreResources.balance = {};
 endpoint.coreResources.balance.get = function() {
 	var obj = urlsData['coreResources.balance.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.coreResources.balanceTransactions = {};
 endpoint.coreResources.balanceTransactions.get = function() {
 	var obj = urlsData['coreResources.balanceTransactions.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.coreResources.charges = {};
@@ -643,8 +653,13 @@ endpoint.coreResources.charges.post = function() {
 endpoint.coreResources.charges.get = function() {
 	var obj = urlsData['coreResources.charges.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.coreResources.charges.capture = {};
@@ -666,23 +681,38 @@ endpoint.coreResources.customers.post = function() {
 endpoint.coreResources.customers.get = function() {
 	var obj = urlsData['coreResources.customers.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.coreResources.customers.delete = function() {
 	var obj = urlsData['coreResources.customers.delete'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.delete(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.delete(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.delete(url);
+	}
 };
 
 endpoint.coreResources.disputes = {};
 endpoint.coreResources.disputes.get = function() {
 	var obj = urlsData['coreResources.disputes.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.coreResources.disputes.post = function() {
@@ -704,16 +734,26 @@ endpoint.coreResources.events = {};
 endpoint.coreResources.events.get = function() {
 	var obj = urlsData['coreResources.events.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.coreResources.files = {};
 endpoint.coreResources.files.get = function() {
 	var obj = urlsData['coreResources.files.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.coreResources.fileLinks = {};
@@ -727,8 +767,13 @@ endpoint.coreResources.fileLinks.post = function() {
 endpoint.coreResources.fileLinks.get = function() {
 	var obj = urlsData['coreResources.fileLinks.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.coreResources.paymentIntents = {};
@@ -742,8 +787,13 @@ endpoint.coreResources.paymentIntents.post = function() {
 endpoint.coreResources.paymentIntents.get = function() {
 	var obj = urlsData['coreResources.paymentIntents.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.coreResources.paymentIntents.confirm = {};
@@ -781,8 +831,13 @@ endpoint.coreResources.setupIntents.post = function() {
 endpoint.coreResources.setupIntents.get = function() {
 	var obj = urlsData['coreResources.setupIntents.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.coreResources.setupIntents.confirm = {};
@@ -812,8 +867,13 @@ endpoint.coreResources.payouts.post = function() {
 endpoint.coreResources.payouts.get = function() {
 	var obj = urlsData['coreResources.payouts.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.coreResources.payouts.cancel = {};
@@ -835,15 +895,25 @@ endpoint.coreResources.products.post = function() {
 endpoint.coreResources.products.get = function() {
 	var obj = urlsData['coreResources.products.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.coreResources.products.delete = function() {
 	var obj = urlsData['coreResources.products.delete'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.delete(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.delete(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.delete(url);
+	}
 };
 
 endpoint.coreResources.refunds = {};
@@ -857,8 +927,13 @@ endpoint.coreResources.refunds.post = function() {
 endpoint.coreResources.refunds.get = function() {
 	var obj = urlsData['coreResources.refunds.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.coreResources.tokens = {};
@@ -872,8 +947,13 @@ endpoint.coreResources.tokens.post = function() {
 endpoint.coreResources.tokens.get = function() {
 	var obj = urlsData['coreResources.tokens.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.paymentMethods = {};
@@ -888,8 +968,13 @@ endpoint.paymentMethods.paymentMethods.post = function() {
 endpoint.paymentMethods.paymentMethods.get = function() {
 	var obj = urlsData['paymentMethods.paymentMethods.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.paymentMethods.paymentMethods.attach = {};
@@ -920,8 +1005,13 @@ endpoint.paymentMethods.customers.sources.post = function() {
 endpoint.paymentMethods.customers.sources.get = function() {
 	var obj = urlsData['paymentMethods.customers.sources.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.paymentMethods.customers.sources.verify = {};
@@ -935,8 +1025,13 @@ endpoint.paymentMethods.customers.sources.verify.post = function() {
 endpoint.paymentMethods.customers.sources.delete = function() {
 	var obj = urlsData['paymentMethods.customers.sources.delete'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.delete(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.delete(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.delete(url);
+	}
 };
 
 endpoint.paymentMethods.sources = {};
@@ -950,8 +1045,13 @@ endpoint.paymentMethods.sources.post = function() {
 endpoint.paymentMethods.sources.get = function() {
 	var obj = urlsData['paymentMethods.sources.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.checkout = {};
@@ -967,8 +1067,13 @@ endpoint.checkout.checkout.sessions.post = function() {
 endpoint.checkout.checkout.sessions.get = function() {
 	var obj = urlsData['checkout.checkout.sessions.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.billing = {};
@@ -983,15 +1088,25 @@ endpoint.billing.coupons.post = function() {
 endpoint.billing.coupons.get = function() {
 	var obj = urlsData['billing.coupons.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.billing.coupons.delete = function() {
 	var obj = urlsData['billing.coupons.delete'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.delete(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.delete(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.delete(url);
+	}
 };
 
 endpoint.billing.creditNotes = {};
@@ -1005,8 +1120,13 @@ endpoint.billing.creditNotes.post = function() {
 endpoint.billing.creditNotes.get = function() {
 	var obj = urlsData['billing.creditNotes.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.billing.creditNotes.void = {};
@@ -1029,16 +1149,26 @@ endpoint.billing.customers.balanceTransactions.post = function() {
 endpoint.billing.customers.balanceTransactions.get = function() {
 	var obj = urlsData['billing.customers.balanceTransactions.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.billing.customers.balanceTransactions  = {};
 endpoint.billing.customers.balanceTransactions .get = function() {
 	var obj = urlsData['billing.customers.balanceTransactions .get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.billing.customers.taxIds = {};
@@ -1052,23 +1182,38 @@ endpoint.billing.customers.taxIds.post = function() {
 endpoint.billing.customers.taxIds.get = function() {
 	var obj = urlsData['billing.customers.taxIds.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.billing.customers.taxIds.delete = function() {
 	var obj = urlsData['billing.customers.taxIds.delete'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.delete(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.delete(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.delete(url);
+	}
 };
 
 endpoint.billing.customers.discount = {};
 endpoint.billing.customers.discount.delete = function() {
 	var obj = urlsData['billing.customers.discount.delete'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.delete(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.delete(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.delete(url);
+	}
 };
 
 endpoint.billing.subscriptions = {};
@@ -1076,8 +1221,13 @@ endpoint.billing.subscriptions.discount = {};
 endpoint.billing.subscriptions.discount.delete = function() {
 	var obj = urlsData['billing.subscriptions.discount.delete'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.delete(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.delete(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.delete(url);
+	}
 };
 
 endpoint.billing.invoices = {};
@@ -1091,15 +1241,25 @@ endpoint.billing.invoices.post = function() {
 endpoint.billing.invoices.get = function() {
 	var obj = urlsData['billing.invoices.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.billing.invoices.delete = function() {
 	var obj = urlsData['billing.invoices.delete'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.delete(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.delete(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.delete(url);
+	}
 };
 
 endpoint.billing.invoices.finalize = {};
@@ -1146,24 +1306,39 @@ endpoint.billing.invoices.lines = {};
 endpoint.billing.invoices.lines.get = function() {
 	var obj = urlsData['billing.invoices.lines.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.billing.invoices.upcoming = {};
 endpoint.billing.invoices.upcoming.get = function() {
 	var obj = urlsData['billing.invoices.upcoming.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.billing.invoices.upcoming.lines = {};
 endpoint.billing.invoices.upcoming.lines.get = function() {
 	var obj = urlsData['billing.invoices.upcoming.lines.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.billing.invoiceitems = {};
@@ -1177,15 +1352,25 @@ endpoint.billing.invoiceitems.post = function() {
 endpoint.billing.invoiceitems.get = function() {
 	var obj = urlsData['billing.invoiceitems.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.billing.invoiceitems.delete = function() {
 	var obj = urlsData['billing.invoiceitems.delete'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.delete(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.delete(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.delete(url);
+	}
 };
 
 endpoint.billing.plans = {};
@@ -1199,15 +1384,25 @@ endpoint.billing.plans.post = function() {
 endpoint.billing.plans.get = function() {
 	var obj = urlsData['billing.plans.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.billing.plans.delete = function() {
 	var obj = urlsData['billing.plans.delete'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.delete(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.delete(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.delete(url);
+	}
 };
 
 endpoint.billing.products = {};
@@ -1221,15 +1416,25 @@ endpoint.billing.products.post = function() {
 endpoint.billing.products.get = function() {
 	var obj = urlsData['billing.products.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.billing.products.delete = function() {
 	var obj = urlsData['billing.products.delete'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.delete(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.delete(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.delete(url);
+	}
 };
 
 endpoint.billing.subscriptions.post = function() {
@@ -1242,15 +1447,25 @@ endpoint.billing.subscriptions.post = function() {
 endpoint.billing.subscriptions.get = function() {
 	var obj = urlsData['billing.subscriptions.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.billing.subscriptions.delete = function() {
 	var obj = urlsData['billing.subscriptions.delete'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.delete(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.delete(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.delete(url);
+	}
 };
 
 endpoint.billing.subscriptionItems = {};
@@ -1264,15 +1479,25 @@ endpoint.billing.subscriptionItems.post = function() {
 endpoint.billing.subscriptionItems.get = function() {
 	var obj = urlsData['billing.subscriptionItems.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.billing.subscriptionItems.delete = function() {
 	var obj = urlsData['billing.subscriptionItems.delete'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.delete(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.delete(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.delete(url);
+	}
 };
 
 endpoint.billing.subscriptionSchedules = {};
@@ -1286,8 +1511,13 @@ endpoint.billing.subscriptionSchedules.post = function() {
 endpoint.billing.subscriptionSchedules.get = function() {
 	var obj = urlsData['billing.subscriptionSchedules.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.billing.subscriptionSchedules.cancel = {};
@@ -1317,8 +1547,13 @@ endpoint.billing.taxRates.post = function() {
 endpoint.billing.taxRates.get = function() {
 	var obj = urlsData['billing.taxRates.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.billing.subscriptionItems.usageRecords = {};
@@ -1333,8 +1568,13 @@ endpoint.billing.subscriptionItems.usageRecordSummaries = {};
 endpoint.billing.subscriptionItems.usageRecordSummaries.get = function() {
 	var obj = urlsData['billing.subscriptionItems.usageRecordSummaries.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.connect = {};
@@ -1349,15 +1589,25 @@ endpoint.connect.accounts.post = function() {
 endpoint.connect.accounts.get = function() {
 	var obj = urlsData['connect.accounts.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.connect.accounts.delete = function() {
 	var obj = urlsData['connect.accounts.delete'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.delete(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.delete(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.delete(url);
+	}
 };
 
 endpoint.connect.accounts.reject = {};
@@ -1388,8 +1638,13 @@ endpoint.connect.applicationFees = {};
 endpoint.connect.applicationFees.get = function() {
 	var obj = urlsData['connect.applicationFees.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.connect.applicationFees.refunds = {};
@@ -1403,8 +1658,13 @@ endpoint.connect.applicationFees.refunds.post = function() {
 endpoint.connect.applicationFees.refunds.get = function() {
 	var obj = urlsData['connect.applicationFees.refunds.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.connect.accounts.capabilities = {};
@@ -1418,16 +1678,26 @@ endpoint.connect.accounts.capabilities.post = function() {
 endpoint.connect.accounts.capabilities.get = function() {
 	var obj = urlsData['connect.accounts.capabilities.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.connect.countrySpecs = {};
 endpoint.connect.countrySpecs.get = function() {
 	var obj = urlsData['connect.countrySpecs.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.connect.accounts.externalAccounts = {};
@@ -1441,15 +1711,25 @@ endpoint.connect.accounts.externalAccounts.post = function() {
 endpoint.connect.accounts.externalAccounts.get = function() {
 	var obj = urlsData['connect.accounts.externalAccounts.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.connect.accounts.externalAccounts.delete = function() {
 	var obj = urlsData['connect.accounts.externalAccounts.delete'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.delete(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.delete(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.delete(url);
+	}
 };
 
 endpoint.connect.topups = {};
@@ -1463,8 +1743,13 @@ endpoint.connect.topups.post = function() {
 endpoint.connect.topups.get = function() {
 	var obj = urlsData['connect.topups.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.connect.topups.cancel = {};
@@ -1486,8 +1771,13 @@ endpoint.connect.transfers.post = function() {
 endpoint.connect.transfers.get = function() {
 	var obj = urlsData['connect.transfers.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.connect.transfers.reversals = {};
@@ -1501,8 +1791,13 @@ endpoint.connect.transfers.reversals.post = function() {
 endpoint.connect.transfers.reversals.get = function() {
 	var obj = urlsData['connect.transfers.reversals.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.fraud = {};
@@ -1511,8 +1806,13 @@ endpoint.fraud.radar.earlyFraudWarnings = {};
 endpoint.fraud.radar.earlyFraudWarnings.get = function() {
 	var obj = urlsData['fraud.radar.earlyFraudWarnings.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.fraud.reviews = {};
@@ -1527,8 +1827,13 @@ endpoint.fraud.reviews.approve.post = function() {
 endpoint.fraud.reviews.get = function() {
 	var obj = urlsData['fraud.reviews.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.fraud.radar.valueLists = {};
@@ -1542,15 +1847,25 @@ endpoint.fraud.radar.valueLists.post = function() {
 endpoint.fraud.radar.valueLists.get = function() {
 	var obj = urlsData['fraud.radar.valueLists.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.fraud.radar.valueLists.delete = function() {
 	var obj = urlsData['fraud.radar.valueLists.delete'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.delete(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.delete(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.delete(url);
+	}
 };
 
 endpoint.fraud.radar.valueListItems = {};
@@ -1564,15 +1879,25 @@ endpoint.fraud.radar.valueListItems.post = function() {
 endpoint.fraud.radar.valueListItems.get = function() {
 	var obj = urlsData['fraud.radar.valueListItems.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.fraud.radar.valueListItems.delete = function() {
 	var obj = urlsData['fraud.radar.valueListItems.delete'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.delete(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.delete(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.delete(url);
+	}
 };
 
 endpoint.issuing = {};
@@ -1581,8 +1906,13 @@ endpoint.issuing.issuing.authorizations = {};
 endpoint.issuing.issuing.authorizations.get = function() {
 	var obj = urlsData['issuing.issuing.authorizations.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.issuing.issuing.authorizations.post = function() {
@@ -1619,8 +1949,13 @@ endpoint.issuing.issuing.cardholders.post = function() {
 endpoint.issuing.issuing.cardholders.get = function() {
 	var obj = urlsData['issuing.issuing.cardholders.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.issuing.issuing.cards = {};
@@ -1634,16 +1969,26 @@ endpoint.issuing.issuing.cards.post = function() {
 endpoint.issuing.issuing.cards.get = function() {
 	var obj = urlsData['issuing.issuing.cards.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.issuing.issuing.cards.details = {};
 endpoint.issuing.issuing.cards.details.get = function() {
 	var obj = urlsData['issuing.issuing.cards.details.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.issuing.issuing.disputes = {};
@@ -1657,16 +2002,26 @@ endpoint.issuing.issuing.disputes.post = function() {
 endpoint.issuing.issuing.disputes.get = function() {
 	var obj = urlsData['issuing.issuing.disputes.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.issuing.issuing.transactions = {};
 endpoint.issuing.issuing.transactions.get = function() {
 	var obj = urlsData['issuing.issuing.transactions.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.issuing.issuing.transactions.post = function() {
@@ -1697,15 +2052,25 @@ endpoint.terminal.terminal.locations.post = function() {
 endpoint.terminal.terminal.locations.get = function() {
 	var obj = urlsData['terminal.terminal.locations.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.terminal.terminal.locations.delete = function() {
 	var obj = urlsData['terminal.terminal.locations.delete'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.delete(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.delete(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.delete(url);
+	}
 };
 
 endpoint.terminal.terminal.readers = {};
@@ -1719,15 +2084,25 @@ endpoint.terminal.terminal.readers.post = function() {
 endpoint.terminal.terminal.readers.get = function() {
 	var obj = urlsData['terminal.terminal.readers.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.terminal.terminal.readers.delete = function() {
 	var obj = urlsData['terminal.terminal.readers.delete'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.delete(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.delete(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.delete(url);
+	}
 };
 
 endpoint.orders = {};
@@ -1742,8 +2117,13 @@ endpoint.orders.orders.post = function() {
 endpoint.orders.orders.get = function() {
 	var obj = urlsData['orders.orders.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.orders.orders.pay = {};
@@ -1766,8 +2146,13 @@ endpoint.orders.orderReturns = {};
 endpoint.orders.orderReturns.get = function() {
 	var obj = urlsData['orders.orderReturns.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.orders.skus = {};
@@ -1781,15 +2166,25 @@ endpoint.orders.skus.post = function() {
 endpoint.orders.skus.get = function() {
 	var obj = urlsData['orders.skus.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.orders.skus.delete = function() {
 	var obj = urlsData['orders.skus.delete'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.delete(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.delete(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.delete(url);
+	}
 };
 
 endpoint.sigma = {};
@@ -1798,8 +2193,13 @@ endpoint.sigma.sigma.scheduledQueryRuns = {};
 endpoint.sigma.sigma.scheduledQueryRuns.get = function() {
 	var obj = urlsData['sigma.sigma.scheduledQueryRuns.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.webhooks = {};
@@ -1814,14 +2214,24 @@ endpoint.webhooks.webhookEndpoints.post = function() {
 endpoint.webhooks.webhookEndpoints.get = function() {
 	var obj = urlsData['webhooks.webhookEndpoints.get'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.get(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.get(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.get(url);
+	}
 };
 
 endpoint.webhooks.webhookEndpoints.delete = function() {
 	var obj = urlsData['webhooks.webhookEndpoints.delete'];
 	var params = analyzeParams(arguments);
-	var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
-	return endpoint.delete(url);
+	if (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+		return endpoint.delete(url, params.argumentsObj);
+	} else {
+		var url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+		return endpoint.delete(url);
+	}
 };
 
