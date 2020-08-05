@@ -1,5 +1,8 @@
 package io.slingr.endpoints.stripe;
 
+import com.stripe.exception.SignatureVerificationException;
+import com.stripe.model.Event;
+import com.stripe.net.Webhook;
 import io.slingr.endpoints.HttpEndpoint;
 import io.slingr.endpoints.exceptions.EndpointException;
 import io.slingr.endpoints.framework.annotations.EndpointFunction;
@@ -35,6 +38,9 @@ public class StripeEndpoint extends HttpEndpoint {
     @EndpointProperty
     private String secretKey;
 
+    @EndpointProperty
+    private String webhookSecret;
+
     public StripeEndpoint() {
     }
 
@@ -45,16 +51,44 @@ public class StripeEndpoint extends HttpEndpoint {
 
     @EndpointWebService
     public WebServiceResponse webhooks(WebServiceRequest request) {
-        final Json json = HttpService.defaultWebhookConverter(request);
-        if (request.getMethod().equals(RestMethod.POST)) {
-            if (request.getBody() != null) {
-                json.set("body", request.getBody());
+
+        try {
+
+            Json body = request.getJsonBody();
+            String payload = request.getJsonBody().toPrettyString();
+            String sigHeader = request.getHeader("Stripe-Signature");
+            if (sigHeader == null) {
+                sigHeader = request.getHeader("stripe-signature");
+            }
+            Webhook.Signature.verifyHeader(payload, sigHeader, webhookSecret, 300L);
+
+            final Json json = HttpService.defaultWebhookConverter(request);
+            if (request.getMethod().equals(RestMethod.POST)) {
+                if (body != null) {
+                    json.set("body", body);
+                }
+
+                // send the webhook event
+                events().send(HttpService.WEBHOOK_EVENT, json);
+
             }
 
-            // send the webhook event
+        } catch (SignatureVerificationException e) {
+            // Invalid signature
+            Json json = Json.map();
+            json.set("type", "error");
+            json.set("code", 400);
+            json.set("message", e.getMessage());
             events().send(HttpService.WEBHOOK_EVENT, json);
-
+        } catch (Exception ex) {
+            // Invalid payload
+            Json json = Json.map();
+            json.set("type", "error");
+            json.set("code", 500);
+            json.set("message", ex.getMessage());
+            events().send(HttpService.WEBHOOK_EVENT, json);
         }
+
         return HttpService.defaultWebhookResponse();
     }
 

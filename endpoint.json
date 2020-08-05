@@ -69,6 +69,12 @@
             "label": "Webhook URL",
             "type": "label",
             "value": "@config.WEBHOOK_URL"
+        },
+        {
+            "label": "Webhook secret",
+            "name": "webhookSecret",
+            "type": "password",
+            "required": true
         }
     ]
 }
