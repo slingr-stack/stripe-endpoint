@@ -19,9 +19,9 @@ var urlsData = {
 		"0": "/v1/charges",
 		"1": "/v1/charges/:id"
 	},
-	"coreResources.charges.get()": {
-		"0": "/v1/charges?ids=222",
-		"1": "/v1/charges/:id?ids=222"
+	"coreResources.charges.get": {
+		"0": "/v1/charges",
+		"1": "/v1/charges/:id"
 	},
 	"coreResources.charges.capture.post": {
 		"1": "/v1/charges/:id/capture"
