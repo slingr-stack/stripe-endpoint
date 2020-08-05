@@ -417,21 +417,28 @@ var makeEndpointsHelpers = function () {
 
                     var method = urlPart[j];
                     var caller = method;
-                    var transfromArguments = 'true';
+                    var fn;
                     if (method === 'get' || method === 'delete') {
-                        caller += '(url)';
-                        transfromArguments = 'true';
-                    } else {
-                        caller += '(url, params.argumentsObj)'
-                        transfromArguments = 'false';
-                    }
-
-                    var fn = `function() {
+                        fn = `function() {
 \tvar obj = urlsData['${i}'];
 \tvar params = analyzeParams(arguments);
-\tvar url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, ${transfromArguments});
-\treturn endpoint.${caller};
+\tif (params.argumentsObj && (typeof params.argumentsObj.headers == 'object' || typeof params.argumentsObj.body == 'object' || typeof params.argumentsObj.params == 'object')) {
+\t\tvar url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+\t\treturn endpoint.${caller}(url, params.argumentsObj);
+\t} else {
+\t\tvar url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, true);
+\t\treturn endpoint.${caller}(url);
+\t}
 };`;
+                    } else {
+                        fn = `function() {
+\tvar obj = urlsData['${i}'];
+\tvar params = analyzeParams(arguments);
+\tvar url = getUrl(obj[params.paramsSize], params.params, params.argumentsObj, false);
+\treturn endpoint.${caller}(url, params.argumentsObj);
+};`;
+                    }
+
 
                     tmpCode += NAMESPACE + path + ' = ' + fn + '\n\n';
                 }
