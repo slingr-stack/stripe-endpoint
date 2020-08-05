@@ -55,12 +55,12 @@ public class StripeEndpoint extends HttpEndpoint {
         try {
 
             Json body = request.getJsonBody();
-            String payload = request.getJsonBody().toPrettyString();
-            String sigHeader = request.getHeader("Stripe-Signature");
-            if (sigHeader == null) {
-                sigHeader = request.getHeader("stripe-signature");
-            }
-            Webhook.Signature.verifyHeader(payload, sigHeader, webhookSecret, 300L);
+//            String payload = request.getRawBody();
+//            String sigHeader = request.getHeader("Stripe-Signature");
+//            if (sigHeader == null) {
+//                sigHeader = request.getHeader("stripe-signature");
+//            }
+//            Webhook.Signature.verifyHeader(payload, sigHeader, webhookSecret, 300L);
 
             final Json json = HttpService.defaultWebhookConverter(request);
             if (request.getMethod().equals(RestMethod.POST)) {
@@ -73,13 +73,13 @@ public class StripeEndpoint extends HttpEndpoint {
 
             }
 
-        } catch (SignatureVerificationException e) {
-            // Invalid signature
-            Json json = Json.map();
-            json.set("type", "error");
-            json.set("code", 400);
-            json.set("message", e.getMessage());
-            events().send(HttpService.WEBHOOK_EVENT, json);
+//        } catch (SignatureVerificationException e) {
+//            // Invalid signature
+//            Json json = Json.map();
+//            json.set("type", "error");
+//            json.set("code", 400);
+//            json.set("message", e.getMessage());
+//            events().send(HttpService.WEBHOOK_EVENT, json);
         } catch (Exception ex) {
             // Invalid payload
             Json json = Json.map();
