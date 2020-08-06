@@ -71,10 +71,16 @@
             "value": "@config.WEBHOOK_URL"
         },
         {
-            "label": "Webhook secret",
-            "name": "webhookSecret",
+            "label": "Check webhooks sign",
+            "name": "checkWebhooksSign",
+            "type": "toggle",
+            "defaultValue": false
+        },
+        {
+            "label": "Webhooks secret",
+            "name": "webhooksSecret",
             "type": "password",
-            "required": true
+            "required": "config.checkWebhooksSign==true"
         }
     ]
 }

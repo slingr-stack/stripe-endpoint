@@ -39,7 +39,10 @@ public class StripeEndpoint extends HttpEndpoint {
     private String secretKey;
 
     @EndpointProperty
-    private String webhookSecret;
+    private Boolean checkWebhooksSign;
+
+    @EndpointProperty
+    private String webhooksSecret;
 
     public StripeEndpoint() {
     }
@@ -54,19 +57,19 @@ public class StripeEndpoint extends HttpEndpoint {
 
         try {
 
-            Json body = request.getJsonBody();
-
-            String payload = request.getRawBody();
-            String sigHeader = request.getHeader("Stripe-Signature");
-            if (sigHeader == null) {
-                sigHeader = request.getHeader("stripe-signature");
+            if (Boolean.TRUE.equals(checkWebhooksSign)) {
+                String payload = request.getRawBody();
+                String sigHeader = request.getHeader("Stripe-Signature");
+                if (sigHeader == null) {
+                    sigHeader = request.getHeader("stripe-signature");
+                }
+                Webhook.Signature.verifyHeader(payload, sigHeader, webhooksSecret, 300L);
             }
-            Webhook.Signature.verifyHeader(payload, sigHeader, webhookSecret, 300L);
 
             final Json json = HttpService.defaultWebhookConverter(request);
             if (request.getMethod().equals(RestMethod.POST)) {
-                if (body != null) {
-                    json.set("body", body);
+                if (request.getBody() != null) {
+                    json.set("body", request.getBody());
                 }
 
                 // send the webhook event
