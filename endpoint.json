@@ -65,6 +65,26 @@
             "required": true
         },
         {
+            "label": "Max Concurrent Calls",
+            "name": "maxConcurrentCalls",
+            "type": "text",
+            "required": true,
+            "typeOptions": {
+                "validation": "number"
+            },
+            "defaultValue":  1
+        },
+        {
+            "label": "Max Retries",
+            "name": "maxRetries",
+            "type": "text",
+            "required": true,
+            "typeOptions": {
+                "validation": "number"
+            },
+            "defaultValue": 6
+        },
+        {
             "name": "webhook",
             "label": "Webhook URL",
             "type": "label",

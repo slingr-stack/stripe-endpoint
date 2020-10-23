@@ -15,6 +15,10 @@ import io.slingr.endpoints.ws.exchange.WebServiceResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.concurrent.Semaphore;
+
+import static java.lang.Integer.*;
+
 
 /**
  * <p>Stripe endpoint
@@ -28,6 +32,10 @@ public class StripeEndpoint extends HttpEndpoint {
 
     private static final Logger logger = LoggerFactory.getLogger(StripeEndpoint.class);
     private static String API_URL = "https://api.stripe.com";
+    private static int WAIT_WHEN_RATE_LIMIT = 5000;
+    public int MAX_CONCURRENT_CALLS;
+    public int MAX_RETRIES;
+    public Semaphore semaphore;
 
     @EndpointProperty
     private String publishableKey;
@@ -35,12 +43,26 @@ public class StripeEndpoint extends HttpEndpoint {
     @EndpointProperty
     private String secretKey;
 
+    @EndpointProperty
+    private String maxConcurrentCalls;
+
+    @EndpointProperty
+    private String maxRetries;
+
     public StripeEndpoint() {
     }
+
 
     @Override
     public String getApiUri() {
         return API_URL;
+    }
+
+    @Override
+    public void endpointStarted() {
+        MAX_CONCURRENT_CALLS = Integer.parseInt(maxConcurrentCalls);
+        MAX_RETRIES = Integer.parseInt(maxRetries);
+        semaphore = new Semaphore(MAX_CONCURRENT_CALLS, true);
     }
 
     @EndpointWebService
@@ -59,57 +81,147 @@ public class StripeEndpoint extends HttpEndpoint {
     }
 
     @EndpointFunction(name = "_get")
-    public Json get(FunctionRequest request) {
-        logger.info(String.format("GET [%s]", request.getJsonParams().string("path")));
-        setRequestConfig(request, false);
+    public Json get(FunctionRequest request) throws InterruptedException {
+        semaphore.acquire();
         try {
-            return defaultGetRequest(request);
-        } catch (EndpointException e) {
-            throw e;
+            logger.info(String.format("GET [%s]", request.getJsonParams().string("path")));
+            setRequestConfig(request, false);
+            int retries = 0;
+            while (true) {
+                try {
+                    return defaultGetRequest(request);
+                } catch (EndpointException e) {
+                    if (e.getReturnCode() == 429) {
+                        if (retries >= MAX_RETRIES) {
+                            throw e;
+                        } else {
+                            // wait a few seconds and retry
+                            Thread.sleep(WAIT_WHEN_RATE_LIMIT);
+                            retries++;
+                        }
+                    } else {
+                        throw e;
+                    }
+                }
+            }
+        } finally {
+            semaphore.release();
         }
     }
 
     @EndpointFunction(name = "_put")
-    public Json put(FunctionRequest request) {
-        logger.info(String.format("PUT [%s]", request.getJsonParams().string("path")));
-        setRequestConfig(request, true);
+    public Json put(FunctionRequest request) throws InterruptedException {
+        semaphore.acquire();
         try {
-            return defaultPutRequest(request);
-        } catch (EndpointException e) {
-            throw e;
+            logger.info(String.format("PUT [%s]", request.getJsonParams().string("path")));
+            setRequestConfig(request, true);
+            int retries = 0;
+            while (true) {
+                try {
+                    return defaultPutRequest(request);
+                } catch (EndpointException e) {
+                    if (e.getReturnCode() == 429) {
+                        if (retries >= MAX_RETRIES) {
+                            throw e;
+                        } else {
+                            // wait a few seconds and retry
+                            Thread.sleep(WAIT_WHEN_RATE_LIMIT);
+                            retries++;
+                        }
+                    } else {
+                        throw e;
+                    }
+                }
+            }
+        } finally {
+            semaphore.release();
         }
     }
 
     @EndpointFunction(name = "_patch")
-    public Json patch(FunctionRequest request) {
-        logger.info(String.format("PATCH [%s]", request.getJsonParams().string("path")));
-        setRequestConfig(request, true);
+    public Json patch(FunctionRequest request) throws InterruptedException {
+        semaphore.acquire();
         try {
-            return defaultPatchRequest(request);
-        } catch (EndpointException e) {
-            throw e;
+            logger.info(String.format("PATCH [%s]", request.getJsonParams().string("path")));
+            setRequestConfig(request, true);
+            int retries = 0;
+            while (true) {
+                try {
+                    return defaultPatchRequest(request);
+                } catch (EndpointException e) {
+                    if (e.getReturnCode() == 429) {
+                        if (retries >= MAX_RETRIES) {
+                            throw e;
+                        } else {
+                            // wait a few seconds and retry
+                            Thread.sleep(WAIT_WHEN_RATE_LIMIT);
+                            retries++;
+                        }
+                    } else {
+                        throw e;
+                    }
+                }
+            }
+        } finally {
+            semaphore.release();
         }
     }
 
     @EndpointFunction(name = "_post")
-    public Json post(FunctionRequest request) {
-        logger.info(String.format("POST [%s]", request.getJsonParams().string("path")));
-        setRequestConfig(request, true);
+    public Json post(FunctionRequest request) throws InterruptedException {
+        semaphore.acquire();
         try {
-            return defaultPostRequest(request);
-        } catch (EndpointException e) {
-            throw e;
+            logger.info(String.format("POST [%s]", request.getJsonParams().string("path")));
+            setRequestConfig(request, true);
+            int retries = 0;
+            while (true) {
+                try {
+                    return defaultPostRequest(request);
+                } catch (EndpointException e) {
+                    if (e.getReturnCode() == 429) {
+                        if (retries >= MAX_RETRIES) {
+                            throw e;
+                        } else {
+                            // wait a few seconds and retry
+                            Thread.sleep(WAIT_WHEN_RATE_LIMIT);
+                            retries++;
+                        }
+                    } else {
+                        throw e;
+                    }
+                }
+            }
+        } finally {
+            semaphore.release();
         }
     }
 
     @EndpointFunction(name = "_delete")
-    public Json delete(FunctionRequest request) {
-        logger.info(String.format("DELETE [%s]", request.getJsonParams().string("path")));
-        setRequestConfig(request, false);
+    public Json delete(FunctionRequest request) throws InterruptedException {
+        semaphore.acquire();
         try {
-            return defaultDeleteRequest(request);
-        } catch (EndpointException e) {
-            throw e;
+            logger.info(String.format("DELETE [%s]", request.getJsonParams().string("path")));
+            setRequestConfig(request, false);
+            int retries = 0;
+            while (true) {
+                try {
+                    return defaultDeleteRequest(request);
+                } catch (EndpointException e) {
+                    if (e.getReturnCode() == 429) {
+                        if (retries >= MAX_RETRIES) {
+                            throw e;
+                        } else {
+                            // wait a few seconds and retry
+                            Thread.sleep(WAIT_WHEN_RATE_LIMIT);
+                            retries++;
+                        }
+                    } else {
+                        throw e;
+                    }
+                }
+            }
+        } finally {
+            semaphore.release();
         }
     }
 
