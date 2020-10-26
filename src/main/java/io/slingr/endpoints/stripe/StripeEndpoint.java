@@ -49,7 +49,6 @@ public class StripeEndpoint extends HttpEndpoint {
 
     @EndpointProperty
     private String maxConcurrentCalls;
-    private Boolean checkWebhooksSign;
 
     @EndpointProperty
     private String webhooksSecret;
