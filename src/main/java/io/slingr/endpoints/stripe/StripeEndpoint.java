@@ -36,6 +36,11 @@ public class StripeEndpoint extends HttpEndpoint {
     public int MAX_CONCURRENT_CALLS;
     public int MAX_RETRIES;
     public Semaphore semaphore;
+    private Boolean checkWebhooksSign;
+
+
+    @EndpointProperty
+    private String webhooksSecret;
 
     @EndpointProperty
     private String publishableKey;
