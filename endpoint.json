@@ -81,6 +81,24 @@
             "name": "webhooksSecret",
             "type": "password",
             "required": "config.checkWebhooksSign==true"
+        },
+        {
+            "label": "Max Concurrent Calls",
+            "name": "maxConcurrentCalls",
+            "type": "text",
+            "required": true,
+            "typeOptions": {
+                "validation": "number"
+            }
+        },
+        {
+            "label": "Max Retries",
+            "name": "maxRetries",
+            "type": "text",
+            "required": true,
+            "typeOptions": {
+                "validation": "number"
+            }
         }
     ]
 }
