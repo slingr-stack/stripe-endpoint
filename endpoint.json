@@ -87,6 +87,7 @@
             "name": "maxConcurrentCalls",
             "type": "text",
             "required": true,
+            "defaultValue": "3",
             "typeOptions": {
                 "validation": "number"
             }
@@ -96,6 +97,7 @@
             "name": "maxRetries",
             "type": "text",
             "required": true,
+            "defaultValue": "6",
             "typeOptions": {
                 "validation": "number"
             }

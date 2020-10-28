@@ -68,8 +68,16 @@ public class StripeEndpoint extends HttpEndpoint {
 
     @Override
     public void endpointStarted() {
-        MAX_CONCURRENT_CALLS = parseInt(maxConcurrentCalls);
-        MAX_RETRIES = parseInt(maxRetries);
+        if (maxConcurrentCalls == null || maxConcurrentCalls.trim().isEmpty()) {
+            MAX_CONCURRENT_CALLS = 3;
+        } else {
+            MAX_CONCURRENT_CALLS = parseInt(maxConcurrentCalls);
+        }
+        if (maxRetries == null || maxRetries.trim().isEmpty()) {
+            MAX_RETRIES = 6;
+        } else {
+            MAX_RETRIES = parseInt(maxRetries);
+        }
         semaphore = new Semaphore(MAX_CONCURRENT_CALLS, true);
     }
 
