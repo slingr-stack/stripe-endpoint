@@ -1,0 +1,1792 @@
+{
+    "fileName": "stripe-helpers",
+    "endpointName": "Stripe",
+    "omittableUrlParts": ["v1"],
+    "apiDescriptors": [
+        {
+            "method": "GET",
+            "url": "/v1/balance",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": "https://stripe.com/docs/api/balance"
+        },
+        {
+            "method": "GET",
+            "url": "/v1/balance_transactions/:id",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/balance_transactions",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/charges",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/charges/:id",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/charges/:id",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/charges/:id/capture",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/charges",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/customers",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/customers/:id",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/customers/:id",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/customers/:id",
+            "prefix": "coreResources",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/customers",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/disputes/:id",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/disputes/:id",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/disputes/:id/close",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/disputes",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/events/:id",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/events",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/files/:id",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/files",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/file_links",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/file_links/:id",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/file_links/:id",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/file_links",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/payment_intents",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/payment_intents/:id",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/payment_intents/:id",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/payment_intents/:id/confirm",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/payment_intents/:id/capture",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/payment_intents/:id/cancel",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/payment_intents",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/setup_intents",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/setup_intents/:id",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/setup_intents/:id",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/setup_intents/:id/confirm",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/setup_intents/:id/cancel",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/setup_intents",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/payouts",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/payouts/:id",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/payouts/:id",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/payouts",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/payouts/:id/cancel",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/products",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/products/:id",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/products/:id",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/products",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/products/:id",
+            "prefix": "coreResources",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/refunds",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/refunds/:id",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/refunds/:id",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/refunds",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/tokens",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/tokens",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/tokens",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/tokens",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/tokens",
+            "prefix": "coreResources",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/tokens/:id",
+            "prefix": "coreResources",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/payment_methods",
+            "prefix": "paymentMethods",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/payment_methods/:id",
+            "prefix": "paymentMethods",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/payment_methods/:id",
+            "prefix": "paymentMethods",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/payment_methods",
+            "prefix": "paymentMethods",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/payment_methods/:id/attach",
+            "prefix": "paymentMethods",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/payment_methods/:id/detach",
+            "prefix": "paymentMethods",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/customers/:id/sources",
+            "prefix": "paymentMethods",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/customers/:id/sources/:id",
+            "prefix": "paymentMethods",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/customers/:id/sources/:id",
+            "prefix": "paymentMethods",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/customers/:id/sources/:id/verify",
+            "prefix": "paymentMethods",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/customers/:id/sources/:id",
+            "prefix": "paymentMethods",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/customers/:id/sources?object=card",
+            "prefix": "paymentMethods",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/sources",
+            "prefix": "paymentMethods",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/sources/:id",
+            "prefix": "paymentMethods",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/sources/:id",
+            "prefix": "paymentMethods",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/customers/:id/sources",
+            "prefix": "paymentMethods",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/customers/:id/sources/:id",
+            "prefix": "paymentMethods",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/checkout/sessions",
+            "prefix": "checkout",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/checkout/sessions/:id",
+            "prefix": "checkout",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/coupons",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/coupons/:id",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/coupons/:id",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/coupons/:id",
+            "prefix": "billing",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/coupons",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/credit_notes",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/credit_notes/:id",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/credit_notes/:id",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/credit_notes/:id/void",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/credit_notes",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/customers/:customer/balance_transactions",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/customers/:customer/balance_transactions/:transaction",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/customers/:customer/balance_transactions/:transaction",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/customers/:customer/balance_transactions ",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/customers/:id/tax_ids",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/customers/:id/tax_ids/:id",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/customers/:id/tax_ids/:id",
+            "prefix": "billing",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/customers/:id/tax_ids",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/customers/:id/discount",
+            "prefix": "billing",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/subscriptions/:id/discount",
+            "prefix": "billing",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/invoices",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/invoices/:id",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/invoices/:id",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/invoices/:id",
+            "prefix": "billing",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/invoices/:id/finalize",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/invoices/:id/pay",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/invoices/:id/send",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/invoices/:id/void",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/invoices/:id/mark_uncollectible",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/invoices/:id/lines",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/invoices/upcoming",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/invoices/upcoming/lines",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/invoices",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/invoiceitems",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/invoiceitems/:id",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/invoiceitems/:id",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/invoiceitems/:id",
+            "prefix": "billing",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/invoiceitems",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/plans",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/plans/:id",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/plans/:id",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/plans/:id",
+            "prefix": "billing",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/plans",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/products",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/products/:id",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/products/:id",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/products",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/products/:id",
+            "prefix": "billing",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/subscriptions",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/subscriptions/:id",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/subscriptions/:id",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/subscriptions/:id",
+            "prefix": "billing",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/subscriptions",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/subscription_items",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/subscription_items/:id",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/subscription_items/:id",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/subscription_items/:id",
+            "prefix": "billing",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/subscription_items",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/subscription_schedules",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/subscription_schedules/:id",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/subscription_schedules/:id",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/subscription_schedules/:id/cancel",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/subscription_schedules/:id/release",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/subscription_schedules",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/tax_rates",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/tax_rates/:id",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/tax_rates/:id",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/tax_rates",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/subscription_items/:id/usage_records",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/subscription_items/:id/usage_record_summaries",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/accounts",
+            "prefix": "connect",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/accounts/:id",
+            "prefix": "connect",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/accounts/:id",
+            "prefix": "connect",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/accounts/:id",
+            "prefix": "connect",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/accounts/:id/reject",
+            "prefix": "connect",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/accounts",
+            "prefix": "connect",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/accounts/:id/login_links",
+            "prefix": "connect",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/account_links",
+            "prefix": "connect",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/application_fees/:id",
+            "prefix": "connect",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/application_fees",
+            "prefix": "connect",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/application_fees/:id/refunds",
+            "prefix": "connect",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/application_fees/:id/refunds/:id",
+            "prefix": "connect",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/application_fees/:id/refunds/:id",
+            "prefix": "connect",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/application_fees/:id/refunds",
+            "prefix": "connect",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/accounts/:id/capabilities/:id",
+            "prefix": "connect",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/accounts/:id/capabilities/:id",
+            "prefix": "connect",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/accounts/:id/capabilities",
+            "prefix": "connect",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/country_specs",
+            "prefix": "connect",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/country_specs/:id",
+            "prefix": "connect",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/accounts/:id/external_accounts",
+            "prefix": "connect",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/accounts/:id/external_accounts/:id",
+            "prefix": "connect",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/accounts/:id/external_accounts/:id",
+            "prefix": "connect",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/accounts/:id/external_accounts/:id",
+            "prefix": "connect",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/accounts/:id/external_accounts?object=bank_account",
+            "prefix": "connect",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/accounts/:id/external_accounts",
+            "prefix": "connect",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/accounts/:id/external_accounts/:id",
+            "prefix": "connect",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/accounts/:id/external_accounts/:id",
+            "prefix": "connect",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/accounts/:id/external_accounts/:id",
+            "prefix": "connect",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/accounts/:id/external_accounts?object=card",
+            "prefix": "connect",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/topups",
+            "prefix": "connect",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/topups/:id",
+            "prefix": "connect",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/topups/:id",
+            "prefix": "connect",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/topups",
+            "prefix": "connect",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/topups/:id/cancel",
+            "prefix": "connect",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/transfers",
+            "prefix": "connect",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/transfers/:id",
+            "prefix": "connect",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/transfers/:id",
+            "prefix": "connect",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/transfers",
+            "prefix": "connect",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/transfers/:id/reversals",
+            "prefix": "connect",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/transfers/:id/reversals/:id",
+            "prefix": "connect",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/transfers/:id/reversals/:id",
+            "prefix": "connect",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/transfers/:id/reversals",
+            "prefix": "connect",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/radar/early_fraud_warnings/:id",
+            "prefix": "fraud",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/radar/early_fraud_warnings",
+            "prefix": "fraud",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/reviews/:id/approve",
+            "prefix": "fraud",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/reviews/:id",
+            "prefix": "fraud",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/reviews",
+            "prefix": "fraud",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/radar/value_lists",
+            "prefix": "fraud",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/radar/value_lists/:id",
+            "prefix": "fraud",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/radar/value_lists/:id",
+            "prefix": "fraud",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/radar/value_lists/:id",
+            "prefix": "fraud",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/radar/value_lists",
+            "prefix": "fraud",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/radar/value_list_items",
+            "prefix": "fraud",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/radar/value_list_items/:id",
+            "prefix": "fraud",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/radar/value_list_items/:id",
+            "prefix": "fraud",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/radar/value_list_items",
+            "prefix": "fraud",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/issuing/authorizations/:id",
+            "prefix": "issuing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/issuing/authorizations/:id",
+            "prefix": "issuing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/issuing/authorizations/:id/approve",
+            "prefix": "issuing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/issuing/authorizations/:id/decline",
+            "prefix": "issuing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/issuing/authorizations",
+            "prefix": "issuing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/issuing/cardholders",
+            "prefix": "issuing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/issuing/cardholders/:id",
+            "prefix": "issuing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/issuing/cardholders/:id",
+            "prefix": "issuing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/issuing/cardholders",
+            "prefix": "issuing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/issuing/cards",
+            "prefix": "issuing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/issuing/cards/:id",
+            "prefix": "issuing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/issuing/cards/:id/details",
+            "prefix": "issuing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/issuing/cards/:id",
+            "prefix": "issuing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/issuing/cards",
+            "prefix": "issuing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/issuing/disputes",
+            "prefix": "issuing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/issuing/disputes/:id",
+            "prefix": "issuing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/issuing/disputes/:id",
+            "prefix": "issuing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/issuing/disputes",
+            "prefix": "issuing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/issuing/transactions/:id",
+            "prefix": "issuing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/issuing/transactions/:id",
+            "prefix": "issuing",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/issuing/transactions",
+            "prefix": "issuing",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/terminal/connection_tokens",
+            "prefix": "terminal",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/terminal/locations",
+            "prefix": "terminal",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/terminal/locations/:id",
+            "prefix": "terminal",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/terminal/locations/:id",
+            "prefix": "terminal",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/terminal/locations/:id",
+            "prefix": "terminal",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/terminal/locations",
+            "prefix": "terminal",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/terminal/readers",
+            "prefix": "terminal",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/terminal/readers/:id",
+            "prefix": "terminal",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/terminal/readers/:id",
+            "prefix": "terminal",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/terminal/readers/:id",
+            "prefix": "terminal",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/terminal/readers",
+            "prefix": "terminal",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/orders",
+            "prefix": "orders",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/orders/:id",
+            "prefix": "orders",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/orders/:id",
+            "prefix": "orders",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/orders/:id/pay",
+            "prefix": "orders",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/orders",
+            "prefix": "orders",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/orders/:id/returns",
+            "prefix": "orders",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/order_returns/:id",
+            "prefix": "orders",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/order_returns",
+            "prefix": "orders",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/skus",
+            "prefix": "orders",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/skus/:id",
+            "prefix": "orders",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/skus/:id",
+            "prefix": "orders",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/skus",
+            "prefix": "orders",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/skus/:id",
+            "prefix": "orders",
+            "suffix": "delete",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/sigma/scheduled_query_runs/:id",
+            "prefix": "sigma",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/sigma/scheduled_query_runs",
+            "prefix": "sigma",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/webhook_endpoints",
+            "prefix": "webhooks",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/webhook_endpoints/:id",
+            "prefix": "webhooks",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "POST",
+            "url": "/v1/webhook_endpoints/:id",
+            "prefix": "webhooks",
+            "suffix": "post",
+            "docsLink": ""
+        },
+        {
+            "method": "GET",
+            "url": "/v1/webhook_endpoints",
+            "prefix": "webhooks",
+            "suffix": "get",
+            "docsLink": ""
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/webhook_endpoints/:id",
+            "prefix": "webhooks",
+            "suffix": "delete",
+            "docsLink": ""
+        }
+    ]
+}
