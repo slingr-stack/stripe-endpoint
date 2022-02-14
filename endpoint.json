@@ -5,7 +5,7 @@
     "internal": false,
     "configurationType": "GLOBAL",
     "deployment": {
-        "profiles":[
+        "profiles": [
             {
                 "name": "default",
                 "label": "Default",
@@ -47,11 +47,12 @@
             "name": "_delete"
         }
     ],
-    "scripts":[
+    "scripts": [
         "functions.js",
-        "stripe-helpers.js"
+        "stripe-helpers.js",
+        "http-generic-helpers.js"
     ],
-    "configuration":[
+    "configuration": [
         {
             "label": "Publishable key",
             "name": "publishableKey",
@@ -80,13 +81,21 @@
             "label": "Webhooks secret",
             "name": "webhooksSecret",
             "type": "password",
-            "required": "config.checkWebhooksSign==true"
+            "required": "config.checkWebhooksSign==true",
+            "visibility": "config.checkWebhooksSign==true"
+        },
+        {
+            "label": "Modify Concurrency Configuration",
+            "name": "modifyConcurrencyConfiguration",
+            "type": "toggle",
+            "defaultValue": false
         },
         {
             "label": "Max Concurrent Calls",
             "name": "maxConcurrentCalls",
             "type": "text",
             "required": true,
+            "visibility": "config.modifyConcurrencyConfiguration==true",
             "defaultValue": "3",
             "typeOptions": {
                 "validation": "number"
@@ -97,7 +106,19 @@
             "name": "maxRetries",
             "type": "text",
             "required": true,
+            "visibility": "config.modifyConcurrencyConfiguration==true",
             "defaultValue": "6",
+            "typeOptions": {
+                "validation": "number"
+            }
+        },
+        {
+            "label": "Time Slot",
+            "name": "timeSlot",
+            "type": "text",
+            "required": true,
+            "visibility": "config.modifyConcurrencyConfiguration==true",
+            "defaultValue": "5000",
             "typeOptions": {
                 "validation": "number"
             }

@@ -8,1785 +8,2161 @@
             "url": "/v1/balance",
             "prefix": "coreResources",
             "suffix": "get",
-            "docsLink": "https://stripe.com/docs/api/balance"
+            "docsLinks": ["https://stripe.com/docs/api/balance/balance_retrieve"]
         },
         {
             "method": "GET",
             "url": "/v1/balance_transactions/:id",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/balance_transactions/retrieve"]
         },
         {
             "method": "GET",
             "url": "/v1/balance_transactions",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/balance_transactions/list"]
         },
         {
             "method": "POST",
             "url": "/v1/charges",
             "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/charges/create"]
         },
         {
             "method": "GET",
             "url": "/v1/charges/:id",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/charges/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/charges/:id",
             "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/charges/update"]
         },
         {
             "method": "POST",
             "url": "/v1/charges/:id/capture",
             "prefix": "coreResources",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/charges/capture"]
         },
         {
             "method": "GET",
             "url": "/v1/charges",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/charges/list"]
         },
         {
             "method": "POST",
             "url": "/v1/customers",
             "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/customers/create"]
         },
         {
             "method": "GET",
             "url": "/v1/customers/:id",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/customers/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/customers/:id",
             "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/customers/update"]
         },
         {
             "method": "DELETE",
             "url": "/v1/customers/:id",
             "prefix": "coreResources",
             "suffix": "delete",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/customers/delete"]
         },
         {
             "method": "GET",
             "url": "/v1/customers",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/customers/list"]
         },
         {
             "method": "GET",
             "url": "/v1/disputes/:id",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/disputes/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/disputes/:id",
             "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/disputes/update"]
         },
         {
             "method": "POST",
             "url": "/v1/disputes/:id/close",
             "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "",
+            "docsLinks": ["https://stripe.com/docs/api/disputes/close"]
         },
         {
             "method": "GET",
             "url": "/v1/disputes",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/disputes/list"]
         },
         {
             "method": "GET",
             "url": "/v1/events/:id",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/events/retrieve"]
         },
         {
             "method": "GET",
             "url": "/v1/events",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/events/list"]
+        },
+        {
+            "method": "POST",
+            "url": "https://files.stripe.com/v1/files",
+            "prefix": "coreResources",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/files/create"]
         },
         {
             "method": "GET",
             "url": "/v1/files/:id",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/files/retrieve"]
         },
         {
             "method": "GET",
             "url": "/v1/files",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "getAll",
+            "docsLinks": ["https://stripe.com/docs/api/files/list"]
         },
         {
             "method": "POST",
             "url": "/v1/file_links",
             "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/file_links/create"]
         },
         {
             "method": "GET",
             "url": "/v1/file_links/:id",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/file_links/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/file_links/:id",
             "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/file_links/update"]
         },
         {
             "method": "GET",
             "url": "/v1/file_links",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/file_links/list"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/mandates/:id",
+            "prefix": "coreResources",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/mandates/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/payment_intents",
             "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/payment_intents/create"]
         },
         {
             "method": "GET",
             "url": "/v1/payment_intents/:id",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/payment_intents/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/payment_intents/:id",
             "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/payment_intents/update"]
         },
         {
             "method": "POST",
             "url": "/v1/payment_intents/:id/confirm",
             "prefix": "coreResources",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/payment_intents/confirm"]
         },
         {
             "method": "POST",
             "url": "/v1/payment_intents/:id/capture",
             "prefix": "coreResources",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/payment_intents/capture"]
         },
         {
             "method": "POST",
             "url": "/v1/payment_intents/:id/cancel",
             "prefix": "coreResources",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/payment_intents/cancel"]
         },
         {
             "method": "GET",
             "url": "/v1/payment_intents",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/payment_intents/list"]
         },
         {
             "method": "POST",
             "url": "/v1/setup_intents",
             "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/setup_intents/create"]
         },
         {
             "method": "GET",
             "url": "/v1/setup_intents/:id",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/setup_intents/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/setup_intents/:id",
             "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/setup_intents/update"]
         },
         {
             "method": "POST",
             "url": "/v1/setup_intents/:id/confirm",
             "prefix": "coreResources",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/setup_intents/confirm"]
         },
         {
             "method": "POST",
             "url": "/v1/setup_intents/:id/cancel",
             "prefix": "coreResources",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/setup_intents/cancel"]
         },
         {
             "method": "GET",
             "url": "/v1/setup_intents",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/setup_intents/list"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/setup_attempts",
+            "prefix": "coreResources",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/setup_attempts/list"]
         },
         {
             "method": "POST",
             "url": "/v1/payouts",
             "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/payouts/create"]
         },
         {
             "method": "GET",
             "url": "/v1/payouts/:id",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/payouts/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/payouts/:id",
             "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/payouts/update"]
         },
         {
             "method": "GET",
             "url": "/v1/payouts",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/payouts/list"]
         },
         {
             "method": "POST",
             "url": "/v1/payouts/:id/cancel",
             "prefix": "coreResources",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/payouts/cancel"]
         },
         {
             "method": "POST",
-            "url": "/v1/products",
+            "url": "/v1/payouts/:id/reverse",
             "prefix": "coreResources",
             "suffix": "post",
-            "docsLink": ""
-        },
-        {
-            "method": "GET",
-            "url": "/v1/products/:id",
-            "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
-        },
-        {
-            "method": "POST",
-            "url": "/v1/products/:id",
-            "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
-        },
-        {
-            "method": "GET",
-            "url": "/v1/products",
-            "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
-        },
-        {
-            "method": "DELETE",
-            "url": "/v1/products/:id",
-            "prefix": "coreResources",
-            "suffix": "delete",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/payouts/reverse"]
         },
         {
             "method": "POST",
             "url": "/v1/refunds",
             "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/refunds/create"]
         },
         {
             "method": "GET",
             "url": "/v1/refunds/:id",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/refunds/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/refunds/:id",
             "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/refunds/update"]
         },
         {
             "method": "GET",
             "url": "/v1/refunds",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/refunds/list"]
         },
         {
             "method": "POST",
             "url": "/v1/tokens",
             "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
-        },
-        {
-            "method": "POST",
-            "url": "/v1/tokens",
-            "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
-        },
-        {
-            "method": "POST",
-            "url": "/v1/tokens",
-            "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
-        },
-        {
-            "method": "POST",
-            "url": "/v1/tokens",
-            "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
-        },
-        {
-            "method": "POST",
-            "url": "/v1/tokens",
-            "prefix": "coreResources",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/tokens/create_card"]
         },
         {
             "method": "GET",
             "url": "/v1/tokens/:id",
             "prefix": "coreResources",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/tokens/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/payment_methods",
             "prefix": "paymentMethods",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/payment_methods/create"]
         },
         {
             "method": "GET",
             "url": "/v1/payment_methods/:id",
             "prefix": "paymentMethods",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/payment_methods/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/payment_methods/:id",
             "prefix": "paymentMethods",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/payment_methods/update"]
         },
         {
             "method": "GET",
             "url": "/v1/payment_methods",
             "prefix": "paymentMethods",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/payment_methods/list"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/customers/:customer/payment_methods",
+            "prefix": "paymentMethods",
             "suffix": "get",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/payment_methods/customer_list"]
         },
         {
             "method": "POST",
             "url": "/v1/payment_methods/:id/attach",
             "prefix": "paymentMethods",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/payment_methods/attach"]
         },
         {
             "method": "POST",
             "url": "/v1/payment_methods/:id/detach",
             "prefix": "paymentMethods",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/payment_methods/detach"]
         },
         {
             "method": "POST",
             "url": "/v1/customers/:id/sources",
             "prefix": "paymentMethods",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": [
+                "https://stripe.com/docs/api/customer_bank_accounts/create",
+                "https://stripe.com/docs/api/cards/create",
+                "https://stripe.com/docs/api/sources/attach"
+            ]
         },
         {
             "method": "GET",
             "url": "/v1/customers/:id/sources/:id",
             "prefix": "paymentMethods",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": [
+                "https://stripe.com/docs/api/customer_bank_accounts/retrieve",
+                "https://stripe.com/docs/api/cards/retrieve"
+            ]
         },
         {
             "method": "POST",
             "url": "/v1/customers/:id/sources/:id",
             "prefix": "paymentMethods",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": [
+                "https://stripe.com/docs/api/customer_bank_accounts/update",
+                "https://stripe.com/docs/api/cards/update"
+            ]
         },
         {
             "method": "POST",
             "url": "/v1/customers/:id/sources/:id/verify",
             "prefix": "paymentMethods",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "",
+            "docsLinks": ["https://stripe.com/docs/api/customer_bank_accounts/verify"]
         },
         {
             "method": "DELETE",
             "url": "/v1/customers/:id/sources/:id",
             "prefix": "paymentMethods",
             "suffix": "delete",
-            "docsLink": ""
+            "docsLinks": [
+                "https://stripe.com/docs/api/customer_bank_accounts/delete",
+                "https://stripe.com/docs/api/cards/delete",
+                "https://stripe.com/docs/api/sources/detach"
+            ]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/customers/:id/sources?object=bank_account",
+            "prefix": "paymentMethods",
+            "suffix": "getBankAccount",
+            "docsLinks": ["https://stripe.com/docs/api/customer_bank_accounts/list"]
         },
         {
             "method": "GET",
             "url": "/v1/customers/:id/sources?object=card",
             "prefix": "paymentMethods",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "getCard",
+            "docsLinks": ["https://stripe.com/docs/api/cards/list"]
         },
         {
             "method": "POST",
             "url": "/v1/sources",
             "prefix": "paymentMethods",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/sources/create"]
         },
         {
             "method": "GET",
             "url": "/v1/sources/:id",
             "prefix": "paymentMethods",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/sources/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/sources/:id",
             "prefix": "paymentMethods",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/sources/update"]
         },
         {
             "method": "POST",
-            "url": "/v1/customers/:id/sources",
-            "prefix": "paymentMethods",
-            "suffix": "post",
-            "docsLink": ""
-        },
-        {
-            "method": "DELETE",
-            "url": "/v1/customers/:id/sources/:id",
-            "prefix": "paymentMethods",
-            "suffix": "delete",
-            "docsLink": ""
-        },
-        {
-            "method": "POST",
-            "url": "/v1/checkout/sessions",
-            "prefix": "checkout",
-            "suffix": "post",
-            "docsLink": ""
+            "url": "/v1/products",
+            "prefix": "products",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/products/create"]
         },
         {
             "method": "GET",
-            "url": "/v1/checkout/sessions/:id",
-            "prefix": "checkout",
-            "suffix": "get",
-            "docsLink": ""
+            "url": "/v1/products/:id",
+            "prefix": "products",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/products/retrieve"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/products/:id",
+            "prefix": "products",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/products/update"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/products",
+            "prefix": "products",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/products/list"]
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/products/:id",
+            "prefix": "products",
+            "suffix": "delete",
+            "docsLinks": ["https://stripe.com/docs/api/products/delete"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/prices",
+            "prefix": "products",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/prices/create"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/prices/:id",
+            "prefix": "products",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/prices/retrieve"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/prices/:id",
+            "prefix": "products",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/prices/update"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/prices",
+            "prefix": "products",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/prices/list"]
         },
         {
             "method": "POST",
             "url": "/v1/coupons",
-            "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
+            "prefix": "products",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/coupons/create"]
         },
         {
             "method": "GET",
             "url": "/v1/coupons/:id",
-            "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "products",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/coupons/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/coupons/:id",
-            "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
+            "prefix": "products",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/coupons/update"]
         },
         {
             "method": "DELETE",
             "url": "/v1/coupons/:id",
-            "prefix": "billing",
+            "prefix": "products",
             "suffix": "delete",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/coupons/delete"]
         },
         {
             "method": "GET",
             "url": "/v1/coupons",
-            "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "products",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/coupons/list"]
         },
         {
             "method": "POST",
-            "url": "/v1/credit_notes",
-            "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
-        },
-        {
-            "method": "GET",
-            "url": "/v1/credit_notes/:id",
-            "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
+            "url": "/v1/promotion_codes",
+            "prefix": "products",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/promotion_codes/create"]
         },
         {
             "method": "POST",
-            "url": "/v1/credit_notes/:id",
-            "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
-        },
-        {
-            "method": "POST",
-            "url": "/v1/credit_notes/:id/void",
-            "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
+            "url": "/v1/promotion_codes/:id",
+            "prefix": "products",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/promotion_codes/update"]
         },
         {
             "method": "GET",
-            "url": "/v1/credit_notes",
-            "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
-        },
-        {
-            "method": "POST",
-            "url": "/v1/customers/:customer/balance_transactions",
-            "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
+            "url": "/v1/promotion_codes/:id",
+            "prefix": "products",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/promotion_codes/retrieve"]
         },
         {
             "method": "GET",
-            "url": "/v1/customers/:customer/balance_transactions/:transaction",
-            "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
-        },
-        {
-            "method": "POST",
-            "url": "/v1/customers/:customer/balance_transactions/:transaction",
-            "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
-        },
-        {
-            "method": "GET",
-            "url": "/v1/customers/:customer/balance_transactions ",
-            "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
-        },
-        {
-            "method": "POST",
-            "url": "/v1/customers/:id/tax_ids",
-            "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
-        },
-        {
-            "method": "GET",
-            "url": "/v1/customers/:id/tax_ids/:id",
-            "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
-        },
-        {
-            "method": "DELETE",
-            "url": "/v1/customers/:id/tax_ids/:id",
-            "prefix": "billing",
-            "suffix": "delete",
-            "docsLink": ""
-        },
-        {
-            "method": "GET",
-            "url": "/v1/customers/:id/tax_ids",
-            "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
+            "url": "/v1/promotion_codes",
+            "prefix": "products",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/promotion_codes/list"]
         },
         {
             "method": "DELETE",
             "url": "/v1/customers/:id/discount",
-            "prefix": "billing",
+            "prefix": "products",
             "suffix": "delete",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/discounts/delete"]
         },
         {
             "method": "DELETE",
             "url": "/v1/subscriptions/:id/discount",
             "prefix": "billing",
             "suffix": "delete",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/discounts/subscription_delete"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/tax_codes",
+            "prefix": "products",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/tax_codes/list"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/tax_codes/:id",
+            "prefix": "products",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/tax_codes/retrieve"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/tax_rates",
+            "prefix": "products",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/tax_rates/create"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/tax_rates/:id",
+            "prefix": "products",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/tax_rates/retrieve"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/tax_rates/:id",
+            "prefix": "products",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/tax_rates/update"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/tax_rates",
+            "prefix": "products",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/tax_rates/list"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/shipping_rates",
+            "prefix": "products",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/shipping_rates/create"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/shipping_rates/:id",
+            "prefix": "products",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/shipping_rates/retrieve"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/shipping_rates/:id",
+            "prefix": "products",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/shipping_rates/update"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/shipping_rates",
+            "prefix": "products",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/shipping_rates/list"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/checkout/sessions",
+            "prefix": "checkout",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/checkout/sessions/create"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/checkout/sessions/:id/expire",
+            "prefix": "checkout",
+            "suffix": "post",
+            "docsLinks": ["https://stripe.com/docs/api/checkout/sessions/expire"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/checkout/sessions/:id",
+            "prefix": "checkout",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/checkout/sessions/retrieve"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/credit_notes",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLinks": [""]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/checkout/sessions",
+            "prefix": "checkout",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/checkout/sessions/list"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/checkout/sessions/:id/line_items",
+            "prefix": "checkout",
+            "suffix": "get",
+            "docsLinks": ["https://stripe.com/docs/api/checkout/sessions/line_items"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/payment_links",
+            "prefix": "",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/payment_links/payment_links/create"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/payment_links/:id",
+            "prefix": "",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/payment_links/payment_links/retrieve"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/payment_links/:id",
+            "prefix": "",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/payment_links/payment_links/update"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/payment_links",
+            "prefix": "",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/payment_links/payment_links/list"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/payment_links/:id/line_items",
+            "prefix": "",
+            "suffix": "get",
+            "docsLinks": ["https://stripe.com/docs/api/payment_links/line_items"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/credit_notes/preview",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLinks": ["https://stripe.com/docs/api/credit_notes/preview"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/credit_notes",
+            "prefix": "billing",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/credit_notes/create"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/credit_notes/:id",
+            "prefix": "billing",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/credit_notes/retrieve"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/credit_notes/:id",
+            "prefix": "billing",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/credit_notes/update"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/credit_notes/:credit_note/lines",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLinks": ["https://stripe.com/docs/api/credit_notes/lines"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/credit_notes/preview/lines",
+            "prefix": "billing",
+            "suffix": "get",
+            "docsLinks": ["https://stripe.com/docs/api/credit_notes/preview_lines"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/credit_notes/:id/void",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLinks": ["https://stripe.com/docs/api/credit_notes/void"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/credit_notes",
+            "prefix": "billing",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/credit_notes/list"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/customers/:id/balance_transactions",
+            "prefix": "billing",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/customer_balance_transactions/create"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/customers/:id/balance_transactions/:id",
+            "prefix": "billing",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/customer_balance_transactions/retrieve"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/customers/:id/balance_transactions/:id",
+            "prefix": "billing",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/customer_balance_transactions/update"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/customers/:id/balance_transactions ",
+            "prefix": "billing",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/customer_balance_transactions/list"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/billing_portal/sessions",
+            "prefix": "billing",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/customer_portal/sessions/create"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/billing_portal/configurations",
+            "prefix": "billing",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/customer_portal/configurations/create"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/billing_portal/configurations/:id",
+            "prefix": "billing",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/customer_portal/configurations/update"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/billing_portal/configurations/:id",
+            "prefix": "billing",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/customer_portal/configurations/retrieve"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/billing_portal/configurations",
+            "prefix": "billing",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/customer_portal/configurations/list"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/customers/:id/tax_ids",
+            "prefix": "billing",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/customer_tax_ids/create"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/customers/:id/tax_ids/:id",
+            "prefix": "billing",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/customer_tax_ids/retrieve"]
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/customers/:id/tax_ids/:id",
+            "prefix": "billing",
+            "suffix": "delete",
+            "docsLinks": ["https://stripe.com/docs/api/customer_tax_ids/delete"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/customers/:id/tax_ids",
+            "prefix": "billing",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/customer_tax_ids/list"]
         },
         {
             "method": "POST",
             "url": "/v1/invoices",
             "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/invoices/create"]
         },
         {
             "method": "GET",
             "url": "/v1/invoices/:id",
             "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/invoices/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/invoices/:id",
             "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/invoices/update"]
         },
         {
             "method": "DELETE",
             "url": "/v1/invoices/:id",
             "prefix": "billing",
             "suffix": "delete",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/invoices/delete"]
         },
         {
             "method": "POST",
             "url": "/v1/invoices/:id/finalize",
             "prefix": "billing",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/invoices/finalize"]
         },
         {
             "method": "POST",
             "url": "/v1/invoices/:id/pay",
             "prefix": "billing",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/invoices/pay"]
         },
         {
             "method": "POST",
             "url": "/v1/invoices/:id/send",
             "prefix": "billing",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/invoices/send"]
         },
         {
             "method": "POST",
             "url": "/v1/invoices/:id/void",
             "prefix": "billing",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/invoices/void"]
         },
         {
             "method": "POST",
             "url": "/v1/invoices/:id/mark_uncollectible",
             "prefix": "billing",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/invoices/mark_uncollectible"]
         },
         {
             "method": "GET",
             "url": "/v1/invoices/:id/lines",
             "prefix": "billing",
             "suffix": "get",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/invoices/invoice_lines"]
         },
         {
             "method": "GET",
             "url": "/v1/invoices/upcoming",
             "prefix": "billing",
             "suffix": "get",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/invoices/upcoming"]
         },
         {
             "method": "GET",
             "url": "/v1/invoices/upcoming/lines",
             "prefix": "billing",
             "suffix": "get",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/invoices/upcoming_invoice_lines"]
         },
         {
             "method": "GET",
             "url": "/v1/invoices",
             "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/invoices/list"]
         },
         {
             "method": "POST",
             "url": "/v1/invoiceitems",
             "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/invoiceitems/create"]
         },
         {
             "method": "GET",
             "url": "/v1/invoiceitems/:id",
             "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/invoiceitems/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/invoiceitems/:id",
             "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/invoiceitems/update"]
         },
         {
             "method": "DELETE",
             "url": "/v1/invoiceitems/:id",
             "prefix": "billing",
             "suffix": "delete",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/invoiceitems/delete"]
         },
         {
             "method": "GET",
             "url": "/v1/invoiceitems",
             "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/invoiceitems/list"]
         },
         {
             "method": "POST",
             "url": "/v1/plans",
             "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/plans/create"]
         },
         {
             "method": "GET",
             "url": "/v1/plans/:id",
             "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/plans/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/plans/:id",
             "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/plans/update"]
         },
         {
             "method": "DELETE",
             "url": "/v1/plans/:id",
             "prefix": "billing",
             "suffix": "delete",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/plans/delete"]
         },
         {
             "method": "GET",
             "url": "/v1/plans",
             "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/plans/list"]
         },
         {
             "method": "POST",
-            "url": "/v1/products",
+            "url": "/v1/quotes",
             "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/quotes/create"]
         },
         {
             "method": "GET",
-            "url": "/v1/products/:id",
+            "url": "/v1/quotes/:id",
             "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/quotes/retrieve"]
         },
         {
             "method": "POST",
-            "url": "/v1/products/:id",
+            "url": "/v1/quotes/:id",
+            "prefix": "billing",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/quotes/update"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/quotes/:id/finalize",
             "prefix": "billing",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/quotes/finalize"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/quotes/:id/accept",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLinks": ["https://stripe.com/docs/api/quotes/accept"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/quotes/:id/cancel",
+            "prefix": "billing",
+            "suffix": "post",
+            "docsLinks": ["https://stripe.com/docs/api/quotes/cancel"]
         },
         {
             "method": "GET",
-            "url": "/v1/products",
+            "url": "https://files.stripe.com/v1/quotes/:id/pdf",
             "prefix": "billing",
             "suffix": "get",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/quotes/pdf"]
         },
         {
-            "method": "DELETE",
-            "url": "/v1/products/:id",
+            "method": "GET",
+            "url": "/v1/quotes",
             "prefix": "billing",
-            "suffix": "delete",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/quotes/list"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/quotes/:id/line_items",
+            "prefix": "billing",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/quotes/line_items/list"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/quotes/:id/computed_upfront_line_items",
+            "prefix": "billing",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/quotes/line_items/upfront/list"]
         },
         {
             "method": "POST",
             "url": "/v1/subscriptions",
             "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/subscriptions/create"]
         },
         {
             "method": "GET",
             "url": "/v1/subscriptions/:id",
             "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/subscriptions/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/subscriptions/:id",
             "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/subscriptions/update"]
         },
         {
             "method": "DELETE",
             "url": "/v1/subscriptions/:id",
             "prefix": "billing",
             "suffix": "delete",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/subscriptions/cancel"]
         },
         {
             "method": "GET",
             "url": "/v1/subscriptions",
             "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/subscriptions/list"]
         },
         {
             "method": "POST",
             "url": "/v1/subscription_items",
             "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/subscription_items/create"]
         },
         {
             "method": "GET",
             "url": "/v1/subscription_items/:id",
             "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/subscription_items/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/subscription_items/:id",
             "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/subscription_items/update"]
         },
         {
             "method": "DELETE",
             "url": "/v1/subscription_items/:id",
             "prefix": "billing",
             "suffix": "delete",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/subscription_items/delete"]
         },
         {
             "method": "GET",
             "url": "/v1/subscription_items",
             "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/subscription_items/list"]
         },
         {
             "method": "POST",
             "url": "/v1/subscription_schedules",
             "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/subscription_schedules/create"]
         },
         {
             "method": "GET",
             "url": "/v1/subscription_schedules/:id",
             "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/subscription_schedules/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/subscription_schedules/:id",
             "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/subscription_schedules/update"]
         },
         {
             "method": "POST",
             "url": "/v1/subscription_schedules/:id/cancel",
             "prefix": "billing",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/subscription_schedules/cancel"]
         },
         {
             "method": "POST",
             "url": "/v1/subscription_schedules/:id/release",
             "prefix": "billing",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/subscription_schedules/release"]
         },
         {
             "method": "GET",
             "url": "/v1/subscription_schedules",
             "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
-        },
-        {
-            "method": "POST",
-            "url": "/v1/tax_rates",
-            "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
-        },
-        {
-            "method": "GET",
-            "url": "/v1/tax_rates/:id",
-            "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
-        },
-        {
-            "method": "POST",
-            "url": "/v1/tax_rates/:id",
-            "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
-        },
-        {
-            "method": "GET",
-            "url": "/v1/tax_rates",
-            "prefix": "billing",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/subscription_schedules/list"]
         },
         {
             "method": "POST",
             "url": "/v1/subscription_items/:id/usage_records",
             "prefix": "billing",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/usage_records/create"]
         },
         {
             "method": "GET",
             "url": "/v1/subscription_items/:id/usage_record_summaries",
             "prefix": "billing",
             "suffix": "get",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/usage_records/subscription_item_summary_list"]
         },
         {
             "method": "POST",
             "url": "/v1/accounts",
             "prefix": "connect",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/accounts/create"]
         },
         {
             "method": "GET",
             "url": "/v1/accounts/:id",
             "prefix": "connect",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/accounts/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/accounts/:id",
             "prefix": "connect",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/accounts/update"]
         },
         {
             "method": "DELETE",
             "url": "/v1/accounts/:id",
             "prefix": "connect",
             "suffix": "delete",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/accounts/delete"]
         },
         {
             "method": "POST",
             "url": "/v1/accounts/:id/reject",
             "prefix": "connect",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/account/reject"]
         },
         {
             "method": "GET",
             "url": "/v1/accounts",
             "prefix": "connect",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/accounts/list"]
         },
         {
             "method": "POST",
-            "url": "/v1/accounts/:id/login_links",
+            "url": "/v1/login_links",
             "prefix": "connect",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/account/create_login_link"]
         },
         {
             "method": "POST",
             "url": "/v1/account_links",
             "prefix": "connect",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/account_links/create"]
         },
         {
             "method": "GET",
             "url": "/v1/application_fees/:id",
             "prefix": "connect",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/application_fees/retrieve"]
         },
         {
             "method": "GET",
             "url": "/v1/application_fees",
             "prefix": "connect",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/application_fees/list"]
         },
         {
             "method": "POST",
             "url": "/v1/application_fees/:id/refunds",
             "prefix": "connect",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/fee_refunds/create"]
         },
         {
             "method": "GET",
             "url": "/v1/application_fees/:id/refunds/:id",
             "prefix": "connect",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/fee_refunds/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/application_fees/:id/refunds/:id",
             "prefix": "connect",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/fee_refunds/update"]
         },
         {
             "method": "GET",
             "url": "/v1/application_fees/:id/refunds",
             "prefix": "connect",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/fee_refunds/list"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/accounts/:id/capabilities/:id",
+            "prefix": "connect",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/capabilities/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/accounts/:id/capabilities/:id",
             "prefix": "connect",
-            "suffix": "post",
-            "docsLink": ""
-        },
-        {
-            "method": "POST",
-            "url": "/v1/accounts/:id/capabilities/:id",
-            "prefix": "connect",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/capabilities/update"]
         },
         {
             "method": "GET",
             "url": "/v1/accounts/:id/capabilities",
             "prefix": "connect",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/capabilities/list"]
         },
         {
             "method": "GET",
             "url": "/v1/country_specs",
             "prefix": "connect",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/country_specs/list"]
         },
         {
             "method": "GET",
             "url": "/v1/country_specs/:id",
             "prefix": "connect",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/country_specs/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/accounts/:id/external_accounts",
             "prefix": "connect",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": [
+                "https://stripe.com/docs/api/external_account_bank_accounts/create",
+                "https://stripe.com/docs/api/external_account_cards/create"
+            ]
         },
         {
             "method": "GET",
             "url": "/v1/accounts/:id/external_accounts/:id",
             "prefix": "connect",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": [
+                "https://stripe.com/docs/api/external_account_bank_accounts/retrieve",
+                "https://stripe.com/docs/api/external_account_cards/retrieve"
+            ]
         },
         {
             "method": "POST",
             "url": "/v1/accounts/:id/external_accounts/:id",
             "prefix": "connect",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": [
+                "https://stripe.com/docs/api/external_account_bank_accounts/update",
+                "https://stripe.com/docs/api/external_account_cards/update"
+            ]
         },
         {
             "method": "DELETE",
             "url": "/v1/accounts/:id/external_accounts/:id",
             "prefix": "connect",
             "suffix": "delete",
-            "docsLink": ""
+            "docsLinks": [
+                "https://stripe.com/docs/api/external_account_bank_accounts/delete",
+                "https://stripe.com/docs/api/external_account_cards/delete"
+            ]
         },
         {
             "method": "GET",
             "url": "/v1/accounts/:id/external_accounts?object=bank_account",
             "prefix": "connect",
-            "suffix": "get",
-            "docsLink": ""
-        },
-        {
-            "method": "POST",
-            "url": "/v1/accounts/:id/external_accounts",
-            "prefix": "connect",
-            "suffix": "post",
-            "docsLink": ""
-        },
-        {
-            "method": "GET",
-            "url": "/v1/accounts/:id/external_accounts/:id",
-            "prefix": "connect",
-            "suffix": "get",
-            "docsLink": ""
-        },
-        {
-            "method": "POST",
-            "url": "/v1/accounts/:id/external_accounts/:id",
-            "prefix": "connect",
-            "suffix": "post",
-            "docsLink": ""
-        },
-        {
-            "method": "DELETE",
-            "url": "/v1/accounts/:id/external_accounts/:id",
-            "prefix": "connect",
-            "suffix": "delete",
-            "docsLink": ""
+            "suffix": "listAllBankAccounts",
+            "docsLinks": ["https://stripe.com/docs/api/external_account_bank_accounts/list"]
         },
         {
             "method": "GET",
             "url": "/v1/accounts/:id/external_accounts?object=card",
             "prefix": "connect",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "listAllCards",
+            "docsLinks": ["https://stripe.com/docs/api/external_account_cards/list"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/accounts/:id/persons",
+            "prefix": "connect",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/persons/create"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/accounts/:id/persons/:id",
+            "prefix": "connect",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/persons/retrieve"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/accounts/:id/persons/:id",
+            "prefix": "connect",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/persons/update"]
+        },
+        {
+            "method": "DELETE",
+            "url": "/v1/accounts/:id/persons/:id",
+            "prefix": "connect",
+            "suffix": "delete",
+            "docsLinks": ["https://stripe.com/docs/api/persons/delete"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/accounts/:id/persons",
+            "prefix": "connect",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/persons/list"]
         },
         {
             "method": "POST",
             "url": "/v1/topups",
             "prefix": "connect",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/topups/create"]
         },
         {
             "method": "GET",
             "url": "/v1/topups/:id",
             "prefix": "connect",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/topups/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/topups/:id",
             "prefix": "connect",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/topups/update"]
         },
         {
             "method": "GET",
             "url": "/v1/topups",
             "prefix": "connect",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/topups/LIST"]
         },
         {
             "method": "POST",
             "url": "/v1/topups/:id/cancel",
             "prefix": "connect",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/topups/cancel"]
         },
         {
             "method": "POST",
             "url": "/v1/transfers",
             "prefix": "connect",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/transfers/create"]
         },
         {
             "method": "GET",
             "url": "/v1/transfers/:id",
             "prefix": "connect",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/transfers/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/transfers/:id",
             "prefix": "connect",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/transfers/update"]
         },
         {
             "method": "GET",
             "url": "/v1/transfers",
             "prefix": "connect",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/transfers/list"]
         },
         {
             "method": "POST",
             "url": "/v1/transfers/:id/reversals",
             "prefix": "connect",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/transfer_reversals/create"]
         },
         {
             "method": "GET",
             "url": "/v1/transfers/:id/reversals/:id",
             "prefix": "connect",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/transfer_reversals/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/transfers/:id/reversals/:id",
             "prefix": "connect",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/transfer_reversals/update"]
         },
         {
             "method": "GET",
             "url": "/v1/transfers/:id/reversals",
             "prefix": "connect",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/transfer_reversals/list"]
         },
         {
             "method": "GET",
             "url": "/v1/radar/early_fraud_warnings/:id",
             "prefix": "fraud",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/radar/early_fraud_warnings/retrieve"]
         },
         {
             "method": "GET",
             "url": "/v1/radar/early_fraud_warnings",
             "prefix": "fraud",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/radar/early_fraud_warnings/list"]
         },
         {
             "method": "POST",
             "url": "/v1/reviews/:id/approve",
             "prefix": "fraud",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/radar/reviews/approve"]
         },
         {
             "method": "GET",
             "url": "/v1/reviews/:id",
             "prefix": "fraud",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/radar/reviews/retrieve"]
         },
         {
             "method": "GET",
             "url": "/v1/reviews",
             "prefix": "fraud",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/radar/reviews/list"]
         },
         {
             "method": "POST",
             "url": "/v1/radar/value_lists",
             "prefix": "fraud",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/radar/value_lists/create"]
         },
         {
             "method": "GET",
             "url": "/v1/radar/value_lists/:id",
             "prefix": "fraud",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/radar/value_lists/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/radar/value_lists/:id",
             "prefix": "fraud",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/radar/value_lists/update"]
         },
         {
             "method": "DELETE",
             "url": "/v1/radar/value_lists/:id",
             "prefix": "fraud",
             "suffix": "delete",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/radar/value_lists/delete"]
         },
         {
             "method": "GET",
             "url": "/v1/radar/value_lists",
             "prefix": "fraud",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/radar/value_lists/list"]
         },
         {
             "method": "POST",
             "url": "/v1/radar/value_list_items",
             "prefix": "fraud",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/radar/value_list_items/create"]
         },
         {
             "method": "GET",
             "url": "/v1/radar/value_list_items/:id",
             "prefix": "fraud",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/radar/value_list_items/retrieve"]
         },
         {
             "method": "DELETE",
             "url": "/v1/radar/value_list_items/:id",
             "prefix": "fraud",
             "suffix": "delete",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/radar/value_list_items/delete"]
         },
         {
             "method": "GET",
             "url": "/v1/radar/value_list_items",
             "prefix": "fraud",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/radar/value_list_items/list"]
         },
         {
             "method": "GET",
             "url": "/v1/issuing/authorizations/:id",
-            "prefix": "issuing",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/issuing/authorizations/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/issuing/authorizations/:id",
-            "prefix": "issuing",
-            "suffix": "post",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/issuing/authorizations/update"]
         },
         {
             "method": "POST",
             "url": "/v1/issuing/authorizations/:id/approve",
-            "prefix": "issuing",
+            "prefix": "",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/issuing/authorizations/approve"]
         },
         {
             "method": "POST",
             "url": "/v1/issuing/authorizations/:id/decline",
-            "prefix": "issuing",
+            "prefix": "",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/issuing/authorizations/decline"]
         },
         {
             "method": "GET",
             "url": "/v1/issuing/authorizations",
-            "prefix": "issuing",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/issuing/authorizations/list"]
         },
         {
             "method": "POST",
             "url": "/v1/issuing/cardholders",
-            "prefix": "issuing",
-            "suffix": "post",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/issuing/cardholders/create"]
         },
         {
             "method": "GET",
             "url": "/v1/issuing/cardholders/:id",
-            "prefix": "issuing",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/issuing/cardholders/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/issuing/cardholders/:id",
-            "prefix": "issuing",
-            "suffix": "post",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/issuing/cardholders/update"]
         },
         {
             "method": "GET",
             "url": "/v1/issuing/cardholders",
-            "prefix": "issuing",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/issuing/cardholders/list"]
         },
         {
             "method": "POST",
             "url": "/v1/issuing/cards",
-            "prefix": "issuing",
-            "suffix": "post",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/issuing/cards/create"]
         },
         {
             "method": "GET",
             "url": "/v1/issuing/cards/:id",
-            "prefix": "issuing",
-            "suffix": "get",
-            "docsLink": ""
-        },
-        {
-            "method": "GET",
-            "url": "/v1/issuing/cards/:id/details",
-            "prefix": "issuing",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/issuing/cards/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/issuing/cards/:id",
-            "prefix": "issuing",
-            "suffix": "post",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/issuing/cards/update"]
         },
         {
             "method": "GET",
             "url": "/v1/issuing/cards",
-            "prefix": "issuing",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/issuing/cards/list"]
         },
         {
             "method": "POST",
             "url": "/v1/issuing/disputes",
-            "prefix": "issuing",
+            "prefix": "",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/issuing/disputes/create"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/issuing/disputes/:id/submit",
+            "prefix": "",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/issuing/dispute/submit"]
         },
         {
             "method": "GET",
             "url": "/v1/issuing/disputes/:id",
-            "prefix": "issuing",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/issuing/disputes/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/issuing/disputes/:id",
-            "prefix": "issuing",
-            "suffix": "post",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/issuing/disputes/update"]
         },
         {
             "method": "GET",
             "url": "/v1/issuing/disputes",
-            "prefix": "issuing",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/issuing/disputes/list"]
         },
         {
             "method": "GET",
             "url": "/v1/issuing/transactions/:id",
-            "prefix": "issuing",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/issuing/transactions/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/issuing/transactions/:id",
-            "prefix": "issuing",
-            "suffix": "post",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/issuing/transactions/update"]
         },
         {
             "method": "GET",
             "url": "/v1/issuing/transactions",
-            "prefix": "issuing",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/issuing/transactions/list"]
         },
         {
             "method": "POST",
             "url": "/v1/terminal/connection_tokens",
-            "prefix": "terminal",
-            "suffix": "post",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/terminal/connection_tokens/create"]
         },
         {
             "method": "POST",
             "url": "/v1/terminal/locations",
-            "prefix": "terminal",
-            "suffix": "post",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/terminal/locations/create"]
         },
         {
             "method": "GET",
             "url": "/v1/terminal/locations/:id",
-            "prefix": "terminal",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/terminal/locations/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/terminal/locations/:id",
-            "prefix": "terminal",
-            "suffix": "post",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/terminal/locations/update"]
         },
         {
             "method": "DELETE",
             "url": "/v1/terminal/locations/:id",
-            "prefix": "terminal",
+            "prefix": "",
             "suffix": "delete",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/terminal/locations/delete"]
         },
         {
             "method": "GET",
             "url": "/v1/terminal/locations",
-            "prefix": "terminal",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/terminal/locations/list"]
         },
         {
             "method": "POST",
             "url": "/v1/terminal/readers",
-            "prefix": "terminal",
-            "suffix": "post",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/terminal/readers/create"]
         },
         {
             "method": "GET",
             "url": "/v1/terminal/readers/:id",
-            "prefix": "terminal",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/terminal/readers/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/terminal/readers/:id",
-            "prefix": "terminal",
-            "suffix": "post",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/terminal/readers/update"]
         },
         {
             "method": "DELETE",
             "url": "/v1/terminal/readers/:id",
-            "prefix": "terminal",
+            "prefix": "",
             "suffix": "delete",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/terminal/readers/delete"]
         },
         {
             "method": "GET",
             "url": "/v1/terminal/readers",
-            "prefix": "terminal",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/terminal/readers/list"]
         },
         {
             "method": "POST",
             "url": "/v1/orders",
-            "prefix": "orders",
-            "suffix": "post",
-            "docsLink": ""
+            "prefix": "legacy",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/orders_legacy/create"]
         },
         {
             "method": "GET",
             "url": "/v1/orders/:id",
-            "prefix": "orders",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "legacy",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/orders_legacy/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/orders/:id",
-            "prefix": "orders",
-            "suffix": "post",
-            "docsLink": ""
+            "prefix": "legacy",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/orders_legacy/update"]
         },
         {
             "method": "POST",
             "url": "/v1/orders/:id/pay",
-            "prefix": "orders",
+            "prefix": "legacy",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/orders_legacy/pay"]
         },
         {
             "method": "GET",
             "url": "/v1/orders",
-            "prefix": "orders",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "legacy",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/orders_legacy/list"]
         },
         {
             "method": "POST",
             "url": "/v1/orders/:id/returns",
-            "prefix": "orders",
+            "prefix": "legacy",
             "suffix": "post",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/orders_legacy/return"]
         },
         {
             "method": "GET",
             "url": "/v1/order_returns/:id",
-            "prefix": "orders",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "legacy.orders",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/order_returns/retrieve"]
         },
         {
             "method": "GET",
             "url": "/v1/order_returns",
-            "prefix": "orders",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "legacy.orders",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/order_returns/list"]
         },
         {
             "method": "POST",
             "url": "/v1/skus",
-            "prefix": "orders",
-            "suffix": "post",
-            "docsLink": ""
+            "prefix": "legacy.orders",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/skus/create"]
         },
         {
             "method": "GET",
             "url": "/v1/skus/:id",
-            "prefix": "orders",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "legacy.orders",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/skus/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/skus/:id",
-            "prefix": "orders",
-            "suffix": "post",
-            "docsLink": ""
+            "prefix": "legacy.orders",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/skus/update"]
         },
         {
             "method": "GET",
             "url": "/v1/skus",
-            "prefix": "orders",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "legacy.orders",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/skus/list"]
         },
         {
             "method": "DELETE",
             "url": "/v1/skus/:id",
-            "prefix": "orders",
+            "prefix": "legacy.orders",
             "suffix": "delete",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/skus/delete"]
         },
         {
             "method": "GET",
             "url": "/v1/sigma/scheduled_query_runs/:id",
-            "prefix": "sigma",
-            "suffix": "get",
-            "docsLink": ""
+            "prefix": "",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/sigma/scheduled_queries/retrieve"]
         },
         {
             "method": "GET",
             "url": "/v1/sigma/scheduled_query_runs",
             "prefix": "sigma",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/sigma/scheduled_queries/list"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/reporting/report_runs",
+            "prefix": "",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/reporting/report_run/create"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/reporting/report_runs/:id",
+            "prefix": "",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/reporting/report_run/retrieve"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/reporting/report_runs",
+            "prefix": "",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/reporting/report_run/list"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/reporting/report_types/:id",
+            "prefix": "",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/reporting/report_type/retrieve"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/reporting/report_types",
+            "prefix": "",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/reporting/report_type/list"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/identity/verification_sessions",
+            "prefix": "",
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/identity/verification_sessions/create"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/identity/verification_sessions",
+            "prefix": "",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/identity/verification_sessions/list"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/identity/verification_sessions/:id",
+            "prefix": "",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/identity/verification_sessions/retrieve"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/identity/verification_sessions/:id",
+            "prefix": "",
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/identity/verification_sessions/update"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/identity/verification_sessions/:id/cancel",
+            "prefix": "",
+            "suffix": "post",
+            "docsLinks": ["https://stripe.com/docs/api/identity/verification_sessions/cancel"]
+        },
+        {
+            "method": "POST",
+            "url": "/v1/identity/verification_sessions/:id/redact",
+            "prefix": "",
+            "suffix": "post",
+            "docsLinks": ["https://stripe.com/docs/api/identity/verification_sessions/redact"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/identity/verification_reports/:id",
+            "prefix": "",
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/identity/verification_reports/retrieve"]
+        },
+        {
+            "method": "GET",
+            "url": "/v1/identity/verification_reports",
+            "prefix": "",
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/identity/verification_reports/list"]
         },
         {
             "method": "POST",
             "url": "/v1/webhook_endpoints",
             "prefix": "webhooks",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "create",
+            "docsLinks": ["https://stripe.com/docs/api/webhook_endpoints/create"]
         },
         {
             "method": "GET",
             "url": "/v1/webhook_endpoints/:id",
             "prefix": "webhooks",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "retrieve",
+            "docsLinks": ["https://stripe.com/docs/api/webhook_endpoints/retrieve"]
         },
         {
             "method": "POST",
             "url": "/v1/webhook_endpoints/:id",
             "prefix": "webhooks",
-            "suffix": "post",
-            "docsLink": ""
+            "suffix": "update",
+            "docsLinks": ["https://stripe.com/docs/api/webhook_endpoints/update"]
         },
         {
             "method": "GET",
             "url": "/v1/webhook_endpoints",
             "prefix": "webhooks",
-            "suffix": "get",
-            "docsLink": ""
+            "suffix": "list",
+            "docsLinks": ["https://stripe.com/docs/api/webhook_endpoints/list"]
         },
         {
             "method": "DELETE",
             "url": "/v1/webhook_endpoints/:id",
             "prefix": "webhooks",
             "suffix": "delete",
-            "docsLink": ""
+            "docsLinks": ["https://stripe.com/docs/api/webhook_endpoints/delete"]
         }
     ]
 }

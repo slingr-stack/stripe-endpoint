@@ -18,6 +18,7 @@ import io.slingr.endpoints.ws.exchange.WebServiceResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Locale;
 import java.util.concurrent.Semaphore;
 
 import static java.lang.Integer.*;
@@ -35,9 +36,10 @@ public class StripeEndpoint extends HttpEndpoint {
 
     private static final Logger logger = LoggerFactory.getLogger(StripeEndpoint.class);
     private static String API_URL = "https://api.stripe.com";
-    private static int WAIT_WHEN_RATE_LIMIT = 5000;
     public int MAX_CONCURRENT_CALLS;
     public int MAX_RETRIES;
+    private int TIME_SLOT;
+
     public Semaphore semaphore;
 
     @EndpointProperty
@@ -58,6 +60,9 @@ public class StripeEndpoint extends HttpEndpoint {
     @EndpointProperty
     private String maxRetries;
 
+    @EndpointProperty
+    private String timeSlot;
+
     public StripeEndpoint() {
     }
 
@@ -68,17 +73,13 @@ public class StripeEndpoint extends HttpEndpoint {
 
     @Override
     public void endpointStarted() {
-        if (maxConcurrentCalls == null || maxConcurrentCalls.trim().isEmpty()) {
-            MAX_CONCURRENT_CALLS = 3;
-        } else {
-            MAX_CONCURRENT_CALLS = parseInt(maxConcurrentCalls);
-        }
-        if (maxRetries == null || maxRetries.trim().isEmpty()) {
-            MAX_RETRIES = 6;
-        } else {
-            MAX_RETRIES = parseInt(maxRetries);
-        }
+        MAX_CONCURRENT_CALLS = parseInt(maxConcurrentCalls);
+        MAX_RETRIES = parseInt(maxRetries);
+        TIME_SLOT = parseInt(timeSlot);
+        
         semaphore = new Semaphore(MAX_CONCURRENT_CALLS, true);
+
+        httpService().setupBearerAuthenticationHeader(secretKey);
     }
 
     @EndpointWebService
@@ -112,14 +113,16 @@ public class StripeEndpoint extends HttpEndpoint {
             json.set("type", "error");
             json.set("code", 400);
             json.set("message", e.getMessage());
-            events().send(HttpService.WEBHOOK_EVENT, json);
+            json.set("webhookBody", request.getBody());
+            appLogs().warn("Stripe Webhook discarded because Signature did not match.",json);
         } catch (Exception ex) {
             // Invalid payload
             Json json = Json.map();
             json.set("type", "error");
             json.set("code", 500);
             json.set("message", ex.getMessage());
-            events().send(HttpService.WEBHOOK_EVENT, json);
+            json.set("webhookBody", request.getBody());
+            appLogs().warn("Stripe Webhook discarded because invalid payload.",json);
         }
 
         return HttpService.defaultWebhookResponse();
@@ -127,162 +130,83 @@ public class StripeEndpoint extends HttpEndpoint {
 
     @EndpointFunction(name = "_get")
     public Json get(FunctionRequest request) throws InterruptedException {
-        semaphore.acquire();
-        try {
-            logger.info(String.format("GET [%s]", request.getJsonParams().string("path")));
-            setRequestConfig(request, false);
-            int retries = 0;
-            while (true) {
-                try {
-                    return defaultGetRequest(request);
-                } catch (EndpointException e) {
-                    if (e.getReturnCode() == 429) {
-                        if (retries >= MAX_RETRIES) {
-                            throw e;
-                        } else {
-                            // wait a few seconds and retry
-                            Thread.sleep(WAIT_WHEN_RATE_LIMIT);
-                            retries++;
-                        }
-                    } else {
-                        throw e;
-                    }
-                }
-            }
-        } finally {
-            semaphore.release();
-        }
+        return makeBackoffRequest(request, "GET");
     }
 
     @EndpointFunction(name = "_put")
     public Json put(FunctionRequest request) throws InterruptedException {
-        semaphore.acquire();
-        try {
-            logger.info(String.format("PUT [%s]", request.getJsonParams().string("path")));
-            setRequestConfig(request, true);
-            int retries = 0;
-            while (true) {
-                try {
-                    return defaultPutRequest(request);
-                } catch (EndpointException e) {
-                    if (e.getReturnCode() == 429) {
-                        if (retries >= MAX_RETRIES) {
-                            throw e;
-                        } else {
-                            // wait a few seconds and retry
-                            Thread.sleep(WAIT_WHEN_RATE_LIMIT);
-                            retries++;
-                        }
-                    } else {
-                        throw e;
-                    }
-                }
-            }
-        } finally {
-            semaphore.release();
-        }
+        return makeBackoffRequest(request, "PUT");
     }
 
     @EndpointFunction(name = "_patch")
     public Json patch(FunctionRequest request) throws InterruptedException {
-        semaphore.acquire();
-        try {
-            logger.info(String.format("PATCH [%s]", request.getJsonParams().string("path")));
-            setRequestConfig(request, true);
-            int retries = 0;
-            while (true) {
-                try {
-                    return defaultPatchRequest(request);
-                } catch (EndpointException e) {
-                    if (e.getReturnCode() == 429) {
-                        if (retries >= MAX_RETRIES) {
-                            throw e;
-                        } else {
-                            // wait a few seconds and retry
-                            Thread.sleep(WAIT_WHEN_RATE_LIMIT);
-                            retries++;
-                        }
-                    } else {
-                        throw e;
-                    }
-                }
-            }
-        } finally {
-            semaphore.release();
-        }
+        return makeBackoffRequest(request, "PATCH");
     }
 
     @EndpointFunction(name = "_post")
     public Json post(FunctionRequest request) throws InterruptedException {
-        semaphore.acquire();
-        try {
-            logger.info(String.format("POST [%s]", request.getJsonParams().string("path")));
-            setRequestConfig(request, true);
-            int retries = 0;
-            while (true) {
-                try {
-                    return defaultPostRequest(request);
-                } catch (EndpointException e) {
-                    if (e.getReturnCode() == 429) {
-                        if (retries >= MAX_RETRIES) {
-                            throw e;
-                        } else {
-                            // wait a few seconds and retry
-                            Thread.sleep(WAIT_WHEN_RATE_LIMIT);
-                            retries++;
-                        }
-                    } else {
-                        throw e;
-                    }
-                }
-            }
-        } finally {
-            semaphore.release();
-        }
+        return makeBackoffRequest(request, "POST");
     }
 
     @EndpointFunction(name = "_delete")
     public Json delete(FunctionRequest request) throws InterruptedException {
-        semaphore.acquire();
-        try {
-            logger.info(String.format("DELETE [%s]", request.getJsonParams().string("path")));
-            setRequestConfig(request, false);
-            int retries = 0;
-            while (true) {
-                try {
-                    return defaultDeleteRequest(request);
-                } catch (EndpointException e) {
-                    if (e.getReturnCode() == 429) {
-                        if (retries >= MAX_RETRIES) {
-                            throw e;
-                        } else {
-                            // wait a few seconds and retry
-                            Thread.sleep(WAIT_WHEN_RATE_LIMIT);
-                            retries++;
-                        }
-                    } else {
-                        throw e;
-                    }
-                }
-            }
-        } finally {
-            semaphore.release();
-        }
+        return makeBackoffRequest(request, "DELETE");
     }
 
-    private void setRequestConfig(FunctionRequest request, boolean formEncoded) {
+    private void setContentType(FunctionRequest request, boolean formEncoded) {
         Json body = request.getJsonParams();
         Json headers = body.json("headers");
         if (headers == null) {
             headers = Json.map();
         }
-        headers.set("Authorization", "Bearer " + secretKey);
         if (formEncoded) {
             headers.set("Content-Type", "application/x-www-form-urlencoded");
         } else {
             headers.set("Content-Type", "application/json");
         }
         body.set("headers", headers);
+    }
+
+    private Json makeBackoffRequest(FunctionRequest request, String reqMethod) throws InterruptedException {
+        semaphore.acquire();
+        try {
+            reqMethod = reqMethod.toUpperCase(Locale.ROOT);
+            int retryNum = 0;
+            while (true) {
+                try {
+                    switch (reqMethod) {
+                        case "GET":
+                            setContentType(request, false);
+                            return defaultGetRequest(request);
+                        case "PATCH":
+                            setContentType(request, true);
+                            return defaultPatchRequest(request);
+                        case "PUT":
+                            setContentType(request, true);
+                            return defaultPutRequest(request);
+                        case "POST":
+                            setContentType(request, true);
+                            return defaultPostRequest(request);
+                        case "DELETE":
+                            setContentType(request, false);
+                            return defaultDeleteRequest(request);
+                    }
+                } catch (EndpointException e) {
+                    if (e.getReturnCode() == 429) {
+                        retryNum++;
+                        if (ExponentialBackoffService.shouldRetry(retryNum,MAX_RETRIES)) {
+                            ExponentialBackoffService.waitRandom(retryNum, TIME_SLOT);
+                        } else {
+                            throw e;
+                        }
+                    } else {
+                        throw e;
+                    }
+                }
+            }
+        } finally {
+            semaphore.release();
+        }
     }
 
 }
