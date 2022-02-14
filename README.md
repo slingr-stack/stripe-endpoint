@@ -1,7 +1,7 @@
 ---
 title: Stripe endpoint
 keywords: 
-last_updated: September 27, 2019
+last_updated: February 14, 2022
 tags: []
 summary: "Detailed description of the API of the Stripe endpoint."
 ---
