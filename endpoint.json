@@ -48,8 +48,10 @@
         }
     ],
     "scripts":[
-        "functions.js",
-        "stripe-helpers.js"
+        "functions.js"
+    ],
+    "flowSteps": [
+        "apiCallStripe"
     ],
     "configuration":[
         {

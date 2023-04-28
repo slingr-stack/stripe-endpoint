@@ -1,0 +1,917 @@
+{
+  "label": "API call to stripe",
+  "name": "apiCallStripe",
+  "category": "integrations",
+  "description": "This flow step will send generic request to stripe",
+  "inputs": [
+    {
+      "label": "Url",
+      "name": "url",
+      "description": "The method and path to which this endpoint is to send requests in a generic way.",
+      "type": "urlParams",
+      "required": "true",
+      "options": {
+        "type": "dropDown",
+        "possibleValues": [
+            {
+              "label": "POST /charges"
+            },
+            {
+              "label": "POST /charges/{id}"
+            },
+            {
+              "label": "POST /charges/{id}/capture"
+            },
+            {
+              "label": "POST /customers"
+            },
+            {
+              "label": "POST /customers/{id}"
+            },
+            {
+              "label": "POST /disputes/{id}"
+            },
+            {
+              "label": "POST /disputes/{id}/close"
+            },
+            {
+              "label": "POST /file_links"
+            },
+            {
+              "label": "POST /file_links/{id}"
+            },
+            {
+              "label": "POST /payment_intents"
+            },
+            {
+              "label": "POST /payment_intents/{id}"
+            },
+            {
+              "label": "POST /payment_intents/{id}/confirm"
+            },
+            {
+              "label": "POST /payment_intents/{id}/capture"
+            },
+            {
+              "label": "POST /payment_intents/{id}/cancel"
+            },
+            {
+              "label": "POST /setup_intents"
+            },
+            {
+              "label": "POST /setup_intents/{id}"
+            },
+            {
+              "label": "POST /setup_intents/{id}/confirm"
+            },
+            {
+              "label": "POST /setup_intents/{id}/cancel"
+            },
+            {
+              "label": "POST /payouts"
+            },
+            {
+              "label": "POST /payouts/{id}"
+            },
+            {
+              "label": "POST /payouts/{id}/cancel"
+            },
+            {
+              "label": "POST /products"
+            },
+            {
+              "label": "POST /products/{id}"
+            },
+            {
+              "label": "POST /products"
+            },
+            {
+              "label": "POST /products/{id}"
+            },
+            {
+              "label": "POST /refunds"
+            },
+            {
+              "label": "POST /refunds/{id}"
+            },
+            {
+              "label": "POST /tokens"
+            },
+            {
+              "label": "POST /tokens"
+            },
+            {
+              "label": "POST /tokens"
+            },
+            {
+              "label": "POST /tokens"
+            },
+            {
+              "label": "POST /tokens"
+            },
+            {
+              "label": "POST /payment_methods"
+            },
+            {
+              "label": "POST /payment_methods/{id}"
+            },
+            {
+              "label": "POST /payment_methods/{id}/attach"
+            },
+            {
+              "label": "POST /payment_methods/{id}/detach"
+            },
+            {
+              "label": "POST /customers/{id}/sources"
+            },
+            {
+              "label": "POST /customers/{id}/sources/{id}"
+            },
+            {
+              "label": "POST /customers/{id}/sources"
+            },
+            {
+              "label": "POST /customers/{id}/sources/{id}/verify"
+            },
+            {
+              "label": "POST /sources"
+            },
+            {
+              "label": "POST /sources/{id}"
+            },
+            {
+              "label": "POST /checkout/sessions"
+            },
+            {
+              "label": "POST /coupons"
+            },
+            {
+              "label": "POST /coupons/{id}"
+            },
+            {
+              "label": "POST /credit_notes"
+            },
+            {
+              "label": "POST /credit_notes/{id}"
+            },
+            {
+              "label": "POST /credit_notes/{id}/void"
+            },
+            {
+              "label": "POST /customers/{customer}/balance_transactions"
+            },
+            {
+              "label": "POST /customers/{customer}/balance_transactions/{transaction}"
+            },
+            {
+              "label": "POST /customers/{id}/tax_ids"
+            },
+            {
+              "label": "POST /invoices"
+            },
+            {
+              "label": "POST /invoices/{id}"
+            },
+            {
+              "label": "POST /invoices/{id}/finalize"
+            },
+            {
+              "label": "POST /invoices/{id}/pay"
+            },
+            {
+              "label": "POST /invoices/{id}/send"
+            },
+            {
+              "label": "POST /invoices/{id}/void"
+            },
+            {
+              "label": "POST /invoices/{id}/mark_uncollectible"
+            },
+            {
+              "label": "POST /invoiceitems"
+            },
+            {
+              "label": "POST /invoiceitems/{id}"
+            },
+            {
+              "label": "POST /plans"
+            },
+            {
+              "label": "POST /plans/{id}"
+            },
+            {
+              "label": "POST /subscriptions"
+            },
+            {
+              "label": "POST /subscriptions/{id}"
+            },
+            {
+              "label": "POST /subscription_items"
+            },
+            {
+              "label": "POST /subscription_items/{id}"
+            },
+            {
+              "label": "POST /subscription_schedules"
+            },
+            {
+              "label": "POST /subscription_schedules/{id}"
+            },
+            {
+              "label": "POST /subscription_schedules/{id}/cancel"
+            },
+            {
+              "label": "POST /subscription_schedules/{id}/release"
+            },
+            {
+              "label": "POST /tax_rates"
+            },
+            {
+              "label": "POST /tax_rates/{id}"
+            },
+            {
+              "label": "POST /subscription_items/{id}/usage_records"
+            },
+            {
+              "label": "POST /accounts"
+            },
+            {
+              "label": "POST /accounts/{id}"
+            },
+            {
+              "label": "POST /accounts/{id}/reject"
+            },
+            {
+              "label": "POST /accounts/{id}/login_links"
+            },
+            {
+              "label": "POST /account_links"
+            },
+            {
+              "label": "POST /application_fees/{id}/refunds"
+            },
+            {
+              "label": "POST /application_fees/{id}/refunds/{id}"
+            },
+            {
+              "label": "POST /accounts/{id}/capabilities/{id}"
+            },
+            {
+              "label": "POST /accounts/{id}/capabilities/{id}"
+            },
+            {
+              "label": "POST /accounts/{id}/external_accounts"
+            },
+            {
+              "label": "POST /accounts/{id}/external_accounts/{id}"
+            },
+            {
+              "label": "POST /accounts/{id}/external_accounts"
+            },
+            {
+              "label": "POST /accounts/{id}/external_accounts/{id}"
+            },
+            {
+              "label": "POST /topups"
+            },
+            {
+              "label": "POST /topups/{id}"
+            },
+            {
+              "label": "POST /topups/{id}/cancel"
+            },
+            {
+              "label": "POST /transfers"
+            },
+            {
+              "label": "POST /transfers/{id}"
+            },
+            {
+              "label": "POST /transfers/{id}/reversals"
+            },
+            {
+              "label": "POST /transfers/{id}/reversals/{id}"
+            },
+            {
+              "label": "POST /reviews/{id}/approve"
+            },
+            {
+              "label": "POST /radar/value_lists"
+            },
+            {
+              "label": "POST /radar/value_lists/{id}"
+            },
+            {
+              "label": "POST /radar/value_list_items"
+            },
+            {
+              "label": "POST /issuing/authorizations/{id}"
+            },
+            {
+              "label": "POST /issuing/authorizations/{id}/approve"
+            },
+            {
+              "label": "POST /issuing/authorizations/{id}/decline"
+            },
+            {
+              "label": "POST /issuing/cardholders"
+            },
+            {
+              "label": "POST /issuing/cardholders/{id}"
+            },
+            {
+              "label": "POST /issuing/cards"
+            },
+            {
+              "label": "POST /issuing/cards/{id}"
+            },
+            {
+              "label": "POST /issuing/disputes"
+            },
+            {
+              "label": "POST /issuing/disputes/{id}"
+            },
+            {
+              "label": "POST /issuing/transactions/{id}"
+            },
+            {
+              "label": "POST /terminal/connection_tokens"
+            },
+            {
+              "label": "POST /terminal/locations"
+            },
+            {
+              "label": "POST /terminal/locations/{id}"
+            },
+            {
+              "label": "POST /terminal/readers"
+            },
+            {
+              "label": "POST /terminal/readers/{id}"
+            },
+            {
+              "label": "POST /orders"
+            },
+            {
+              "label": "POST /orders/{id}"
+            },
+            {
+              "label": "POST /orders/{id}/pay"
+            },
+            {
+              "label": "POST /orders/{id}/returns"
+            },
+            {
+              "label": "POST /skus"
+            },
+            {
+              "label": "POST /skus/{id}"
+            },
+            {
+              "label": "POST /webhook_endpoints"
+            },
+            {
+              "label": "POST /webhook_endpoints/{id}"
+            },
+            {
+              "label": "GET /balance"
+            },
+            {
+              "label": "GET /balance_transactions/{id}"
+            },
+            {
+              "label": "GET /balance_transactions"
+            },
+            {
+              "label": "GET /charges/{id}"
+            },
+            {
+              "label": "GET /charges"
+            },
+            {
+              "label": "GET /customers/{id}"
+            },
+            {
+              "label": "GET /customers"
+            },
+            {
+              "label": "GET /disputes/{id}"
+            },
+            {
+              "label": "GET /disputes"
+            },
+            {
+              "label": "GET /events/{id}"
+            },
+            {
+              "label": "GET /events"
+            },
+            {
+              "label": "GET /files/{id}"
+            },
+            {
+              "label": "GET /files"
+            },
+            {
+              "label": "GET /file_links/{id}"
+            },
+            {
+              "label": "GET /file_links"
+            },
+            {
+              "label": "GET /payment_intents/{id}"
+            },
+            {
+              "label": "GET /payment_intents"
+            },
+            {
+              "label": "GET /setup_intents/{id}"
+            },
+            {
+              "label": "GET /setup_intents"
+            },
+            {
+              "label": "GET /payouts/{id}"
+            },
+            {
+              "label": "GET /payouts"
+            },
+            {
+              "label": "GET /products/{id}"
+            },
+            {
+              "label": "GET /products"
+            },
+            {
+              "label": "GET /products/{id}"
+            },
+            {
+              "label": "GET /products"
+            },
+            {
+              "label": "GET /refunds/{id}"
+            },
+            {
+              "label": "GET /refunds"
+            },
+            {
+              "label": "GET /tokens/{id}"
+            },
+            {
+              "label": "GET /payment_methods/{id}"
+            },
+            {
+              "label": "GET /payment_methods"
+            },
+            {
+              "label": "GET /customers/{id}/sources/{id}"
+            },
+            {
+              "label": "GET /customers/{id}/sources?object=card"
+            },
+            {
+              "label": "GET /sources/{id}"
+            },
+            {
+              "label": "GET /checkout/sessions/{id}"
+            },
+            {
+              "label": "GET /coupons/{id}"
+            },
+            {
+              "label": "GET /coupons"
+            },
+            {
+              "label": "GET /credit_notes/{id}"
+            },
+            {
+              "label": "GET /credit_notes"
+            },
+            {
+              "label": "GET /customers/{customer}/balance_transactions/{transaction}"
+            },
+            {
+              "label": "GET /customers/{customer}/balance_transactions"
+            },
+            {
+              "label": "GET /customers/{id}/tax_ids/{id}"
+            },
+            {
+              "label": "GET /customers/{id}/tax_ids"
+            },
+            {
+              "label": "GET /invoices/{id}"
+            },
+            {
+              "label": "GET /invoices"
+            },
+            {
+              "label": "GET /invoices/{id}/lines"
+            },
+            {
+              "label": "GET /invoices/upcoming"
+            },
+            {
+              "label": "GET /invoices/upcoming/lines"
+            },
+            {
+              "label": "GET /invoiceitems/{id}"
+            },
+            {
+              "label": "GET /invoiceitems"
+            },
+            {
+              "label": "GET /plans/{id}"
+            },
+            {
+              "label": "GET /plans"
+            },
+            {
+              "label": "GET /subscriptions/{id}"
+            },
+            {
+              "label": "GET /subscriptions"
+            },
+            {
+              "label": "GET /subscription_items/{id}"
+            },
+            {
+              "label": "GET /subscription_items"
+            },
+            {
+              "label": "GET /subscription_schedules/{id}"
+            },
+            {
+              "label": "GET /subscription_schedules"
+            },
+            {
+              "label": "GET /tax_rates/{id}"
+            },
+            {
+              "label": "GET /tax_rates"
+            },
+            {
+              "label": "GET /subscription_items/{id}/usage_record_summaries"
+            },
+            {
+              "label": "GET /accounts/{id}"
+            },
+            {
+              "label": "GET /accounts"
+            },
+            {
+              "label": "GET /application_fees/{id}"
+            },
+            {
+              "label": "GET /application_fees"
+            },
+            {
+              "label": "GET /application_fees/{id}/refunds/{id}"
+            },
+            {
+              "label": "GET /application_fees/{id}/refunds"
+            },
+            {
+              "label": "GET /accounts/{id}/capabilities"
+            },
+            {
+              "label": "GET /country_specs"
+            },
+            {
+              "label": "GET /country_specs/{id}"
+            },
+            {
+              "label": "GET /accounts/{id}/external_accounts/{id}"
+            },
+            {
+              "label": "GET /accounts/{id}/external_accounts?object=bank_account"
+            },
+            {
+              "label": "GET /accounts/{id}/external_accounts/{id}"
+            },
+            {
+              "label": "GET /accounts/{id}/external_accounts?object=card"
+            },
+            {
+              "label": "GET /topups/{id}"
+            },
+            {
+              "label": "GET /topups"
+            },
+            {
+              "label": "GET /transfers/{id}"
+            },
+            {
+              "label": "GET /transfers"
+            },
+            {
+              "label": "GET /transfers/{id}/reversals/{id}"
+            },
+            {
+              "label": "GET /transfers/{id}/reversals"
+            },
+            {
+              "label": "GET /radar/early_fraud_warnings/{id}"
+            },
+            {
+              "label": "GET /radar/early_fraud_warnings"
+            },
+            {
+              "label": "GET /reviews/{id}"
+            },
+            {
+              "label": "GET /reviews"
+            },
+            {
+              "label": "GET /radar/value_lists/{id}"
+            },
+            {
+              "label": "GET /radar/value_lists"
+            },
+            {
+              "label": "GET /radar/value_list_items/{id}"
+            },
+            {
+              "label": "GET /radar/value_list_items"
+            },
+            {
+              "label": "GET /issuing/authorizations/{id}"
+            },
+            {
+              "label": "GET /issuing/authorizations"
+            },
+            {
+              "label": "GET /issuing/cardholders/{id}"
+            },
+            {
+              "label": "GET /issuing/cardholders"
+            },
+            {
+              "label": "GET /issuing/cards/{id}"
+            },
+            {
+              "label": "GET /issuing/cards"
+            },
+            {
+              "label": "GET /issuing/cards/{id}/details"
+            },
+            {
+              "label": "GET /issuing/disputes/{id}"
+            },
+            {
+              "label": "GET /issuing/disputes"
+            },
+            {
+              "label": "GET /issuing/transactions/{id}"
+            },
+            {
+              "label": "GET /issuing/transactions"
+            },
+            {
+              "label": "GET /terminal/locations/{id}"
+            },
+            {
+              "label": "GET /terminal/locations"
+            },
+            {
+              "label": "GET /terminal/readers/{id}"
+            },
+            {
+              "label": "GET /terminal/readers"
+            },
+            {
+              "label": "GET /orders/{id}"
+            },
+            {
+              "label": "GET /orders"
+            },
+            {
+              "label": "GET /order_returns/{id}"
+            },
+            {
+              "label": "GET /order_returns"
+            },
+            {
+              "label": "GET /skus/{id}"
+            },
+            {
+              "label": "GET /skus"
+            },
+            {
+              "label": "GET /sigma/scheduled_query_runs/{id}"
+            },
+            {
+              "label": "GET /sigma/scheduled_query_runs"
+            },
+            {
+              "label": "GET /webhook_endpoints/{id}"
+            },
+            {
+              "label": "GET /webhook_endpoints"
+            },
+            {
+              "label": "DELETE /customers/{id}"
+            },
+            {
+              "label": "DELETE /products/{id}"
+            },
+            {
+              "label": "DELETE /products/{id}"
+            },
+            {
+              "label": "DELETE /customers/{id}/sources/{id}"
+            },
+            {
+              "label": "DELETE /customers/{id}/sources/{id}"
+            },
+            {
+              "label": "DELETE /coupons/{id}"
+            },
+            {
+              "label": "DELETE /customers/{id}/tax_ids/{id}"
+            },
+            {
+              "label": "DELETE /customers/{id}/discount"
+            },
+            {
+              "label": "DELETE /subscriptions/{id}/discount"
+            },
+            {
+              "label": "DELETE /invoices/{id}"
+            },
+            {
+              "label": "DELETE /invoiceitems/{id}"
+            },
+            {
+              "label": "DELETE /plans/{id}"
+            },
+            {
+              "label": "DELETE /subscriptions/{id}"
+            },
+            {
+              "label": "DELETE /subscription_items/{id}"
+            },
+            {
+              "label": "DELETE /accounts/{id}"
+            },
+            {
+              "label": "DELETE /accounts/{id}/external_accounts/{id}"
+            },
+            {
+              "label": "DELETE /accounts/{id}/external_accounts/{id}"
+            },
+            {
+              "label": "DELETE /radar/value_lists/{id}"
+            },
+            {
+              "label": "DELETE /radar/value_list_items/{id}"
+            },
+            {
+              "label": "DELETE /terminal/locations/{id}"
+            },
+            {
+              "label": "DELETE /terminal/readers/{id}"
+            },
+            {
+              "label": "DELETE /skus/{id}"
+            },
+            {
+              "label": "DELETE /webhook_endpoints/{id}"
+            }
+        ]
+      }
+    },
+    {
+      "label": "Headers",
+      "name": "headers",
+      "description": "Let the client and the server pass additional information with the HTTP request in a key value format. (e.g. key=ABC123)",
+      "type": "keyValue"
+    },
+    {
+      "label": "Query Params",
+      "name": "params",
+      "description": "Parameters attached to the end of a url in a key value format. (e.g. key=ABC123)",
+      "type": "keyValue"
+    },
+    {
+      "label": "Body",
+      "name": "body",
+      "type": "json",
+      "description": "Content to be sent to the server.",
+      "options": {
+        "allowContextSelector": "false"
+      }
+    },
+    {
+      "label": "Event",
+      "name": "events",
+      "type": "dropDown",
+      "description": "Select event",
+      "multiplicity": "one",
+      "options": {
+        "possibleValues": [
+          {
+            "label": "File Downloaded",
+            "name": "fileDownloaded"
+          }
+        ],
+        "allowContextSelector": "false"
+      }
+    },
+    {
+      "label": "Override Settings",
+      "name": "overrideSettings",
+      "type": "boolean",
+      "description": "If true, allows adding configurations",
+      "defaultValue": false,
+      "options": {
+        "allowContextSelector": "false"
+      }
+    },
+    {
+      "label": "Follow Redirects",
+      "name": "followRedirects",
+      "type": "boolean",
+      "description": "Follow the redirects when a HTTP request is executed",
+      "visibility": "config.overrideSettings",
+      "defaultValue": false,
+      "options": {
+        "allowContextSelector": "false"
+      }
+    },
+    {
+      "label": "Download",
+      "name": "download",
+      "type": "boolean",
+      "description": "Indicates that the resource has to be downloaded into a file instead of returning it in the response.",
+      "visibility": "config.overrideSettings && config.events != \"fileDownloaded\"",
+      "defaultValue": false,
+      "options": {
+        "allowContextSelector": "false"
+      }
+    },
+    {
+      "label": "File Name",
+      "name": "fileName",
+      "description": "If provided, the file will be stored with this name. If empty the file name will be calculated from the URL.",
+      "visibility": "(config.overrideSettings && config.download) || config.events === \"fileDownloaded\"",
+      "type": "text",
+      "options": {
+        "allowContextSelector": "true"
+      }
+    },
+    {
+      "label": "Full Response",
+      "name": "fullResponse",
+      "type": "boolean",
+      "description": "Include extended information about response",
+      "visibility": "config.overrideSettings",
+      "defaultValue": false,
+      "options": {
+        "allowContextSelector": "false"
+      }
+    },
+    {
+      "label": "Connection timeout",
+      "name": "connectionTimeout",
+      "description": "Connect timeout interval, in milliseconds (0 = infinity). Default value: 5000 ms (5 sec)",
+      "visibility": "config.overrideSettings",
+      "type": "text",
+      "defaultValue": "5000",
+      "typeOptions": {
+        "validation": {
+          "function": "!config.connectionTimeout || utils.isPlaceholder(config.connectionTimeout) || utils.getInteger(config.connectionTimeout) >= 0",
+          "message": "The time must be a valid placeholder or a positive integer greater than or equal to 0. "
+        }
+      },
+      "options": {
+        "allowContextSelector": "false"
+      }
+    },
+    {
+      "label": "Read timeout",
+      "name": "readTimeout",
+      "description": "Read timeout interval, in milliseconds (0 = infinity). Default value: 60000 ms (60 sec)",
+      "visibility": "config.overrideSettings",
+      "type": "text",
+      "defaultValue": "60000",
+      "typeOptions": {
+        "validation": {
+          "function": "!config.readTimeout || utils.isPlaceholder(config.readTimeout) || utils.getInteger(config.readTimeout) >= 0",
+          "message": "The time must be a valid placeholder or a positive integer greater than or equal to 0. "
+        }
+      },
+      "options": {
+        "allowContextSelector": "false"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "label": "Response",
+      "name": "response",
+      "type": "object",
+      "description": "The response to external URL"
+    }
+  ]
+}

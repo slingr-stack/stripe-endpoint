@@ -1,0 +1,1536 @@
+{
+    "fileName": "functions",
+    "apiDescriptors": [
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/charges"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/charges/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/charges/:id/capture"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/disputes/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/disputes/:id/close"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/file_links"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/file_links/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/payment_intents"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/payment_intents/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/payment_intents/:id/confirm"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/payment_intents/:id/capture"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/payment_intents/:id/cancel"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/setup_intents"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/setup_intents/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/setup_intents/:id/confirm"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/setup_intents/:id/cancel"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/payouts"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/payouts/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/payouts/:id/cancel"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/products"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/products/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/refunds"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/refunds/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/tokens"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/tokens"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/tokens"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/tokens"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/tokens"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/payment_methods"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/payment_methods/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/payment_methods/:id/attach"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/payment_methods/:id/detach"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers/:id/sources"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers/:id/sources/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers/:id/sources/:id/verify"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/sources"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/sources/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers/:id/sources"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/checkout/sessions"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/coupons"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/coupons/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/credit_notes"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/credit_notes/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/credit_notes/:id/void"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers/:customer/balance_transactions"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers/:customer/balance_transactions/:transaction"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers/:id/tax_ids"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/invoices"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/invoices/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/invoices/:id/finalize"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/invoices/:id/pay"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/invoices/:id/send"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/invoices/:id/void"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/invoices/:id/mark_uncollectible"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/invoiceitems"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/invoiceitems/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/plans"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/plans/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/products"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/products/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/subscriptions"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/subscriptions/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/subscription_items"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/subscription_items/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/subscription_schedules"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/subscription_schedules/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/subscription_schedules/:id/cancel"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/subscription_schedules/:id/release"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/tax_rates"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/tax_rates/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/subscription_items/:id/usage_records"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/accounts"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/accounts/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/accounts/:id/reject"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/accounts/:id/login_links"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/account_links"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/application_fees/:id/refunds"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/application_fees/:id/refunds/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/accounts/:id/capabilities/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/accounts/:id/capabilities/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/accounts/:id/external_accounts"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/accounts/:id/external_accounts/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/accounts/:id/external_accounts"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/accounts/:id/external_accounts/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/topups"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/topups/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/topups/:id/cancel"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/transfers"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/transfers/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/transfers/:id/reversals"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/transfers/:id/reversals/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/reviews/:id/approve"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/radar/value_lists"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/radar/value_lists/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/radar/value_list_items"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/issuing/authorizations/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/issuing/authorizations/:id/approve"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/issuing/authorizations/:id/decline"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/issuing/cardholders"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/issuing/cardholders/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/issuing/cards"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/issuing/cards/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/issuing/disputes"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/issuing/disputes/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/issuing/transactions/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/terminal/connection_tokens"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/terminal/locations"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/terminal/locations/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/terminal/readers"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/terminal/readers/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/orders"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/orders/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/orders/:id/pay"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/orders/:id/returns"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/skus"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/skus/:id"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/webhook_endpoints"
+        },
+        {
+            "method": "POST",
+            "prefix": "",
+            "suffix": "",
+            "url": "/webhook_endpoints/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/balance"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/balance_transactions/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/balance_transactions"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/charges/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/charges"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/disputes/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/disputes"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/events/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/events"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/files/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/files"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/file_links/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/file_links"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/payment_intents/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/payment_intents"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/setup_intents/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/setup_intents"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/payouts/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/payouts"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/products/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/products"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/refunds/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/refunds"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/tokens/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/payment_methods/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/payment_methods"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers/:id/sources/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers/:id/sources?object=card"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/sources/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/checkout/sessions/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/coupons/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/coupons"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/credit_notes/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/credit_notes"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers/:customer/balance_transactions/:transaction"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers/:customer/balance_transactions"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers/:id/tax_ids/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers/:id/tax_ids"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/invoices/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/invoices/:id/lines"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/invoices/upcoming"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/invoices/upcoming/lines"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/invoices"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/invoiceitems/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/invoiceitems"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/plans/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/plans"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/products/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/products"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/subscriptions/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/subscriptions"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/subscription_items/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/subscription_items"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/subscription_schedules/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/subscription_schedules"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/tax_rates/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/tax_rates"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/subscription_items/:id/usage_record_summaries"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/accounts/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/accounts"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/application_fees/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/application_fees"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/application_fees/:id/refunds/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/application_fees/:id/refunds"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/accounts/:id/capabilities"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/country_specs"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/country_specs/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/accounts/:id/external_accounts/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/accounts/:id/external_accounts?object=bank_account"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/accounts/:id/external_accounts/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/accounts/:id/external_accounts?object=card"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/topups/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/topups"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/transfers/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/transfers"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/transfers/:id/reversals/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/transfers/:id/reversals"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/radar/early_fraud_warnings/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/radar/early_fraud_warnings"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/reviews/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/reviews"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/radar/value_lists/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/radar/value_lists"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/radar/value_list_items/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/radar/value_list_items"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/issuing/authorizations/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/issuing/authorizations"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/issuing/cardholders/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/issuing/cardholders"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/issuing/cards/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/issuing/cards/:id/details"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/issuing/cards"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/issuing/disputes/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/issuing/disputes"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/issuing/transactions/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/issuing/transactions"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/terminal/locations/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/terminal/locations"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/terminal/readers/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/terminal/readers"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/orders/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/orders"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/order_returns/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/order_returns"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/skus/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/skus"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/sigma/scheduled_query_runs/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/sigma/scheduled_query_runs"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/webhook_endpoints/:id"
+        },
+        {
+            "method": "GET",
+            "prefix": "",
+            "suffix": "",
+            "url": "/webhook_endpoints"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers/:id"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/products/:id"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers/:id/sources/:id"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers/:id/sources/:id"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/coupons/:id"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers/:id/tax_ids/:id"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/customers/:id/discount"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/subscriptions/:id/discount"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/invoices/:id"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/invoiceitems/:id"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/plans/:id"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/products/:id"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/subscriptions/:id"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/subscription_items/:id"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/accounts/:id"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/accounts/:id/external_accounts/:id"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/accounts/:id/external_accounts/:id"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/radar/value_lists/:id"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/radar/value_list_items/:id"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/terminal/locations/:id"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/terminal/readers/:id"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/skus/:id"
+        },
+        {
+            "method": "DELETE",
+            "prefix": "",
+            "suffix": "",
+            "url": "/webhook_endpoints/:id"
+        }
+    ],
+    "endpointName": "stripe"
+}
