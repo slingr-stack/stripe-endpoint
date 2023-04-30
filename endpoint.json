@@ -51,7 +51,8 @@
         "functions.js"
     ],
     "flowSteps": [
-        "apiCallStripe"
+        "apiCallStripe",
+        "createPaymentStripe"
     ],
     "configuration":[
         {

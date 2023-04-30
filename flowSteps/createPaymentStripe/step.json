@@ -1,0 +1,585 @@
+{
+  "label": "Create a payment",
+  "name": "createPaymentStripe",
+  "category": "integrations",
+  "description": "This step allows you to create a payment.",
+  "inputs": [
+    {
+      "label": "Currency",
+      "name": "currency",
+      "type": "dropDown",
+      "description": "Three-letter ISO currency code, in lowercase.",
+      "multiplicity": "one",
+      "required": "true",
+      "options": {
+        "possibleValues": [
+          {
+            "label": "USD",
+            "name": "usd"
+          },
+          {
+            "label": "AED",
+            "name": "aed"
+          },
+          {
+            "label": "AFN",
+            "name": "afn"
+          },
+          {
+            "label": "ALL",
+            "name": "all"
+          },
+          {
+            "label": "AMD",
+            "name": "amd"
+          },
+          {
+            "label": "ANG",
+            "name": "ang"
+          },
+          {
+            "label": "AOA",
+            "name": "aoa"
+          },
+          {
+            "label": "ARS",
+            "name": "ars"
+          },
+          {
+            "label": "AUD",
+            "name": "aud"
+          },
+          {
+            "label": "AWG",
+            "name": "awg"
+          },
+          {
+            "label": "AZN",
+            "name": "azn"
+          },
+          {
+            "label": "BAM",
+            "name": "bam"
+          },
+          {
+            "label": "BBD",
+            "name": "bbd"
+          },
+          {
+            "label": "BDT",
+            "name": "bdt"
+          },
+          {
+            "label": "BGN",
+            "name": "bgn"
+          },
+          {
+            "label": "BIF",
+            "name": "bif"
+          },
+          {
+            "label": "BMD",
+            "name": "bmd"
+          },
+          {
+            "label": "BND",
+            "name": "bnd"
+          },
+          {
+            "label": "BOB",
+            "name": "bob"
+          },
+          {
+            "label": "BRL",
+            "name": "brl"
+          },
+          {
+            "label": "BSD",
+            "name": "bsd"
+          },
+          {
+            "label": "BWP",
+            "name": "bwp"
+          },
+          {
+            "label": "BYN",
+            "name": "byn"
+          },
+          {
+            "label": "BZD",
+            "name": "bzd"
+          },
+          {
+            "label": "CAD",
+            "name": "cad"
+          },
+          {
+            "label": "CDF",
+            "name": "cdf"
+          },
+          {
+            "label": "CHF",
+            "name": "chf"
+          },
+          {
+            "label": "CLP",
+            "name": "clp"
+          },
+          {
+            "label": "CNY",
+            "name": "cny"
+          },
+          {
+            "label": "COP",
+            "name": "cop"
+          },
+          {
+            "label": "CRC",
+            "name": "crc"
+          },
+          {
+            "label": "CVE",
+            "name": "cve"
+          },
+          {
+            "label": "CZK",
+            "name": "czk"
+          },
+          {
+            "label": "DJF",
+            "name": "djf"
+          },
+          {
+            "label": "DKK",
+            "name": "dkk"
+          },
+          {
+            "label": "DOP",
+            "name": "dop"
+          },
+          {
+            "label": "DZD",
+            "name": "dzd"
+          },
+          },
+          {
+            "label": "EGP",
+            "name": "egp"
+          },
+          {
+            "label": "ETB",
+            "name": "etb"
+          },
+          {
+            "label": "EUR",
+            "name": "eur"
+          },
+          {
+            "label": "FJD",
+            "name": "fjd"
+          },
+          {
+            "label": "FKP",
+            "name": "fkp"
+          },
+          {
+            "label": "GBP",
+            "name": "gbp"
+          },
+          {
+            "label": "GEL",
+            "name": "gel"
+          },
+          {
+            "label": "GIP",
+            "name": "gip"
+          },
+          {
+            "label": "GMD",
+            "name": "gmd"
+          },
+          {
+            "label": "GNF",
+            "name": "gnf"
+          },
+          {
+            "label": "GTQ",
+            "name": "gtq"
+          },
+          {
+            "label": "GYD",
+            "name": "gyd"
+          },
+          {
+            "label": "HKD",
+            "name": "hkd"
+          },
+          {
+            "label": "HNL",
+            "name": "hnl"
+          },
+          {
+            "label": "HTG",
+            "name": "htg"
+          },
+          {
+            "label": "HUF",
+            "name": "huf"
+          },
+          {
+            "label": "IDR",
+            "name": "idr"
+          },
+          {
+            "label": "ILS",
+            "name": "ils"
+          },
+          {
+            "label": "INR",
+            "name": "inr"
+          },
+          {
+            "label": "ISK",
+            "name": "isk"
+          },
+          {
+            "label": "JMD",
+            "name": "jmd"
+          },
+          {
+            "label": "JPY",
+            "name": "jpy"
+          },
+          {
+            "label": "KES",
+            "name": "kes"
+          },
+          {
+            "label": "KGS",
+            "name": "kgs"
+          },
+          {
+            "label": "KHR",
+            "name": "khr"
+          },
+          {
+            "label": "KMF",
+            "name": "kmf"
+          },
+          {
+            "label": "KRW",
+            "name": "krw"
+          },
+          {
+            "label": "KYD",
+            "name": "kyd"
+          },
+          {
+            "label": "KZT",
+            "name": "kzt"
+          },
+          {
+            "label": "LAK",
+            "name": "lak"
+          },
+          {
+            "label": "LBP",
+            "name": "lbp"
+          },
+          {
+            "label": "LKR",
+            "name": "lkr"
+          },
+          {
+            "label": "LRD",
+            "name": "lrd"
+          },
+          {
+            "label": "LSL",
+            "name": "lsl"
+          },
+          {
+            "label": "MAD",
+            "name": "mad"
+          },
+          {
+            "label": "MDL",
+            "name": "mdl"
+          },
+          {
+            "label": "MGA",
+            "name": "mga"
+          },
+          {
+            "label": "MKD",
+            "name": "mkd"
+          },
+          {
+            "label": "MMK",
+            "name": "mmk"
+          },
+          {
+            "label": "MNT",
+            "name": "mnt"
+          },
+          {
+            "label": "MOP",
+            "name": "mop"
+          },
+          {
+            "label": "MRO",
+            "name": "mro"
+          },
+          {
+            "label": "MUR",
+            "name": "mur"
+          },
+          {
+            "label": "MVR",
+            "name": "mvr"
+          },
+          {
+            "label": "MWK",
+            "name": "mwk"
+          },
+          {
+            "label": "MXN",
+            "name": "mxn"
+          },
+          {
+            "label": "MYR",
+            "name": "myr"
+          },
+          {
+            "label": "MZN",
+            "name": "mzn"
+          },
+          {
+            "label": "NAD",
+            "name": "nad"
+          },
+          {
+            "label": "NGN",
+            "name": "ngn"
+          },
+          {
+            "label": "NIO",
+            "name": "nio"
+          },
+          {
+            "label": "NOK",
+            "name": "nok"
+          },
+          {
+            "label": "NPR",
+            "name": "npr"
+          },
+          {
+            "label": "NZD",
+            "name": "nzd"
+          },
+          {
+            "label": "PAB",
+            "name": "pab"
+          },
+          {
+            "label": "PEN",
+            "name": "pen"
+          },
+          {
+            "label": "PGK",
+            "name": "pgk"
+          },
+          {
+            "label": "PHP",
+            "name": "php"
+          },
+          {
+            "label": "PKR",
+            "name": "pkr"
+          },
+          {
+            "label": "PLN",
+            "name": "pln"
+          },
+          {
+            "label": "PYG",
+            "name": "pyg"
+          },
+          {
+            "label": "QAR",
+            "name": "qar"
+          },
+          {
+            "label": "RON",
+            "name": "ron"
+          },
+          {
+            "label": "RSD",
+            "name": "rsd"
+          },
+          {
+            "label": "RUB",
+            "name": "rub"
+          },
+          {
+            "label": "RWF",
+            "name": "rwf"
+          },
+          {
+            "label": "SAR",
+            "name": "sar"
+          },
+          {
+            "label": "SBD",
+            "name": "sbd"
+          },
+          {
+            "label": "SCR",
+            "name": "scr"
+          },
+          {
+            "label": "SEK",
+            "name": "sek"
+          },
+          {
+            "label": "SGD",
+            "name": "sgd"
+          },
+          {
+            "label": "SHP",
+            "name": "shp"
+          },
+          {
+            "label": "SLE",
+            "name": "sle"
+          },
+          {
+            "label": "SLL",
+            "name": "sll"
+          },
+          {
+            "label": "SOS",
+            "name": "sos"
+          },
+          {
+            "label": "SRD",
+            "name": "srd"
+          },
+          {
+            "label": "STD",
+            "name": "std"
+          },
+          {
+            "label": "SZL",
+            "name": "szl"
+          },
+          {
+            "label": "THB",
+            "name": "thb"
+          },
+          {
+            "label": "TJS",
+            "name": "tjs"
+          },
+          {
+            "label": "TOP",
+            "name": "top"
+          },
+          {
+            "label": "TRY",
+            "name": "try"
+          },
+          {
+            "label": "TTD",
+            "name": "ttd"
+          },
+          {
+            "label": "TWD",
+            "name": "twd"
+          },
+          {
+            "label": "TZS",
+            "name": "tzs"
+          },
+          {
+            "label": "UAH",
+            "name": "uah"
+          },
+          {
+            "label": "UGX",
+            "name": "ugx"
+          },
+          {
+            "label": "UYU",
+            "name": "uyu"
+          },
+          {
+            "label": "UZS",
+            "name": "uzs"
+          },
+          {
+            "label": "VND",
+            "name": "vnd"
+          },
+          {
+            "label": "VUV",
+            "name": "vuv"
+          },
+          {
+            "label": "WST",
+            "name": "wst"
+          },
+          {
+            "label": "XAF",
+            "name": "xaf"
+          },
+          {
+            "label": "XCD",
+            "name": "xcd"
+          },
+          {
+            "label": "XOF",
+            "name": "xof"
+          },
+          {
+            "label": "XPF",
+            "name": "xpf"
+          },
+          {
+            "label": "YER",
+            "name": "yer"
+          },
+          {
+            "label": "ZAR",
+            "name": "zar"
+          },
+          {
+            "label": "ZMW",
+            "name": "zmw"
+          }
+        ]
+        ],
+        "allowContextSelector": "false"
+      }
+    },
+    {
+      "label": "Amount",
+      "name": "amount",
+      "description": "Amount intended to be collected by this PaymentIntent. A positive integer representing how much to charge in the smallest currency unit (e.g., 100 cents to charge $1.00 or 100 to charge ¥100, a zero-decimal currency). The minimum amount is $0.50 US or equivalent in charge currency. The amount value supports up to eight digits (e.g., a value of 99999999 for a USD charge of $999,999.99).",
+      "type": "text",
+      "required": "true",
+      "options": {
+        "allowContextSelector": "true"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "label": "Response",
+      "name": "response",
+      "type": "object",
+      "description": "The response to external URL"
+    }
+  ]
+}
