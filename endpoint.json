@@ -54,7 +54,7 @@
         "apiCallStripe",
         "createPaymentIntentsStripe",
         "listAllPaymentIntentsStripe",
-        "cancelPaymentIntentsStrip"
+        "cancelPaymentIntentsStripe"
     ],
     "configuration":[
         {

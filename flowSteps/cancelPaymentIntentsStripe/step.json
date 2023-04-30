@@ -1,6 +1,6 @@
 {
   "label": "Cancel PaymentIntents",
-  "name": "cancelPaymentIntentsStrip",
+  "name": "cancelPaymentIntentsStripe",
   "category": "integrations",
   "description": "A PaymentIntent object can be canceled when it is in one of these statuses: requires_payment_method, requires_capture, requires_confirmation, requires_action or, in rare cases, processing.",
   "inputs": [

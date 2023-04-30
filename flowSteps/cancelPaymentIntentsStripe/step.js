@@ -1,4 +1,4 @@
-step.cancelPaymentIntentsStrip = function (inputs) {
+step.cancelPaymentIntentsStripe = function (inputs) {
 
 	var inputLogics = {
 		intent: inputs.intent || "",
