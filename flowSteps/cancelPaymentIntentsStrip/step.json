@@ -1,0 +1,35 @@
+{
+  "label": "Cancel PaymentIntents",
+  "name": "cancelPaymentIntentsStrip",
+  "category": "integrations",
+  "description": "A PaymentIntent object can be canceled when it is in one of these statuses: requires_payment_method, requires_capture, requires_confirmation, requires_action or, in rare cases, processing.",
+  "inputs": [
+    {
+      "label": "Intent",
+      "name": "intent",
+      "description": "Payment intent id",
+      "type": "text",
+      "required": "true",
+      "options": {
+        "allowContextSelector": "true"
+      }
+    },
+    {
+      "label": "Cancellation Reason",
+      "name": "cancellationReason",
+      "description": "Reason for canceling this PaymentIntent. Possible values are duplicate, fraudulent, requested_by_customer, or abandoned",
+      "type": "text",
+      "options": {
+        "allowContextSelector": "true"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "label": "Response",
+      "name": "response",
+      "type": "object",
+      "description": "The response to external URL"
+    }
+  ]
+}

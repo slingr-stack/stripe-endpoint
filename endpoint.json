@@ -52,7 +52,9 @@
     ],
     "flowSteps": [
         "apiCallStripe",
-        "createPaymentStripe"
+        "createPaymentIntentsStripe",
+        "listAllPaymentIntentsStripe",
+        "cancelPaymentIntentsStrip"
     ],
     "configuration":[
         {

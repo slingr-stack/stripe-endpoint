@@ -1,6 +1,6 @@
 {
   "label": "Create a payment",
-  "name": "createPaymentStripe",
+  "name": "createPaymentIntentsStripe",
   "category": "integrations",
   "description": "This step allows you to create a payment.",
   "inputs": [

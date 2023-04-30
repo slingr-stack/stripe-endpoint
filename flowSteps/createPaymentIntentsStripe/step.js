@@ -1,4 +1,4 @@
-step.createPaymentStripe = function (inputs) {
+step.createPaymentIntentsStripe = function (inputs) {
 
     var inputsLogic = {
         currency: inputs.currency || "",
@@ -6,7 +6,7 @@ step.createPaymentStripe = function (inputs) {
     };
 
     var options = {
-        path: "/payment_intents",
+        path: "/v1/payment_intents",
         body: inputsLogic
     }
 
