@@ -18,7 +18,7 @@
       "label": "Cancellation Reason",
       "name": "cancellationReason",
       "type": "dropDown",
-      "description": "Three-letter ISO currency code, in lowercase.",
+      "description": "Reason for canceling this PaymentIntent. Possible values are duplicate, fraudulent, requested_by_customer, or abandoned",
       "multiplicity": "one",
       "options": {
         "possibleValues": [
