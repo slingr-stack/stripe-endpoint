@@ -17,10 +17,29 @@
     {
       "label": "Cancellation Reason",
       "name": "cancellationReason",
-      "description": "Reason for canceling this PaymentIntent. Possible values are duplicate, fraudulent, requested_by_customer, or abandoned",
-      "type": "text",
+      "type": "dropDown",
+      "description": "Three-letter ISO currency code, in lowercase.",
+      "multiplicity": "one",
       "options": {
-        "allowContextSelector": "true"
+        "possibleValues": [
+          {
+            "label": "Duplicate",
+            "name": "duplicate"
+          },
+          {
+            "label": "Fraudulent",
+            "name": "fraudulent"
+          },
+          {
+            "label": "Requested by customer",
+            "name": "requested_by_customer"
+          },
+          {
+            "label": "Abandoned",
+            "name": "abandoned"
+          }
+        ],
+        "allowContextSelector": "false"
       }
     }
   ],
