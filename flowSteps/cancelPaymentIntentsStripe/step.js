@@ -10,7 +10,7 @@ step.cancelPaymentIntentsStripe = function (inputs) {
 
 	var options = {
 		path: "/v1/payment_intents/"+inputLogics.intent+"/cancel",
-		body: body.cancellation_reason || []
+		body: body
 	}
 
 	return endpoint._post(options);

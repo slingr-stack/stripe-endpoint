@@ -8,404 +8,402 @@
 //                                                                        //
 ////////////////////////////////////////////////////////////////////////////
 
-endpoint.v1 = {};
+endpoint.accountLinks = {};
 
-endpoint.v1.accountLinks = {};
+endpoint.accounts = {};
 
-endpoint.v1.accounts = {};
+endpoint.accounts.capabilities = {};
 
-endpoint.v1.accounts.capabilities = {};
+endpoint.accounts.externalAccounts = {};
 
-endpoint.v1.accounts.externalAccounts = {};
+endpoint.accounts.loginLinks = {};
 
-endpoint.v1.accounts.loginLinks = {};
+endpoint.accounts.reject = {};
 
-endpoint.v1.accounts.reject = {};
+endpoint.applicationFees = {};
 
-endpoint.v1.applicationFees = {};
+endpoint.applicationFees.refund = {};
 
-endpoint.v1.applicationFees.refund = {};
+endpoint.applicationFees.refunds = {};
 
-endpoint.v1.applicationFees.refunds = {};
+endpoint.balance = {};
 
-endpoint.v1.balance = {};
+endpoint.balanceTransactions = {};
 
-endpoint.v1.balanceTransactions = {};
+endpoint.charges = {};
 
-endpoint.v1.charges = {};
+endpoint.charges.search = {};
 
-endpoint.v1.charges.search = {};
+endpoint.charges.capture = {};
 
-endpoint.v1.charges.capture = {};
+endpoint.checkout = {};
 
-endpoint.v1.checkout = {};
+endpoint.checkout.sessions = {};
 
-endpoint.v1.checkout.sessions = {};
+endpoint.checkout.sessions.expire = {};
 
-endpoint.v1.checkout.sessions.expire = {};
+endpoint.checkout.sessions.lineItems = {};
 
-endpoint.v1.checkout.sessions.lineItems = {};
+endpoint.countrySpecs = {};
 
-endpoint.v1.countrySpecs = {};
+endpoint.coupons = {};
 
-endpoint.v1.coupons = {};
+endpoint.creditNotes = {};
 
-endpoint.v1.creditNotes = {};
+endpoint.creditNotes.preview = {};
 
-endpoint.v1.creditNotes.preview = {};
+endpoint.creditNotes.preview.lines = {};
 
-endpoint.v1.creditNotes.preview.lines = {};
+endpoint.creditNotes.lines = {};
 
-endpoint.v1.creditNotes.lines = {};
+endpoint.creditNotes.void = {};
 
-endpoint.v1.creditNotes.void = {};
+endpoint.customers = {};
 
-endpoint.v1.customers = {};
+endpoint.customers.balanceTransactions = {};
 
-endpoint.v1.customers.balanceTransactions = {};
+endpoint.customers.cashBalance = {};
 
-endpoint.v1.customers.cashBalance = {};
+endpoint.customers.cashBalanceTransactions = {};
 
-endpoint.v1.customers.cashBalanceTransactions = {};
+endpoint.billingPortal = {};
 
-endpoint.v1.billingPortal = {};
+endpoint.billingPortal.configurations = {};
 
-endpoint.v1.billingPortal.configurations = {};
+endpoint.billingPortal.sessions = {};
 
-endpoint.v1.billingPortal.sessions = {};
+endpoint.customers.taxIds = {};
 
-endpoint.v1.customers.taxIds = {};
+endpoint.customers.search = {};
 
-endpoint.v1.customers.search = {};
+endpoint.customers.paymentMethods = {};
 
-endpoint.v1.customers.paymentMethods = {};
+endpoint.customers.discount = {};
 
-endpoint.v1.customers.discount = {};
+endpoint.disputes = {};
 
-endpoint.v1.disputes = {};
+endpoint.disputes.close = {};
 
-endpoint.v1.disputes.close = {};
+endpoint.events = {};
 
-endpoint.v1.events = {};
+endpoint.exchangeRates = {};
 
-endpoint.v1.exchangeRates = {};
+endpoint.fileLinks = {};
 
-endpoint.v1.fileLinks = {};
+endpoint.files = {};
 
-endpoint.v1.files = {};
+endpoint.financialConnections = {};
 
-endpoint.v1.financialConnections = {};
+endpoint.financialConnections.accounts = {};
 
-endpoint.v1.financialConnections.accounts = {};
+endpoint.financialConnections.accounts.disconnect = {};
 
-endpoint.v1.financialConnections.accounts.disconnect = {};
+endpoint.financialConnections.accounts.refresh = {};
 
-endpoint.v1.financialConnections.accounts.refresh = {};
+endpoint.financialConnections.sessions = {};
 
-endpoint.v1.financialConnections.sessions = {};
+endpoint.identity = {};
 
-endpoint.v1.identity = {};
+endpoint.identity.verificationReports = {};
 
-endpoint.v1.identity.verificationReports = {};
+endpoint.identity.verificationSessions = {};
 
-endpoint.v1.identity.verificationSessions = {};
+endpoint.identity.verificationSessions.cancel = {};
 
-endpoint.v1.identity.verificationSessions.cancel = {};
+endpoint.identity.verificationSessions.redact = {};
 
-endpoint.v1.identity.verificationSessions.redact = {};
+endpoint.invoiceitems = {};
 
-endpoint.v1.invoiceitems = {};
+endpoint.invoices = {};
 
-endpoint.v1.invoices = {};
+endpoint.invoices.search = {};
 
-endpoint.v1.invoices.search = {};
+endpoint.invoices.upcoming = {};
 
-endpoint.v1.invoices.upcoming = {};
+endpoint.invoices.upcoming.lines = {};
 
-endpoint.v1.invoices.upcoming.lines = {};
+endpoint.invoices.finalize = {};
 
-endpoint.v1.invoices.finalize = {};
+endpoint.invoices.lines = {};
 
-endpoint.v1.invoices.lines = {};
+endpoint.invoices.markUncollectible = {};
 
-endpoint.v1.invoices.markUncollectible = {};
+endpoint.invoices.pay = {};
 
-endpoint.v1.invoices.pay = {};
+endpoint.invoices.send = {};
 
-endpoint.v1.invoices.send = {};
+endpoint.invoices.void = {};
 
-endpoint.v1.invoices.void = {};
+endpoint.issuing = {};
 
-endpoint.v1.issuing = {};
+endpoint.issuing.authorizations = {};
 
-endpoint.v1.issuing.authorizations = {};
+endpoint.issuing.authorizations.approve = {};
 
-endpoint.v1.issuing.authorizations.approve = {};
+endpoint.issuing.authorizations.decline = {};
 
-endpoint.v1.issuing.authorizations.decline = {};
+endpoint.issuing.cardholders = {};
 
-endpoint.v1.issuing.cardholders = {};
+endpoint.issuing.cards = {};
 
-endpoint.v1.issuing.cards = {};
+endpoint.testHelpers = {};
 
-endpoint.v1.testHelpers = {};
+endpoint.testHelpers.issuing = {};
 
-endpoint.v1.testHelpers.issuing = {};
+endpoint.testHelpers.issuing.cards = {};
 
-endpoint.v1.testHelpers.issuing.cards = {};
+endpoint.testHelpers.issuing.cards.shipping = {};
 
-endpoint.v1.testHelpers.issuing.cards.shipping = {};
+endpoint.testHelpers.issuing.cards.shipping.fail = {};
 
-endpoint.v1.testHelpers.issuing.cards.shipping.fail = {};
+endpoint.testHelpers.issuing.cards.shipping.return = {};
 
-endpoint.v1.testHelpers.issuing.cards.shipping.return = {};
+endpoint.testHelpers.issuing.cards.shipping.ship = {};
 
-endpoint.v1.testHelpers.issuing.cards.shipping.ship = {};
+endpoint.issuing.disputes = {};
 
-endpoint.v1.issuing.disputes = {};
+endpoint.issuing.disputes.submit = {};
 
-endpoint.v1.issuing.disputes.submit = {};
+endpoint.issuing.transactions = {};
 
-endpoint.v1.issuing.transactions = {};
+endpoint.mandates = {};
 
-endpoint.v1.mandates = {};
+endpoint.paymentIntents = {};
 
-endpoint.v1.paymentIntents = {};
+endpoint.paymentIntents.search = {};
 
-endpoint.v1.paymentIntents.search = {};
+endpoint.paymentIntents.applyCustomerBalance = {};
 
-endpoint.v1.paymentIntents.applyCustomerBalance = {};
+endpoint.paymentIntents.cancel = {};
 
-endpoint.v1.paymentIntents.cancel = {};
+endpoint.paymentIntents.capture = {};
 
-endpoint.v1.paymentIntents.capture = {};
+endpoint.paymentIntents.confirm = {};
 
-endpoint.v1.paymentIntents.confirm = {};
+endpoint.paymentIntents.incrementAuthorization = {};
 
-endpoint.v1.paymentIntents.incrementAuthorization = {};
+endpoint.paymentIntents.verifyMicrodeposits = {};
 
-endpoint.v1.paymentIntents.verifyMicrodeposits = {};
+endpoint.paymentLinks = {};
 
-endpoint.v1.paymentLinks = {};
+endpoint.paymentLinks.lineItems = {};
 
-endpoint.v1.paymentLinks.lineItems = {};
+endpoint.paymentMethods = {};
 
-endpoint.v1.paymentMethods = {};
+endpoint.paymentMethods.attach = {};
 
-endpoint.v1.paymentMethods.attach = {};
+endpoint.paymentMethods.detach = {};
 
-endpoint.v1.paymentMethods.detach = {};
+endpoint.payouts = {};
 
-endpoint.v1.payouts = {};
+endpoint.payouts.cancel = {};
 
-endpoint.v1.payouts.cancel = {};
+endpoint.payouts.reverse = {};
 
-endpoint.v1.payouts.reverse = {};
+endpoint.accounts.persons = {};
 
-endpoint.v1.accounts.persons = {};
+endpoint.prices = {};
 
-endpoint.v1.prices = {};
+endpoint.prices.search = {};
 
-endpoint.v1.prices.search = {};
+endpoint.products = {};
 
-endpoint.v1.products = {};
+endpoint.products.search = {};
 
-endpoint.v1.products.search = {};
+endpoint.promotionCodes = {};
 
-endpoint.v1.promotionCodes = {};
+endpoint.quotes = {};
 
-endpoint.v1.quotes = {};
+endpoint.quotes.computedUpfrontLineItems = {};
 
-endpoint.v1.quotes.computedUpfrontLineItems = {};
+endpoint.quotes.lineItems = {};
 
-endpoint.v1.quotes.lineItems = {};
+endpoint.quotes.accept = {};
 
-endpoint.v1.quotes.accept = {};
+endpoint.quotes.cancel = {};
 
-endpoint.v1.quotes.cancel = {};
+endpoint.quotes.finalize = {};
 
-endpoint.v1.quotes.finalize = {};
+endpoint.quotes.pdf = {};
 
-endpoint.v1.quotes.pdf = {};
+endpoint.radar = {};
 
-endpoint.v1.radar = {};
+endpoint.radar.earlyFraudWarnings = {};
 
-endpoint.v1.radar.earlyFraudWarnings = {};
+endpoint.reviews = {};
 
-endpoint.v1.reviews = {};
+endpoint.reviews.approve = {};
 
-endpoint.v1.reviews.approve = {};
+endpoint.radar.valueLists = {};
 
-endpoint.v1.radar.valueLists = {};
+endpoint.radar.valueListItems = {};
 
-endpoint.v1.radar.valueListItems = {};
+endpoint.refunds = {};
 
-endpoint.v1.refunds = {};
+endpoint.reporting = {};
 
-endpoint.v1.reporting = {};
+endpoint.reporting.reportRuns = {};
 
-endpoint.v1.reporting.reportRuns = {};
+endpoint.reporting.reportTypes = {};
 
-endpoint.v1.reporting.reportTypes = {};
+endpoint.apps = {};
 
-endpoint.v1.apps = {};
+endpoint.apps.secrets = {};
 
-endpoint.v1.apps.secrets = {};
+endpoint.apps.secrets.delete = {};
 
-endpoint.v1.apps.secrets.delete = {};
+endpoint.apps.secrets.find = {};
 
-endpoint.v1.apps.secrets.find = {};
+endpoint.setupAttempts = {};
 
-endpoint.v1.setupAttempts = {};
+endpoint.setupIntents = {};
 
-endpoint.v1.setupIntents = {};
+endpoint.setupIntents.cancel = {};
 
-endpoint.v1.setupIntents.cancel = {};
+endpoint.setupIntents.confirm = {};
 
-endpoint.v1.setupIntents.confirm = {};
+endpoint.setupIntents.verifyMicrodeposits = {};
 
-endpoint.v1.setupIntents.verifyMicrodeposits = {};
+endpoint.shippingRates = {};
 
-endpoint.v1.shippingRates = {};
+endpoint.sigma = {};
 
-endpoint.v1.sigma = {};
+endpoint.sigma.scheduledQueryRuns = {};
 
-endpoint.v1.sigma.scheduledQueryRuns = {};
+endpoint.skus = {};
 
-endpoint.v1.skus = {};
+endpoint.customers.sources = {};
 
-endpoint.v1.customers.sources = {};
+endpoint.customers.sources.verify = {};
 
-endpoint.v1.customers.sources.verify = {};
+endpoint.sources = {};
 
-endpoint.v1.sources = {};
+endpoint.subscriptionItems = {};
 
-endpoint.v1.subscriptionItems = {};
+endpoint.subscriptionItems.usageRecordSummaries = {};
 
-endpoint.v1.subscriptionItems.usageRecordSummaries = {};
+endpoint.subscriptionItems.usageRecords = {};
 
-endpoint.v1.subscriptionItems.usageRecords = {};
+endpoint.subscriptionSchedules = {};
 
-endpoint.v1.subscriptionSchedules = {};
+endpoint.subscriptionSchedules.cancel = {};
 
-endpoint.v1.subscriptionSchedules.cancel = {};
+endpoint.subscriptionSchedules.release = {};
 
-endpoint.v1.subscriptionSchedules.release = {};
+endpoint.subscriptions = {};
 
-endpoint.v1.subscriptions = {};
+endpoint.subscriptions.search = {};
 
-endpoint.v1.subscriptions.search = {};
+endpoint.subscriptions.discount = {};
 
-endpoint.v1.subscriptions.discount = {};
+endpoint.taxRates = {};
 
-endpoint.v1.taxRates = {};
+endpoint.terminal = {};
 
-endpoint.v1.terminal = {};
+endpoint.terminal.configurations = {};
 
-endpoint.v1.terminal.configurations = {};
+endpoint.terminal.connectionTokens = {};
 
-endpoint.v1.terminal.connectionTokens = {};
+endpoint.terminal.locations = {};
 
-endpoint.v1.terminal.locations = {};
+endpoint.terminal.readers = {};
 
-endpoint.v1.terminal.readers = {};
+endpoint.terminal.readers.cancelAction = {};
 
-endpoint.v1.terminal.readers.cancelAction = {};
+endpoint.terminal.readers.processPaymentIntent = {};
 
-endpoint.v1.terminal.readers.processPaymentIntent = {};
+endpoint.terminal.readers.processSetupIntent = {};
 
-endpoint.v1.terminal.readers.processSetupIntent = {};
+endpoint.terminal.readers.setReaderDisplay = {};
 
-endpoint.v1.terminal.readers.setReaderDisplay = {};
+endpoint.testHelpers.terminal = {};
 
-endpoint.v1.testHelpers.terminal = {};
+endpoint.testHelpers.terminal.readers = {};
 
-endpoint.v1.testHelpers.terminal.readers = {};
+endpoint.testHelpers.terminal.readers.presentPaymentMethod = {};
 
-endpoint.v1.testHelpers.terminal.readers.presentPaymentMethod = {};
+endpoint.testHelpers.testClocks = {};
 
-endpoint.v1.testHelpers.testClocks = {};
+endpoint.testHelpers.testClocks.advance = {};
 
-endpoint.v1.testHelpers.testClocks.advance = {};
+endpoint.tokens = {};
 
-endpoint.v1.tokens = {};
+endpoint.topups = {};
 
-endpoint.v1.topups = {};
+endpoint.topups.cancel = {};
 
-endpoint.v1.topups.cancel = {};
+endpoint.transfers = {};
 
-endpoint.v1.transfers = {};
+endpoint.transfers.reversals = {};
 
-endpoint.v1.transfers.reversals = {};
+endpoint.treasury = {};
 
-endpoint.v1.treasury = {};
+endpoint.treasury.creditReversals = {};
 
-endpoint.v1.treasury.creditReversals = {};
+endpoint.treasury.debitReversals = {};
 
-endpoint.v1.treasury.debitReversals = {};
+endpoint.treasury.financialAccounts = {};
 
-endpoint.v1.treasury.financialAccounts = {};
+endpoint.treasury.financialAccounts.features = {};
 
-endpoint.v1.treasury.financialAccounts.features = {};
+endpoint.testHelpers.treasury = {};
 
-endpoint.v1.testHelpers.treasury = {};
+endpoint.testHelpers.treasury.inboundTransfers = {};
 
-endpoint.v1.testHelpers.treasury.inboundTransfers = {};
+endpoint.testHelpers.treasury.inboundTransfers.fail = {};
 
-endpoint.v1.testHelpers.treasury.inboundTransfers.fail = {};
+endpoint.testHelpers.treasury.inboundTransfers.succeed = {};
 
-endpoint.v1.testHelpers.treasury.inboundTransfers.succeed = {};
+endpoint.treasury.inboundTransfers = {};
 
-endpoint.v1.treasury.inboundTransfers = {};
+endpoint.treasury.inboundTransfers.cancel = {};
 
-endpoint.v1.treasury.inboundTransfers.cancel = {};
+endpoint.testHelpers.treasury.outboundPayments = {};
 
-endpoint.v1.testHelpers.treasury.outboundPayments = {};
+endpoint.testHelpers.treasury.outboundPayments.fail = {};
 
-endpoint.v1.testHelpers.treasury.outboundPayments.fail = {};
+endpoint.testHelpers.treasury.outboundPayments.post = {};
 
-endpoint.v1.testHelpers.treasury.outboundPayments.post = {};
+endpoint.testHelpers.treasury.outboundPayments.return = {};
 
-endpoint.v1.testHelpers.treasury.outboundPayments.return = {};
+endpoint.treasury.outboundPayments = {};
 
-endpoint.v1.treasury.outboundPayments = {};
+endpoint.treasury.outboundPayments.cancel = {};
 
-endpoint.v1.treasury.outboundPayments.cancel = {};
+endpoint.testHelpers.treasury.outboundTransfers = {};
 
-endpoint.v1.testHelpers.treasury.outboundTransfers = {};
+endpoint.testHelpers.treasury.outboundTransfers.fail = {};
 
-endpoint.v1.testHelpers.treasury.outboundTransfers.fail = {};
+endpoint.testHelpers.treasury.outboundTransfers.post = {};
 
-endpoint.v1.testHelpers.treasury.outboundTransfers.post = {};
+endpoint.testHelpers.treasury.outboundTransfers.return = {};
 
-endpoint.v1.testHelpers.treasury.outboundTransfers.return = {};
+endpoint.treasury.outboundTransfers = {};
 
-endpoint.v1.treasury.outboundTransfers = {};
+endpoint.treasury.outboundTransfers.cancel = {};
 
-endpoint.v1.treasury.outboundTransfers.cancel = {};
+endpoint.testHelpers.treasury.receivedCredits = {};
 
-endpoint.v1.testHelpers.treasury.receivedCredits = {};
+endpoint.treasury.receivedCredits = {};
 
-endpoint.v1.treasury.receivedCredits = {};
+endpoint.testHelpers.treasury.receivedDebits = {};
 
-endpoint.v1.testHelpers.treasury.receivedDebits = {};
+endpoint.treasury.receivedDebits = {};
 
-endpoint.v1.treasury.receivedDebits = {};
+endpoint.treasury.transactionEntries = {};
 
-endpoint.v1.treasury.transactionEntries = {};
+endpoint.treasury.transactions = {};
 
-endpoint.v1.treasury.transactions = {};
+endpoint.webhookEndpoints = {};
 
-endpoint.v1.webhookEndpoints = {};
-
-endpoint.v1.accountLinks.post = function(httpOptions) {
+endpoint.accountLinks.post = function(httpOptions) {
     var url = parse('/v1/account_links');
     sys.logs.debug('[stripe] POST from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._post(options);
 };
 
-endpoint.v1.accounts.get = function(account, httpOptions) {
+endpoint.accounts.get = function(account, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -431,7 +429,7 @@ endpoint.v1.accounts.get = function(account, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.accounts.post = function(account, httpOptions) {
+endpoint.accounts.post = function(account, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -461,7 +459,7 @@ endpoint.v1.accounts.post = function(account, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.accounts.delete = function(account, httpOptions) {
+endpoint.accounts.delete = function(account, httpOptions) {
     if (!account) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [account].');
         return;
@@ -472,7 +470,7 @@ endpoint.v1.accounts.delete = function(account, httpOptions) {
     return endpoint._delete(options);
 };
 
-endpoint.v1.accounts.capabilities.get = function(account, capability, httpOptions) {
+endpoint.accounts.capabilities.get = function(account, capability, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -498,7 +496,7 @@ endpoint.v1.accounts.capabilities.get = function(account, capability, httpOption
 	return endpoint._get(options);
 };
 
-endpoint.v1.accounts.capabilities.post = function(account, capability, httpOptions) {
+endpoint.accounts.capabilities.post = function(account, capability, httpOptions) {
     if (!account || !capability) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [account,capability].');
         return;
@@ -509,7 +507,7 @@ endpoint.v1.accounts.capabilities.post = function(account, capability, httpOptio
     return endpoint._post(options);
 };
 
-endpoint.v1.accounts.externalAccounts.get = function(account, id, httpOptions) {
+endpoint.accounts.externalAccounts.get = function(account, id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -535,7 +533,7 @@ endpoint.v1.accounts.externalAccounts.get = function(account, id, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.accounts.externalAccounts.post = function(account, id, httpOptions) {
+endpoint.accounts.externalAccounts.post = function(account, id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -565,7 +563,7 @@ endpoint.v1.accounts.externalAccounts.post = function(account, id, httpOptions) 
 	return endpoint._post(options);
 };
 
-endpoint.v1.accounts.externalAccounts.delete = function(account, id, httpOptions) {
+endpoint.accounts.externalAccounts.delete = function(account, id, httpOptions) {
     if (!account || !id) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [account,id].');
         return;
@@ -576,7 +574,7 @@ endpoint.v1.accounts.externalAccounts.delete = function(account, id, httpOptions
     return endpoint._delete(options);
 };
 
-endpoint.v1.accounts.loginLinks.post = function(account, httpOptions) {
+endpoint.accounts.loginLinks.post = function(account, httpOptions) {
     if (!account) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [account].');
         return;
@@ -587,7 +585,7 @@ endpoint.v1.accounts.loginLinks.post = function(account, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.accounts.reject.post = function(account, httpOptions) {
+endpoint.accounts.reject.post = function(account, httpOptions) {
     if (!account) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [account].');
         return;
@@ -598,7 +596,7 @@ endpoint.v1.accounts.reject.post = function(account, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.applicationFees.refund.post = function(id, httpOptions) {
+endpoint.applicationFees.refund.post = function(id, httpOptions) {
     if (!id) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [id].');
         return;
@@ -609,7 +607,7 @@ endpoint.v1.applicationFees.refund.post = function(id, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.applicationFees.refunds.get = function(fee, id, httpOptions) {
+endpoint.applicationFees.refunds.get = function(fee, id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -635,7 +633,7 @@ endpoint.v1.applicationFees.refunds.get = function(fee, id, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.applicationFees.refunds.post = function(fee, id, httpOptions) {
+endpoint.applicationFees.refunds.post = function(fee, id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -665,7 +663,7 @@ endpoint.v1.applicationFees.refunds.post = function(fee, id, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.applicationFees.get = function(id, httpOptions) {
+endpoint.applicationFees.get = function(id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -691,14 +689,14 @@ endpoint.v1.applicationFees.get = function(id, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.balance.get = function(httpOptions) {
+endpoint.balance.get = function(httpOptions) {
     var url = parse('/v1/balance');
     sys.logs.debug('[stripe] GET from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._get(options);
 };
 
-endpoint.v1.balanceTransactions.get = function(id, httpOptions) {
+endpoint.balanceTransactions.get = function(id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -724,7 +722,7 @@ endpoint.v1.balanceTransactions.get = function(id, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.charges.get = function(charge, httpOptions) {
+endpoint.charges.get = function(charge, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -750,7 +748,7 @@ endpoint.v1.charges.get = function(charge, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.charges.post = function(charge, httpOptions) {
+endpoint.charges.post = function(charge, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -780,14 +778,14 @@ endpoint.v1.charges.post = function(charge, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.charges.search.get = function(httpOptions) {
+endpoint.charges.search.get = function(httpOptions) {
     var url = parse('/v1/charges/search');
     sys.logs.debug('[stripe] GET from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._get(options);
 };
 
-endpoint.v1.charges.capture.post = function(charge, httpOptions) {
+endpoint.charges.capture.post = function(charge, httpOptions) {
     if (!charge) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [charge].');
         return;
@@ -798,7 +796,7 @@ endpoint.v1.charges.capture.post = function(charge, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.checkout.sessions.get = function(session, httpOptions) {
+endpoint.checkout.sessions.get = function(session, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -824,14 +822,14 @@ endpoint.v1.checkout.sessions.get = function(session, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.checkout.sessions.post = function(httpOptions) {
+endpoint.checkout.sessions.post = function(httpOptions) {
     var url = parse('/v1/checkout/sessions');
     sys.logs.debug('[stripe] POST from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._post(options);
 };
 
-endpoint.v1.checkout.sessions.expire.post = function(session, httpOptions) {
+endpoint.checkout.sessions.expire.post = function(session, httpOptions) {
     if (!session) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [session].');
         return;
@@ -842,7 +840,7 @@ endpoint.v1.checkout.sessions.expire.post = function(session, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.checkout.sessions.lineItems.get = function(session, httpOptions) {
+endpoint.checkout.sessions.lineItems.get = function(session, httpOptions) {
     if (!session) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [session].');
         return;
@@ -853,7 +851,7 @@ endpoint.v1.checkout.sessions.lineItems.get = function(session, httpOptions) {
     return endpoint._get(options);
 };
 
-endpoint.v1.countrySpecs.get = function(country, httpOptions) {
+endpoint.countrySpecs.get = function(country, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -879,7 +877,7 @@ endpoint.v1.countrySpecs.get = function(country, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.coupons.get = function(coupon, httpOptions) {
+endpoint.coupons.get = function(coupon, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -905,7 +903,7 @@ endpoint.v1.coupons.get = function(coupon, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.coupons.post = function(coupon, httpOptions) {
+endpoint.coupons.post = function(coupon, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -935,7 +933,7 @@ endpoint.v1.coupons.post = function(coupon, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.coupons.delete = function(coupon, httpOptions) {
+endpoint.coupons.delete = function(coupon, httpOptions) {
     if (!coupon) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [coupon].');
         return;
@@ -946,7 +944,7 @@ endpoint.v1.coupons.delete = function(coupon, httpOptions) {
     return endpoint._delete(options);
 };
 
-endpoint.v1.creditNotes.get = function(id, httpOptions) {
+endpoint.creditNotes.get = function(id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -972,7 +970,7 @@ endpoint.v1.creditNotes.get = function(id, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.creditNotes.post = function(id, httpOptions) {
+endpoint.creditNotes.post = function(id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1002,21 +1000,21 @@ endpoint.v1.creditNotes.post = function(id, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.creditNotes.preview.get = function(httpOptions) {
+endpoint.creditNotes.preview.get = function(httpOptions) {
     var url = parse('/v1/credit_notes/preview');
     sys.logs.debug('[stripe] GET from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._get(options);
 };
 
-endpoint.v1.creditNotes.preview.lines.get = function(httpOptions) {
+endpoint.creditNotes.preview.lines.get = function(httpOptions) {
     var url = parse('/v1/credit_notes/preview/lines');
     sys.logs.debug('[stripe] GET from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._get(options);
 };
 
-endpoint.v1.creditNotes.lines.get = function(creditNote, httpOptions) {
+endpoint.creditNotes.lines.get = function(creditNote, httpOptions) {
     if (!creditNote) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [creditNote].');
         return;
@@ -1027,7 +1025,7 @@ endpoint.v1.creditNotes.lines.get = function(creditNote, httpOptions) {
     return endpoint._get(options);
 };
 
-endpoint.v1.creditNotes.void.post = function(id, httpOptions) {
+endpoint.creditNotes.void.post = function(id, httpOptions) {
     if (!id) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [id].');
         return;
@@ -1038,7 +1036,7 @@ endpoint.v1.creditNotes.void.post = function(id, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.customers.balanceTransactions.get = function(customer, transaction, httpOptions) {
+endpoint.customers.balanceTransactions.get = function(customer, transaction, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1064,7 +1062,7 @@ endpoint.v1.customers.balanceTransactions.get = function(customer, transaction, 
 	return endpoint._get(options);
 };
 
-endpoint.v1.customers.balanceTransactions.post = function(customer, transaction, httpOptions) {
+endpoint.customers.balanceTransactions.post = function(customer, transaction, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1094,7 +1092,7 @@ endpoint.v1.customers.balanceTransactions.post = function(customer, transaction,
 	return endpoint._post(options);
 };
 
-endpoint.v1.customers.cashBalance.get = function(customer, httpOptions) {
+endpoint.customers.cashBalance.get = function(customer, httpOptions) {
     if (!customer) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [customer].');
         return;
@@ -1105,7 +1103,7 @@ endpoint.v1.customers.cashBalance.get = function(customer, httpOptions) {
     return endpoint._get(options);
 };
 
-endpoint.v1.customers.cashBalance.post = function(customer, httpOptions) {
+endpoint.customers.cashBalance.post = function(customer, httpOptions) {
     if (!customer) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [customer].');
         return;
@@ -1116,7 +1114,7 @@ endpoint.v1.customers.cashBalance.post = function(customer, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.customers.cashBalanceTransactions.get = function(customer, transaction, httpOptions) {
+endpoint.customers.cashBalanceTransactions.get = function(customer, transaction, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1142,7 +1140,7 @@ endpoint.v1.customers.cashBalanceTransactions.get = function(customer, transacti
 	return endpoint._get(options);
 };
 
-endpoint.v1.billingPortal.configurations.get = function(configuration, httpOptions) {
+endpoint.billingPortal.configurations.get = function(configuration, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1168,7 +1166,7 @@ endpoint.v1.billingPortal.configurations.get = function(configuration, httpOptio
 	return endpoint._get(options);
 };
 
-endpoint.v1.billingPortal.configurations.post = function(configuration, httpOptions) {
+endpoint.billingPortal.configurations.post = function(configuration, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1198,14 +1196,14 @@ endpoint.v1.billingPortal.configurations.post = function(configuration, httpOpti
 	return endpoint._post(options);
 };
 
-endpoint.v1.billingPortal.sessions.post = function(httpOptions) {
+endpoint.billingPortal.sessions.post = function(httpOptions) {
     var url = parse('/v1/billing_portal/sessions');
     sys.logs.debug('[stripe] POST from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._post(options);
 };
 
-endpoint.v1.customers.taxIds.get = function(customer, id, httpOptions) {
+endpoint.customers.taxIds.get = function(customer, id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1231,7 +1229,7 @@ endpoint.v1.customers.taxIds.get = function(customer, id, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.customers.taxIds.post = function(customer, httpOptions) {
+endpoint.customers.taxIds.post = function(customer, httpOptions) {
     if (!customer) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [customer].');
         return;
@@ -1242,7 +1240,7 @@ endpoint.v1.customers.taxIds.post = function(customer, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.customers.taxIds.delete = function(customer, id, httpOptions) {
+endpoint.customers.taxIds.delete = function(customer, id, httpOptions) {
     if (!customer || !id) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [customer,id].');
         return;
@@ -1253,7 +1251,7 @@ endpoint.v1.customers.taxIds.delete = function(customer, id, httpOptions) {
     return endpoint._delete(options);
 };
 
-endpoint.v1.customers.get = function(customer, httpOptions) {
+endpoint.customers.get = function(customer, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1279,7 +1277,7 @@ endpoint.v1.customers.get = function(customer, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.customers.post = function(customer, httpOptions) {
+endpoint.customers.post = function(customer, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1309,14 +1307,14 @@ endpoint.v1.customers.post = function(customer, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.customers.search.get = function(httpOptions) {
+endpoint.customers.search.get = function(httpOptions) {
     var url = parse('/v1/customers/search');
     sys.logs.debug('[stripe] GET from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._get(options);
 };
 
-endpoint.v1.customers.delete = function(customer, httpOptions) {
+endpoint.customers.delete = function(customer, httpOptions) {
     if (!customer) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [customer].');
         return;
@@ -1327,7 +1325,7 @@ endpoint.v1.customers.delete = function(customer, httpOptions) {
     return endpoint._delete(options);
 };
 
-endpoint.v1.customers.paymentMethods.get = function(customer, paymentMethod, httpOptions) {
+endpoint.customers.paymentMethods.get = function(customer, paymentMethod, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1353,7 +1351,7 @@ endpoint.v1.customers.paymentMethods.get = function(customer, paymentMethod, htt
 	return endpoint._get(options);
 };
 
-endpoint.v1.customers.discount.delete = function(customer, httpOptions) {
+endpoint.customers.discount.delete = function(customer, httpOptions) {
     if (!customer) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [customer].');
         return;
@@ -1364,7 +1362,7 @@ endpoint.v1.customers.discount.delete = function(customer, httpOptions) {
     return endpoint._delete(options);
 };
 
-endpoint.v1.disputes.get = function(dispute, httpOptions) {
+endpoint.disputes.get = function(dispute, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1390,7 +1388,7 @@ endpoint.v1.disputes.get = function(dispute, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.disputes.post = function(dispute, httpOptions) {
+endpoint.disputes.post = function(dispute, httpOptions) {
     if (!dispute) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [dispute].');
         return;
@@ -1401,7 +1399,7 @@ endpoint.v1.disputes.post = function(dispute, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.disputes.close.post = function(dispute, httpOptions) {
+endpoint.disputes.close.post = function(dispute, httpOptions) {
     if (!dispute) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [dispute].');
         return;
@@ -1412,7 +1410,7 @@ endpoint.v1.disputes.close.post = function(dispute, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.events.get = function(id, httpOptions) {
+endpoint.events.get = function(id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1438,7 +1436,7 @@ endpoint.v1.events.get = function(id, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.exchangeRates.get = function(rateId, httpOptions) {
+endpoint.exchangeRates.get = function(rateId, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1464,7 +1462,7 @@ endpoint.v1.exchangeRates.get = function(rateId, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.fileLinks.get = function(link, httpOptions) {
+endpoint.fileLinks.get = function(link, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1490,7 +1488,7 @@ endpoint.v1.fileLinks.get = function(link, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.fileLinks.post = function(link, httpOptions) {
+endpoint.fileLinks.post = function(link, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1520,7 +1518,7 @@ endpoint.v1.fileLinks.post = function(link, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.files.get = function(file, httpOptions) {
+endpoint.files.get = function(file, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1546,14 +1544,14 @@ endpoint.v1.files.get = function(file, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.files.post = function(httpOptions) {
+endpoint.files.post = function(httpOptions) {
     var url = parse('https://files.stripe.com/v1/files');
     sys.logs.debug('[stripe] POST from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._post(options);
 };
 
-endpoint.v1.financialConnections.accounts.get = function(account, httpOptions) {
+endpoint.financialConnections.accounts.get = function(account, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1579,7 +1577,7 @@ endpoint.v1.financialConnections.accounts.get = function(account, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.financialConnections.accounts.disconnect.post = function(account, httpOptions) {
+endpoint.financialConnections.accounts.disconnect.post = function(account, httpOptions) {
     if (!account) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [account].');
         return;
@@ -1590,7 +1588,7 @@ endpoint.v1.financialConnections.accounts.disconnect.post = function(account, ht
     return endpoint._post(options);
 };
 
-endpoint.v1.financialConnections.accounts.refresh.post = function(account, httpOptions) {
+endpoint.financialConnections.accounts.refresh.post = function(account, httpOptions) {
     if (!account) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [account].');
         return;
@@ -1601,14 +1599,14 @@ endpoint.v1.financialConnections.accounts.refresh.post = function(account, httpO
     return endpoint._post(options);
 };
 
-endpoint.v1.financialConnections.sessions.post = function(httpOptions) {
+endpoint.financialConnections.sessions.post = function(httpOptions) {
     var url = parse('/v1/financial_connections/sessions');
     sys.logs.debug('[stripe] POST from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._post(options);
 };
 
-endpoint.v1.financialConnections.sessions.get = function(session, httpOptions) {
+endpoint.financialConnections.sessions.get = function(session, httpOptions) {
     if (!session) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [session].');
         return;
@@ -1619,7 +1617,7 @@ endpoint.v1.financialConnections.sessions.get = function(session, httpOptions) {
     return endpoint._get(options);
 };
 
-endpoint.v1.identity.verificationReports.get = function(report, httpOptions) {
+endpoint.identity.verificationReports.get = function(report, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1645,7 +1643,7 @@ endpoint.v1.identity.verificationReports.get = function(report, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.identity.verificationSessions.get = function(session, httpOptions) {
+endpoint.identity.verificationSessions.get = function(session, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1671,7 +1669,7 @@ endpoint.v1.identity.verificationSessions.get = function(session, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.identity.verificationSessions.post = function(session, httpOptions) {
+endpoint.identity.verificationSessions.post = function(session, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1701,7 +1699,7 @@ endpoint.v1.identity.verificationSessions.post = function(session, httpOptions) 
 	return endpoint._post(options);
 };
 
-endpoint.v1.identity.verificationSessions.cancel.post = function(session, httpOptions) {
+endpoint.identity.verificationSessions.cancel.post = function(session, httpOptions) {
     if (!session) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [session].');
         return;
@@ -1712,7 +1710,7 @@ endpoint.v1.identity.verificationSessions.cancel.post = function(session, httpOp
     return endpoint._post(options);
 };
 
-endpoint.v1.identity.verificationSessions.redact.post = function(session, httpOptions) {
+endpoint.identity.verificationSessions.redact.post = function(session, httpOptions) {
     if (!session) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [session].');
         return;
@@ -1723,7 +1721,7 @@ endpoint.v1.identity.verificationSessions.redact.post = function(session, httpOp
     return endpoint._post(options);
 };
 
-endpoint.v1.invoiceitems.get = function(invoiceitem, httpOptions) {
+endpoint.invoiceitems.get = function(invoiceitem, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1749,7 +1747,7 @@ endpoint.v1.invoiceitems.get = function(invoiceitem, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.invoiceitems.post = function(invoiceitem, httpOptions) {
+endpoint.invoiceitems.post = function(invoiceitem, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1779,7 +1777,7 @@ endpoint.v1.invoiceitems.post = function(invoiceitem, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.invoiceitems.delete = function(invoiceitem, httpOptions) {
+endpoint.invoiceitems.delete = function(invoiceitem, httpOptions) {
     if (!invoiceitem) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [invoiceitem].');
         return;
@@ -1790,7 +1788,7 @@ endpoint.v1.invoiceitems.delete = function(invoiceitem, httpOptions) {
     return endpoint._delete(options);
 };
 
-endpoint.v1.invoices.get = function(invoice, httpOptions) {
+endpoint.invoices.get = function(invoice, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1816,7 +1814,7 @@ endpoint.v1.invoices.get = function(invoice, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.invoices.post = function(invoice, httpOptions) {
+endpoint.invoices.post = function(invoice, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1846,28 +1844,28 @@ endpoint.v1.invoices.post = function(invoice, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.invoices.search.get = function(httpOptions) {
+endpoint.invoices.search.get = function(httpOptions) {
     var url = parse('/v1/invoices/search');
     sys.logs.debug('[stripe] GET from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._get(options);
 };
 
-endpoint.v1.invoices.upcoming.get = function(httpOptions) {
+endpoint.invoices.upcoming.get = function(httpOptions) {
     var url = parse('/v1/invoices/upcoming');
     sys.logs.debug('[stripe] GET from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._get(options);
 };
 
-endpoint.v1.invoices.upcoming.lines.get = function(httpOptions) {
+endpoint.invoices.upcoming.lines.get = function(httpOptions) {
     var url = parse('/v1/invoices/upcoming/lines');
     sys.logs.debug('[stripe] GET from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._get(options);
 };
 
-endpoint.v1.invoices.delete = function(invoice, httpOptions) {
+endpoint.invoices.delete = function(invoice, httpOptions) {
     if (!invoice) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [invoice].');
         return;
@@ -1878,7 +1876,7 @@ endpoint.v1.invoices.delete = function(invoice, httpOptions) {
     return endpoint._delete(options);
 };
 
-endpoint.v1.invoices.finalize.post = function(invoice, httpOptions) {
+endpoint.invoices.finalize.post = function(invoice, httpOptions) {
     if (!invoice) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [invoice].');
         return;
@@ -1889,7 +1887,7 @@ endpoint.v1.invoices.finalize.post = function(invoice, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.invoices.lines.get = function(invoice, httpOptions) {
+endpoint.invoices.lines.get = function(invoice, httpOptions) {
     if (!invoice) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [invoice].');
         return;
@@ -1900,7 +1898,7 @@ endpoint.v1.invoices.lines.get = function(invoice, httpOptions) {
     return endpoint._get(options);
 };
 
-endpoint.v1.invoices.markUncollectible.post = function(invoice, httpOptions) {
+endpoint.invoices.markUncollectible.post = function(invoice, httpOptions) {
     if (!invoice) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [invoice].');
         return;
@@ -1911,7 +1909,7 @@ endpoint.v1.invoices.markUncollectible.post = function(invoice, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.invoices.pay.post = function(invoice, httpOptions) {
+endpoint.invoices.pay.post = function(invoice, httpOptions) {
     if (!invoice) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [invoice].');
         return;
@@ -1922,7 +1920,7 @@ endpoint.v1.invoices.pay.post = function(invoice, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.invoices.send.post = function(invoice, httpOptions) {
+endpoint.invoices.send.post = function(invoice, httpOptions) {
     if (!invoice) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [invoice].');
         return;
@@ -1933,7 +1931,7 @@ endpoint.v1.invoices.send.post = function(invoice, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.invoices.void.post = function(invoice, httpOptions) {
+endpoint.invoices.void.post = function(invoice, httpOptions) {
     if (!invoice) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [invoice].');
         return;
@@ -1944,7 +1942,7 @@ endpoint.v1.invoices.void.post = function(invoice, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.issuing.authorizations.get = function(authorization, httpOptions) {
+endpoint.issuing.authorizations.get = function(authorization, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -1970,7 +1968,7 @@ endpoint.v1.issuing.authorizations.get = function(authorization, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.issuing.authorizations.post = function(authorization, httpOptions) {
+endpoint.issuing.authorizations.post = function(authorization, httpOptions) {
     if (!authorization) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [authorization].');
         return;
@@ -1981,7 +1979,7 @@ endpoint.v1.issuing.authorizations.post = function(authorization, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.issuing.authorizations.approve.post = function(authorization, httpOptions) {
+endpoint.issuing.authorizations.approve.post = function(authorization, httpOptions) {
     if (!authorization) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [authorization].');
         return;
@@ -1992,7 +1990,7 @@ endpoint.v1.issuing.authorizations.approve.post = function(authorization, httpOp
     return endpoint._post(options);
 };
 
-endpoint.v1.issuing.authorizations.decline.post = function(authorization, httpOptions) {
+endpoint.issuing.authorizations.decline.post = function(authorization, httpOptions) {
     if (!authorization) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [authorization].');
         return;
@@ -2003,7 +2001,7 @@ endpoint.v1.issuing.authorizations.decline.post = function(authorization, httpOp
     return endpoint._post(options);
 };
 
-endpoint.v1.issuing.cardholders.get = function(cardholder, httpOptions) {
+endpoint.issuing.cardholders.get = function(cardholder, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2029,7 +2027,7 @@ endpoint.v1.issuing.cardholders.get = function(cardholder, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.issuing.cardholders.post = function(cardholder, httpOptions) {
+endpoint.issuing.cardholders.post = function(cardholder, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2059,7 +2057,7 @@ endpoint.v1.issuing.cardholders.post = function(cardholder, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.issuing.cards.get = function(card, httpOptions) {
+endpoint.issuing.cards.get = function(card, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2085,7 +2083,7 @@ endpoint.v1.issuing.cards.get = function(card, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.issuing.cards.post = function(card, httpOptions) {
+endpoint.issuing.cards.post = function(card, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2115,7 +2113,7 @@ endpoint.v1.issuing.cards.post = function(card, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.testHelpers.issuing.cards.shipping.fail.post = function(card, httpOptions) {
+endpoint.testHelpers.issuing.cards.shipping.fail.post = function(card, httpOptions) {
     if (!card) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [card].');
         return;
@@ -2126,7 +2124,7 @@ endpoint.v1.testHelpers.issuing.cards.shipping.fail.post = function(card, httpOp
     return endpoint._post(options);
 };
 
-endpoint.v1.testHelpers.issuing.cards.shipping.return.post = function(card, httpOptions) {
+endpoint.testHelpers.issuing.cards.shipping.return.post = function(card, httpOptions) {
     if (!card) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [card].');
         return;
@@ -2137,7 +2135,7 @@ endpoint.v1.testHelpers.issuing.cards.shipping.return.post = function(card, http
     return endpoint._post(options);
 };
 
-endpoint.v1.testHelpers.issuing.cards.shipping.ship.post = function(card, httpOptions) {
+endpoint.testHelpers.issuing.cards.shipping.ship.post = function(card, httpOptions) {
     if (!card) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [card].');
         return;
@@ -2148,7 +2146,7 @@ endpoint.v1.testHelpers.issuing.cards.shipping.ship.post = function(card, httpOp
     return endpoint._post(options);
 };
 
-endpoint.v1.issuing.disputes.get = function(dispute, httpOptions) {
+endpoint.issuing.disputes.get = function(dispute, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2174,7 +2172,7 @@ endpoint.v1.issuing.disputes.get = function(dispute, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.issuing.disputes.post = function(dispute, httpOptions) {
+endpoint.issuing.disputes.post = function(dispute, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2204,7 +2202,7 @@ endpoint.v1.issuing.disputes.post = function(dispute, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.issuing.disputes.submit.post = function(dispute, httpOptions) {
+endpoint.issuing.disputes.submit.post = function(dispute, httpOptions) {
     if (!dispute) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [dispute].');
         return;
@@ -2215,7 +2213,7 @@ endpoint.v1.issuing.disputes.submit.post = function(dispute, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.issuing.transactions.get = function(transaction, httpOptions) {
+endpoint.issuing.transactions.get = function(transaction, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2241,7 +2239,7 @@ endpoint.v1.issuing.transactions.get = function(transaction, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.issuing.transactions.post = function(transaction, httpOptions) {
+endpoint.issuing.transactions.post = function(transaction, httpOptions) {
     if (!transaction) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [transaction].');
         return;
@@ -2252,7 +2250,7 @@ endpoint.v1.issuing.transactions.post = function(transaction, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.mandates.get = function(mandate, httpOptions) {
+endpoint.mandates.get = function(mandate, httpOptions) {
     if (!mandate) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [mandate].');
         return;
@@ -2263,7 +2261,7 @@ endpoint.v1.mandates.get = function(mandate, httpOptions) {
     return endpoint._get(options);
 };
 
-endpoint.v1.paymentIntents.get = function(intent, httpOptions) {
+endpoint.paymentIntents.get = function(intent, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2289,7 +2287,7 @@ endpoint.v1.paymentIntents.get = function(intent, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.paymentIntents.post = function(intent, httpOptions) {
+endpoint.paymentIntents.post = function(intent, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2319,14 +2317,14 @@ endpoint.v1.paymentIntents.post = function(intent, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.paymentIntents.search.get = function(httpOptions) {
+endpoint.paymentIntents.search.get = function(httpOptions) {
     var url = parse('/v1/payment_intents/search');
     sys.logs.debug('[stripe] GET from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._get(options);
 };
 
-endpoint.v1.paymentIntents.applyCustomerBalance.post = function(intent, httpOptions) {
+endpoint.paymentIntents.applyCustomerBalance.post = function(intent, httpOptions) {
     if (!intent) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [intent].');
         return;
@@ -2337,7 +2335,7 @@ endpoint.v1.paymentIntents.applyCustomerBalance.post = function(intent, httpOpti
     return endpoint._post(options);
 };
 
-endpoint.v1.paymentIntents.cancel.post = function(intent, httpOptions) {
+endpoint.paymentIntents.cancel.post = function(intent, httpOptions) {
     if (!intent) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [intent].');
         return;
@@ -2348,7 +2346,7 @@ endpoint.v1.paymentIntents.cancel.post = function(intent, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.paymentIntents.capture.post = function(intent, httpOptions) {
+endpoint.paymentIntents.capture.post = function(intent, httpOptions) {
     if (!intent) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [intent].');
         return;
@@ -2359,7 +2357,7 @@ endpoint.v1.paymentIntents.capture.post = function(intent, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.paymentIntents.confirm.post = function(intent, httpOptions) {
+endpoint.paymentIntents.confirm.post = function(intent, httpOptions) {
     if (!intent) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [intent].');
         return;
@@ -2370,7 +2368,7 @@ endpoint.v1.paymentIntents.confirm.post = function(intent, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.paymentIntents.incrementAuthorization.post = function(intent, httpOptions) {
+endpoint.paymentIntents.incrementAuthorization.post = function(intent, httpOptions) {
     if (!intent) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [intent].');
         return;
@@ -2381,7 +2379,7 @@ endpoint.v1.paymentIntents.incrementAuthorization.post = function(intent, httpOp
     return endpoint._post(options);
 };
 
-endpoint.v1.paymentIntents.verifyMicrodeposits.post = function(intent, httpOptions) {
+endpoint.paymentIntents.verifyMicrodeposits.post = function(intent, httpOptions) {
     if (!intent) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [intent].');
         return;
@@ -2392,7 +2390,7 @@ endpoint.v1.paymentIntents.verifyMicrodeposits.post = function(intent, httpOptio
     return endpoint._post(options);
 };
 
-endpoint.v1.paymentLinks.get = function(paymentLink, httpOptions) {
+endpoint.paymentLinks.get = function(paymentLink, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2418,7 +2416,7 @@ endpoint.v1.paymentLinks.get = function(paymentLink, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.paymentLinks.post = function(paymentLink, httpOptions) {
+endpoint.paymentLinks.post = function(paymentLink, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2448,7 +2446,7 @@ endpoint.v1.paymentLinks.post = function(paymentLink, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.paymentLinks.lineItems.get = function(paymentLink, httpOptions) {
+endpoint.paymentLinks.lineItems.get = function(paymentLink, httpOptions) {
     if (!paymentLink) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [paymentLink].');
         return;
@@ -2459,7 +2457,7 @@ endpoint.v1.paymentLinks.lineItems.get = function(paymentLink, httpOptions) {
     return endpoint._get(options);
 };
 
-endpoint.v1.paymentMethods.get = function(paymentMethod, httpOptions) {
+endpoint.paymentMethods.get = function(paymentMethod, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2485,7 +2483,7 @@ endpoint.v1.paymentMethods.get = function(paymentMethod, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.paymentMethods.post = function(paymentMethod, httpOptions) {
+endpoint.paymentMethods.post = function(paymentMethod, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2515,7 +2513,7 @@ endpoint.v1.paymentMethods.post = function(paymentMethod, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.paymentMethods.attach.post = function(paymentMethod, httpOptions) {
+endpoint.paymentMethods.attach.post = function(paymentMethod, httpOptions) {
     if (!paymentMethod) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [paymentMethod].');
         return;
@@ -2526,7 +2524,7 @@ endpoint.v1.paymentMethods.attach.post = function(paymentMethod, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.paymentMethods.detach.post = function(paymentMethod, httpOptions) {
+endpoint.paymentMethods.detach.post = function(paymentMethod, httpOptions) {
     if (!paymentMethod) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [paymentMethod].');
         return;
@@ -2537,7 +2535,7 @@ endpoint.v1.paymentMethods.detach.post = function(paymentMethod, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.payouts.get = function(payout, httpOptions) {
+endpoint.payouts.get = function(payout, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2563,7 +2561,7 @@ endpoint.v1.payouts.get = function(payout, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.payouts.post = function(payout, httpOptions) {
+endpoint.payouts.post = function(payout, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2593,7 +2591,7 @@ endpoint.v1.payouts.post = function(payout, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.payouts.cancel.post = function(payout, httpOptions) {
+endpoint.payouts.cancel.post = function(payout, httpOptions) {
     if (!payout) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [payout].');
         return;
@@ -2604,7 +2602,7 @@ endpoint.v1.payouts.cancel.post = function(payout, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.payouts.reverse.post = function(payout, httpOptions) {
+endpoint.payouts.reverse.post = function(payout, httpOptions) {
     if (!payout) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [payout].');
         return;
@@ -2615,7 +2613,7 @@ endpoint.v1.payouts.reverse.post = function(payout, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.accounts.persons.get = function(account, person, httpOptions) {
+endpoint.accounts.persons.get = function(account, person, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2641,7 +2639,7 @@ endpoint.v1.accounts.persons.get = function(account, person, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.accounts.persons.post = function(account, person, httpOptions) {
+endpoint.accounts.persons.post = function(account, person, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2671,7 +2669,7 @@ endpoint.v1.accounts.persons.post = function(account, person, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.accounts.persons.delete = function(account, person, httpOptions) {
+endpoint.accounts.persons.delete = function(account, person, httpOptions) {
     if (!account || !person) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [account,person].');
         return;
@@ -2682,7 +2680,7 @@ endpoint.v1.accounts.persons.delete = function(account, person, httpOptions) {
     return endpoint._delete(options);
 };
 
-endpoint.v1.prices.get = function(price, httpOptions) {
+endpoint.prices.get = function(price, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2708,7 +2706,7 @@ endpoint.v1.prices.get = function(price, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.prices.post = function(price, httpOptions) {
+endpoint.prices.post = function(price, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2738,14 +2736,14 @@ endpoint.v1.prices.post = function(price, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.prices.search.get = function(httpOptions) {
+endpoint.prices.search.get = function(httpOptions) {
     var url = parse('/v1/prices/search');
     sys.logs.debug('[stripe] GET from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._get(options);
 };
 
-endpoint.v1.products.get = function(id, httpOptions) {
+endpoint.products.get = function(id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2771,7 +2769,7 @@ endpoint.v1.products.get = function(id, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.products.post = function(id, httpOptions) {
+endpoint.products.post = function(id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2801,14 +2799,14 @@ endpoint.v1.products.post = function(id, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.products.search.get = function(httpOptions) {
+endpoint.products.search.get = function(httpOptions) {
     var url = parse('/v1/products/search');
     sys.logs.debug('[stripe] GET from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._get(options);
 };
 
-endpoint.v1.products.delete = function(id, httpOptions) {
+endpoint.products.delete = function(id, httpOptions) {
     if (!id) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [id].');
         return;
@@ -2819,7 +2817,7 @@ endpoint.v1.products.delete = function(id, httpOptions) {
     return endpoint._delete(options);
 };
 
-endpoint.v1.promotionCodes.get = function(promotionCode, httpOptions) {
+endpoint.promotionCodes.get = function(promotionCode, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2845,7 +2843,7 @@ endpoint.v1.promotionCodes.get = function(promotionCode, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.promotionCodes.post = function(promotionCode, httpOptions) {
+endpoint.promotionCodes.post = function(promotionCode, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2875,7 +2873,7 @@ endpoint.v1.promotionCodes.post = function(promotionCode, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.quotes.computedUpfrontLineItems.get = function(quote, httpOptions) {
+endpoint.quotes.computedUpfrontLineItems.get = function(quote, httpOptions) {
     if (!quote) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [quote].');
         return;
@@ -2886,7 +2884,7 @@ endpoint.v1.quotes.computedUpfrontLineItems.get = function(quote, httpOptions) {
     return endpoint._get(options);
 };
 
-endpoint.v1.quotes.lineItems.get = function(quote, httpOptions) {
+endpoint.quotes.lineItems.get = function(quote, httpOptions) {
     if (!quote) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [quote].');
         return;
@@ -2897,7 +2895,7 @@ endpoint.v1.quotes.lineItems.get = function(quote, httpOptions) {
     return endpoint._get(options);
 };
 
-endpoint.v1.quotes.get = function(quote, httpOptions) {
+endpoint.quotes.get = function(quote, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2923,7 +2921,7 @@ endpoint.v1.quotes.get = function(quote, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.quotes.post = function(quote, httpOptions) {
+endpoint.quotes.post = function(quote, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -2953,7 +2951,7 @@ endpoint.v1.quotes.post = function(quote, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.quotes.accept.post = function(quote, httpOptions) {
+endpoint.quotes.accept.post = function(quote, httpOptions) {
     if (!quote) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [quote].');
         return;
@@ -2964,7 +2962,7 @@ endpoint.v1.quotes.accept.post = function(quote, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.quotes.cancel.post = function(quote, httpOptions) {
+endpoint.quotes.cancel.post = function(quote, httpOptions) {
     if (!quote) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [quote].');
         return;
@@ -2975,7 +2973,7 @@ endpoint.v1.quotes.cancel.post = function(quote, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.quotes.finalize.post = function(quote, httpOptions) {
+endpoint.quotes.finalize.post = function(quote, httpOptions) {
     if (!quote) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [quote].');
         return;
@@ -2986,7 +2984,7 @@ endpoint.v1.quotes.finalize.post = function(quote, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.quotes.pdf.get = function(quote, httpOptions) {
+endpoint.quotes.pdf.get = function(quote, httpOptions) {
     if (!quote) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [quote].');
         return;
@@ -2997,7 +2995,7 @@ endpoint.v1.quotes.pdf.get = function(quote, httpOptions) {
     return endpoint._get(options);
 };
 
-endpoint.v1.radar.earlyFraudWarnings.get = function(earlyFraudWarning, httpOptions) {
+endpoint.radar.earlyFraudWarnings.get = function(earlyFraudWarning, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3023,7 +3021,7 @@ endpoint.v1.radar.earlyFraudWarnings.get = function(earlyFraudWarning, httpOptio
 	return endpoint._get(options);
 };
 
-endpoint.v1.reviews.get = function(review, httpOptions) {
+endpoint.reviews.get = function(review, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3049,7 +3047,7 @@ endpoint.v1.reviews.get = function(review, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.reviews.approve.post = function(review, httpOptions) {
+endpoint.reviews.approve.post = function(review, httpOptions) {
     if (!review) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [review].');
         return;
@@ -3060,7 +3058,7 @@ endpoint.v1.reviews.approve.post = function(review, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.radar.valueLists.get = function(valueList, httpOptions) {
+endpoint.radar.valueLists.get = function(valueList, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3086,7 +3084,7 @@ endpoint.v1.radar.valueLists.get = function(valueList, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.radar.valueLists.post = function(valueList, httpOptions) {
+endpoint.radar.valueLists.post = function(valueList, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3116,7 +3114,7 @@ endpoint.v1.radar.valueLists.post = function(valueList, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.radar.valueLists.delete = function(valueList, httpOptions) {
+endpoint.radar.valueLists.delete = function(valueList, httpOptions) {
     if (!valueList) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [valueList].');
         return;
@@ -3127,7 +3125,7 @@ endpoint.v1.radar.valueLists.delete = function(valueList, httpOptions) {
     return endpoint._delete(options);
 };
 
-endpoint.v1.radar.valueListItems.get = function(item, httpOptions) {
+endpoint.radar.valueListItems.get = function(item, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3153,14 +3151,14 @@ endpoint.v1.radar.valueListItems.get = function(item, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.radar.valueListItems.post = function(httpOptions) {
+endpoint.radar.valueListItems.post = function(httpOptions) {
     var url = parse('/v1/radar/value_list_items');
     sys.logs.debug('[stripe] POST from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._post(options);
 };
 
-endpoint.v1.radar.valueListItems.delete = function(item, httpOptions) {
+endpoint.radar.valueListItems.delete = function(item, httpOptions) {
     if (!item) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [item].');
         return;
@@ -3171,7 +3169,7 @@ endpoint.v1.radar.valueListItems.delete = function(item, httpOptions) {
     return endpoint._delete(options);
 };
 
-endpoint.v1.refunds.get = function(refund, httpOptions) {
+endpoint.refunds.get = function(refund, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3197,7 +3195,7 @@ endpoint.v1.refunds.get = function(refund, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.refunds.post = function(refund, httpOptions) {
+endpoint.refunds.post = function(refund, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3227,7 +3225,7 @@ endpoint.v1.refunds.post = function(refund, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.reporting.reportRuns.get = function(reportRun, httpOptions) {
+endpoint.reporting.reportRuns.get = function(reportRun, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3253,14 +3251,14 @@ endpoint.v1.reporting.reportRuns.get = function(reportRun, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.reporting.reportRuns.post = function(httpOptions) {
+endpoint.reporting.reportRuns.post = function(httpOptions) {
     var url = parse('/v1/reporting/report_runs');
     sys.logs.debug('[stripe] POST from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._post(options);
 };
 
-endpoint.v1.reporting.reportTypes.get = function(reportType, httpOptions) {
+endpoint.reporting.reportTypes.get = function(reportType, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3286,42 +3284,42 @@ endpoint.v1.reporting.reportTypes.get = function(reportType, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.apps.secrets.get = function(httpOptions) {
+endpoint.apps.secrets.get = function(httpOptions) {
     var url = parse('/v1/apps/secrets');
     sys.logs.debug('[stripe] GET from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._get(options);
 };
 
-endpoint.v1.apps.secrets.post = function(httpOptions) {
+endpoint.apps.secrets.post = function(httpOptions) {
     var url = parse('/v1/apps/secrets');
     sys.logs.debug('[stripe] POST from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._post(options);
 };
 
-endpoint.v1.apps.secrets.delete.post = function(httpOptions) {
+endpoint.apps.secrets.delete.post = function(httpOptions) {
     var url = parse('/v1/apps/secrets/delete');
     sys.logs.debug('[stripe] POST from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._post(options);
 };
 
-endpoint.v1.apps.secrets.find.get = function(httpOptions) {
+endpoint.apps.secrets.find.get = function(httpOptions) {
     var url = parse('/v1/apps/secrets/find');
     sys.logs.debug('[stripe] GET from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._get(options);
 };
 
-endpoint.v1.setupAttempts.get = function(httpOptions) {
+endpoint.setupAttempts.get = function(httpOptions) {
     var url = parse('/v1/setup_attempts');
     sys.logs.debug('[stripe] GET from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._get(options);
 };
 
-endpoint.v1.setupIntents.get = function(intent, httpOptions) {
+endpoint.setupIntents.get = function(intent, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3347,7 +3345,7 @@ endpoint.v1.setupIntents.get = function(intent, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.setupIntents.post = function(intent, httpOptions) {
+endpoint.setupIntents.post = function(intent, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3377,7 +3375,7 @@ endpoint.v1.setupIntents.post = function(intent, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.setupIntents.cancel.post = function(intent, httpOptions) {
+endpoint.setupIntents.cancel.post = function(intent, httpOptions) {
     if (!intent) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [intent].');
         return;
@@ -3388,7 +3386,7 @@ endpoint.v1.setupIntents.cancel.post = function(intent, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.setupIntents.confirm.post = function(intent, httpOptions) {
+endpoint.setupIntents.confirm.post = function(intent, httpOptions) {
     if (!intent) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [intent].');
         return;
@@ -3399,7 +3397,7 @@ endpoint.v1.setupIntents.confirm.post = function(intent, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.setupIntents.verifyMicrodeposits.post = function(intent, httpOptions) {
+endpoint.setupIntents.verifyMicrodeposits.post = function(intent, httpOptions) {
     if (!intent) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [intent].');
         return;
@@ -3410,7 +3408,7 @@ endpoint.v1.setupIntents.verifyMicrodeposits.post = function(intent, httpOptions
     return endpoint._post(options);
 };
 
-endpoint.v1.shippingRates.get = function(shippingRateToken, httpOptions) {
+endpoint.shippingRates.get = function(shippingRateToken, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3436,7 +3434,7 @@ endpoint.v1.shippingRates.get = function(shippingRateToken, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.shippingRates.post = function(shippingRateToken, httpOptions) {
+endpoint.shippingRates.post = function(shippingRateToken, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3466,7 +3464,7 @@ endpoint.v1.shippingRates.post = function(shippingRateToken, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.sigma.scheduledQueryRuns.get = function(scheduledQueryRun, httpOptions) {
+endpoint.sigma.scheduledQueryRuns.get = function(scheduledQueryRun, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3492,7 +3490,7 @@ endpoint.v1.sigma.scheduledQueryRuns.get = function(scheduledQueryRun, httpOptio
 	return endpoint._get(options);
 };
 
-endpoint.v1.skus.get = function(id, httpOptions) {
+endpoint.skus.get = function(id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3518,7 +3516,7 @@ endpoint.v1.skus.get = function(id, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.skus.post = function(id, httpOptions) {
+endpoint.skus.post = function(id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3548,7 +3546,7 @@ endpoint.v1.skus.post = function(id, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.skus.delete = function(id, httpOptions) {
+endpoint.skus.delete = function(id, httpOptions) {
     if (!id) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [id].');
         return;
@@ -3559,7 +3557,7 @@ endpoint.v1.skus.delete = function(id, httpOptions) {
     return endpoint._delete(options);
 };
 
-endpoint.v1.customers.sources.get = function(customer, id, httpOptions) {
+endpoint.customers.sources.get = function(customer, id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3585,7 +3583,7 @@ endpoint.v1.customers.sources.get = function(customer, id, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.customers.sources.post = function(customer, id, httpOptions) {
+endpoint.customers.sources.post = function(customer, id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3615,7 +3613,7 @@ endpoint.v1.customers.sources.post = function(customer, id, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.customers.sources.delete = function(customer, id, httpOptions) {
+endpoint.customers.sources.delete = function(customer, id, httpOptions) {
     if (!customer || !id) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [customer,id].');
         return;
@@ -3626,7 +3624,7 @@ endpoint.v1.customers.sources.delete = function(customer, id, httpOptions) {
     return endpoint._delete(options);
 };
 
-endpoint.v1.customers.sources.verify.post = function(customer, id, httpOptions) {
+endpoint.customers.sources.verify.post = function(customer, id, httpOptions) {
     if (!customer || !id) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [customer,id].');
         return;
@@ -3637,7 +3635,7 @@ endpoint.v1.customers.sources.verify.post = function(customer, id, httpOptions) 
     return endpoint._post(options);
 };
 
-endpoint.v1.sources.post = function(source, httpOptions) {
+endpoint.sources.post = function(source, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3667,7 +3665,7 @@ endpoint.v1.sources.post = function(source, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.sources.get = function(source, httpOptions) {
+endpoint.sources.get = function(source, httpOptions) {
     if (!source) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [source].');
         return;
@@ -3678,7 +3676,7 @@ endpoint.v1.sources.get = function(source, httpOptions) {
     return endpoint._get(options);
 };
 
-endpoint.v1.subscriptionItems.get = function(item, httpOptions) {
+endpoint.subscriptionItems.get = function(item, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3704,7 +3702,7 @@ endpoint.v1.subscriptionItems.get = function(item, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.subscriptionItems.post = function(item, httpOptions) {
+endpoint.subscriptionItems.post = function(item, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3734,7 +3732,7 @@ endpoint.v1.subscriptionItems.post = function(item, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.subscriptionItems.delete = function(item, httpOptions) {
+endpoint.subscriptionItems.delete = function(item, httpOptions) {
     if (!item) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [item].');
         return;
@@ -3745,7 +3743,7 @@ endpoint.v1.subscriptionItems.delete = function(item, httpOptions) {
     return endpoint._delete(options);
 };
 
-endpoint.v1.subscriptionItems.usageRecordSummaries.get = function(subscriptionItem, httpOptions) {
+endpoint.subscriptionItems.usageRecordSummaries.get = function(subscriptionItem, httpOptions) {
     if (!subscriptionItem) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [subscriptionItem].');
         return;
@@ -3756,7 +3754,7 @@ endpoint.v1.subscriptionItems.usageRecordSummaries.get = function(subscriptionIt
     return endpoint._get(options);
 };
 
-endpoint.v1.subscriptionItems.usageRecords.post = function(subscriptionItem, httpOptions) {
+endpoint.subscriptionItems.usageRecords.post = function(subscriptionItem, httpOptions) {
     if (!subscriptionItem) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [subscriptionItem].');
         return;
@@ -3767,7 +3765,7 @@ endpoint.v1.subscriptionItems.usageRecords.post = function(subscriptionItem, htt
     return endpoint._post(options);
 };
 
-endpoint.v1.subscriptionSchedules.get = function(schedule, httpOptions) {
+endpoint.subscriptionSchedules.get = function(schedule, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3793,7 +3791,7 @@ endpoint.v1.subscriptionSchedules.get = function(schedule, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.subscriptionSchedules.post = function(schedule, httpOptions) {
+endpoint.subscriptionSchedules.post = function(schedule, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3823,7 +3821,7 @@ endpoint.v1.subscriptionSchedules.post = function(schedule, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.subscriptionSchedules.cancel.post = function(schedule, httpOptions) {
+endpoint.subscriptionSchedules.cancel.post = function(schedule, httpOptions) {
     if (!schedule) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [schedule].');
         return;
@@ -3834,7 +3832,7 @@ endpoint.v1.subscriptionSchedules.cancel.post = function(schedule, httpOptions) 
     return endpoint._post(options);
 };
 
-endpoint.v1.subscriptionSchedules.release.post = function(schedule, httpOptions) {
+endpoint.subscriptionSchedules.release.post = function(schedule, httpOptions) {
     if (!schedule) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [schedule].');
         return;
@@ -3845,7 +3843,7 @@ endpoint.v1.subscriptionSchedules.release.post = function(schedule, httpOptions)
     return endpoint._post(options);
 };
 
-endpoint.v1.subscriptions.get = function(subscriptionExposedId, httpOptions) {
+endpoint.subscriptions.get = function(subscriptionExposedId, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3871,7 +3869,7 @@ endpoint.v1.subscriptions.get = function(subscriptionExposedId, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.subscriptions.post = function(subscriptionExposedId, httpOptions) {
+endpoint.subscriptions.post = function(subscriptionExposedId, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3901,14 +3899,14 @@ endpoint.v1.subscriptions.post = function(subscriptionExposedId, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.subscriptions.search.get = function(httpOptions) {
+endpoint.subscriptions.search.get = function(httpOptions) {
     var url = parse('/v1/subscriptions/search');
     sys.logs.debug('[stripe] GET from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._get(options);
 };
 
-endpoint.v1.subscriptions.delete = function(subscriptionExposedId, httpOptions) {
+endpoint.subscriptions.delete = function(subscriptionExposedId, httpOptions) {
     if (!subscriptionExposedId) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [subscriptionExposedId].');
         return;
@@ -3919,7 +3917,7 @@ endpoint.v1.subscriptions.delete = function(subscriptionExposedId, httpOptions) 
     return endpoint._delete(options);
 };
 
-endpoint.v1.subscriptions.discount.delete = function(subscriptionExposedId, httpOptions) {
+endpoint.subscriptions.discount.delete = function(subscriptionExposedId, httpOptions) {
     if (!subscriptionExposedId) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [subscriptionExposedId].');
         return;
@@ -3930,7 +3928,7 @@ endpoint.v1.subscriptions.discount.delete = function(subscriptionExposedId, http
     return endpoint._delete(options);
 };
 
-endpoint.v1.taxRates.get = function(taxRate, httpOptions) {
+endpoint.taxRates.get = function(taxRate, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3956,7 +3954,7 @@ endpoint.v1.taxRates.get = function(taxRate, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.taxRates.post = function(taxRate, httpOptions) {
+endpoint.taxRates.post = function(taxRate, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -3986,7 +3984,7 @@ endpoint.v1.taxRates.post = function(taxRate, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.terminal.configurations.get = function(configuration, httpOptions) {
+endpoint.terminal.configurations.get = function(configuration, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4012,7 +4010,7 @@ endpoint.v1.terminal.configurations.get = function(configuration, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.terminal.configurations.post = function(configuration, httpOptions) {
+endpoint.terminal.configurations.post = function(configuration, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4042,7 +4040,7 @@ endpoint.v1.terminal.configurations.post = function(configuration, httpOptions) 
 	return endpoint._post(options);
 };
 
-endpoint.v1.terminal.configurations.delete = function(configuration, httpOptions) {
+endpoint.terminal.configurations.delete = function(configuration, httpOptions) {
     if (!configuration) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [configuration].');
         return;
@@ -4053,14 +4051,14 @@ endpoint.v1.terminal.configurations.delete = function(configuration, httpOptions
     return endpoint._delete(options);
 };
 
-endpoint.v1.terminal.connectionTokens.post = function(httpOptions) {
+endpoint.terminal.connectionTokens.post = function(httpOptions) {
     var url = parse('/v1/terminal/connection_tokens');
     sys.logs.debug('[stripe] POST from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._post(options);
 };
 
-endpoint.v1.terminal.locations.get = function(location, httpOptions) {
+endpoint.terminal.locations.get = function(location, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4086,7 +4084,7 @@ endpoint.v1.terminal.locations.get = function(location, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.terminal.locations.post = function(location, httpOptions) {
+endpoint.terminal.locations.post = function(location, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4116,7 +4114,7 @@ endpoint.v1.terminal.locations.post = function(location, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.terminal.locations.delete = function(location, httpOptions) {
+endpoint.terminal.locations.delete = function(location, httpOptions) {
     if (!location) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [location].');
         return;
@@ -4127,7 +4125,7 @@ endpoint.v1.terminal.locations.delete = function(location, httpOptions) {
     return endpoint._delete(options);
 };
 
-endpoint.v1.terminal.readers.get = function(reader, httpOptions) {
+endpoint.terminal.readers.get = function(reader, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4153,7 +4151,7 @@ endpoint.v1.terminal.readers.get = function(reader, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.terminal.readers.post = function(reader, httpOptions) {
+endpoint.terminal.readers.post = function(reader, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4183,7 +4181,7 @@ endpoint.v1.terminal.readers.post = function(reader, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.terminal.readers.delete = function(reader, httpOptions) {
+endpoint.terminal.readers.delete = function(reader, httpOptions) {
     if (!reader) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [reader].');
         return;
@@ -4194,7 +4192,7 @@ endpoint.v1.terminal.readers.delete = function(reader, httpOptions) {
     return endpoint._delete(options);
 };
 
-endpoint.v1.terminal.readers.cancelAction.post = function(reader, httpOptions) {
+endpoint.terminal.readers.cancelAction.post = function(reader, httpOptions) {
     if (!reader) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [reader].');
         return;
@@ -4205,7 +4203,7 @@ endpoint.v1.terminal.readers.cancelAction.post = function(reader, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.terminal.readers.processPaymentIntent.post = function(reader, httpOptions) {
+endpoint.terminal.readers.processPaymentIntent.post = function(reader, httpOptions) {
     if (!reader) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [reader].');
         return;
@@ -4216,7 +4214,7 @@ endpoint.v1.terminal.readers.processPaymentIntent.post = function(reader, httpOp
     return endpoint._post(options);
 };
 
-endpoint.v1.terminal.readers.processSetupIntent.post = function(reader, httpOptions) {
+endpoint.terminal.readers.processSetupIntent.post = function(reader, httpOptions) {
     if (!reader) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [reader].');
         return;
@@ -4227,7 +4225,7 @@ endpoint.v1.terminal.readers.processSetupIntent.post = function(reader, httpOpti
     return endpoint._post(options);
 };
 
-endpoint.v1.terminal.readers.setReaderDisplay.post = function(reader, httpOptions) {
+endpoint.terminal.readers.setReaderDisplay.post = function(reader, httpOptions) {
     if (!reader) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [reader].');
         return;
@@ -4238,7 +4236,7 @@ endpoint.v1.terminal.readers.setReaderDisplay.post = function(reader, httpOption
     return endpoint._post(options);
 };
 
-endpoint.v1.testHelpers.terminal.readers.presentPaymentMethod.post = function(reader, httpOptions) {
+endpoint.testHelpers.terminal.readers.presentPaymentMethod.post = function(reader, httpOptions) {
     if (!reader) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [reader].');
         return;
@@ -4249,7 +4247,7 @@ endpoint.v1.testHelpers.terminal.readers.presentPaymentMethod.post = function(re
     return endpoint._post(options);
 };
 
-endpoint.v1.testHelpers.testClocks.get = function(testClock, httpOptions) {
+endpoint.testHelpers.testClocks.get = function(testClock, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4275,14 +4273,14 @@ endpoint.v1.testHelpers.testClocks.get = function(testClock, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.testHelpers.testClocks.post = function(httpOptions) {
+endpoint.testHelpers.testClocks.post = function(httpOptions) {
     var url = parse('/v1/test_helpers/test_clocks');
     sys.logs.debug('[stripe] POST from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._post(options);
 };
 
-endpoint.v1.testHelpers.testClocks.delete = function(testClock, httpOptions) {
+endpoint.testHelpers.testClocks.delete = function(testClock, httpOptions) {
     if (!testClock) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [testClock].');
         return;
@@ -4293,7 +4291,7 @@ endpoint.v1.testHelpers.testClocks.delete = function(testClock, httpOptions) {
     return endpoint._delete(options);
 };
 
-endpoint.v1.testHelpers.testClocks.advance.post = function(testClock, httpOptions) {
+endpoint.testHelpers.testClocks.advance.post = function(testClock, httpOptions) {
     if (!testClock) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [testClock].');
         return;
@@ -4304,14 +4302,14 @@ endpoint.v1.testHelpers.testClocks.advance.post = function(testClock, httpOption
     return endpoint._post(options);
 };
 
-endpoint.v1.tokens.post = function(httpOptions) {
+endpoint.tokens.post = function(httpOptions) {
     var url = parse('/v1/tokens');
     sys.logs.debug('[stripe] POST from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._post(options);
 };
 
-endpoint.v1.tokens.get = function(token, httpOptions) {
+endpoint.tokens.get = function(token, httpOptions) {
     if (!token) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [token].');
         return;
@@ -4322,7 +4320,7 @@ endpoint.v1.tokens.get = function(token, httpOptions) {
     return endpoint._get(options);
 };
 
-endpoint.v1.topups.get = function(topup, httpOptions) {
+endpoint.topups.get = function(topup, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4348,7 +4346,7 @@ endpoint.v1.topups.get = function(topup, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.topups.post = function(topup, httpOptions) {
+endpoint.topups.post = function(topup, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4378,7 +4376,7 @@ endpoint.v1.topups.post = function(topup, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.topups.cancel.post = function(topup, httpOptions) {
+endpoint.topups.cancel.post = function(topup, httpOptions) {
     if (!topup) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [topup].');
         return;
@@ -4389,7 +4387,7 @@ endpoint.v1.topups.cancel.post = function(topup, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.transfers.reversals.get = function(transfer, id, httpOptions) {
+endpoint.transfers.reversals.get = function(transfer, id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4415,7 +4413,7 @@ endpoint.v1.transfers.reversals.get = function(transfer, id, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.transfers.reversals.post = function(transfer, id, httpOptions) {
+endpoint.transfers.reversals.post = function(transfer, id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4445,7 +4443,7 @@ endpoint.v1.transfers.reversals.post = function(transfer, id, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.transfers.get = function(transfer, httpOptions) {
+endpoint.transfers.get = function(transfer, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4471,7 +4469,7 @@ endpoint.v1.transfers.get = function(transfer, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.transfers.post = function(transfer, httpOptions) {
+endpoint.transfers.post = function(transfer, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4501,7 +4499,7 @@ endpoint.v1.transfers.post = function(transfer, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.treasury.creditReversals.get = function(creditReversal, httpOptions) {
+endpoint.treasury.creditReversals.get = function(creditReversal, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4527,14 +4525,14 @@ endpoint.v1.treasury.creditReversals.get = function(creditReversal, httpOptions)
 	return endpoint._get(options);
 };
 
-endpoint.v1.treasury.creditReversals.post = function(httpOptions) {
+endpoint.treasury.creditReversals.post = function(httpOptions) {
     var url = parse('/v1/treasury/credit_reversals');
     sys.logs.debug('[stripe] POST from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._post(options);
 };
 
-endpoint.v1.treasury.debitReversals.get = function(debitReversal, httpOptions) {
+endpoint.treasury.debitReversals.get = function(debitReversal, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4560,14 +4558,14 @@ endpoint.v1.treasury.debitReversals.get = function(debitReversal, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.treasury.debitReversals.post = function(httpOptions) {
+endpoint.treasury.debitReversals.post = function(httpOptions) {
     var url = parse('/v1/treasury/debit_reversals');
     sys.logs.debug('[stripe] POST from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._post(options);
 };
 
-endpoint.v1.treasury.financialAccounts.features.get = function(financialAccount, httpOptions) {
+endpoint.treasury.financialAccounts.features.get = function(financialAccount, httpOptions) {
     if (!financialAccount) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [financialAccount].');
         return;
@@ -4578,7 +4576,7 @@ endpoint.v1.treasury.financialAccounts.features.get = function(financialAccount,
     return endpoint._get(options);
 };
 
-endpoint.v1.treasury.financialAccounts.features.post = function(financialAccount, httpOptions) {
+endpoint.treasury.financialAccounts.features.post = function(financialAccount, httpOptions) {
     if (!financialAccount) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [financialAccount].');
         return;
@@ -4589,7 +4587,7 @@ endpoint.v1.treasury.financialAccounts.features.post = function(financialAccount
     return endpoint._post(options);
 };
 
-endpoint.v1.treasury.financialAccounts.get = function(financialAccount, httpOptions) {
+endpoint.treasury.financialAccounts.get = function(financialAccount, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4615,7 +4613,7 @@ endpoint.v1.treasury.financialAccounts.get = function(financialAccount, httpOpti
 	return endpoint._get(options);
 };
 
-endpoint.v1.treasury.financialAccounts.post = function(financialAccount, httpOptions) {
+endpoint.treasury.financialAccounts.post = function(financialAccount, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4645,7 +4643,7 @@ endpoint.v1.treasury.financialAccounts.post = function(financialAccount, httpOpt
 	return endpoint._post(options);
 };
 
-endpoint.v1.testHelpers.treasury.inboundTransfers.fail.post = function(id, httpOptions) {
+endpoint.testHelpers.treasury.inboundTransfers.fail.post = function(id, httpOptions) {
     if (!id) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [id].');
         return;
@@ -4656,7 +4654,7 @@ endpoint.v1.testHelpers.treasury.inboundTransfers.fail.post = function(id, httpO
     return endpoint._post(options);
 };
 
-endpoint.v1.testHelpers.treasury.inboundTransfers.succeed.post = function(id, httpOptions) {
+endpoint.testHelpers.treasury.inboundTransfers.succeed.post = function(id, httpOptions) {
     if (!id) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [id].');
         return;
@@ -4667,7 +4665,7 @@ endpoint.v1.testHelpers.treasury.inboundTransfers.succeed.post = function(id, ht
     return endpoint._post(options);
 };
 
-endpoint.v1.treasury.inboundTransfers.get = function(id, httpOptions) {
+endpoint.treasury.inboundTransfers.get = function(id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4693,14 +4691,14 @@ endpoint.v1.treasury.inboundTransfers.get = function(id, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.treasury.inboundTransfers.post = function(httpOptions) {
+endpoint.treasury.inboundTransfers.post = function(httpOptions) {
     var url = parse('/v1/treasury/inbound_transfers');
     sys.logs.debug('[stripe] POST from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._post(options);
 };
 
-endpoint.v1.treasury.inboundTransfers.cancel.post = function(inboundTransfer, httpOptions) {
+endpoint.treasury.inboundTransfers.cancel.post = function(inboundTransfer, httpOptions) {
     if (!inboundTransfer) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [inboundTransfer].');
         return;
@@ -4711,7 +4709,7 @@ endpoint.v1.treasury.inboundTransfers.cancel.post = function(inboundTransfer, ht
     return endpoint._post(options);
 };
 
-endpoint.v1.testHelpers.treasury.outboundPayments.fail.post = function(id, httpOptions) {
+endpoint.testHelpers.treasury.outboundPayments.fail.post = function(id, httpOptions) {
     if (!id) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [id].');
         return;
@@ -4722,7 +4720,7 @@ endpoint.v1.testHelpers.treasury.outboundPayments.fail.post = function(id, httpO
     return endpoint._post(options);
 };
 
-endpoint.v1.testHelpers.treasury.outboundPayments.post.post = function(id, httpOptions) {
+endpoint.testHelpers.treasury.outboundPayments.post.post = function(id, httpOptions) {
     if (!id) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [id].');
         return;
@@ -4733,7 +4731,7 @@ endpoint.v1.testHelpers.treasury.outboundPayments.post.post = function(id, httpO
     return endpoint._post(options);
 };
 
-endpoint.v1.testHelpers.treasury.outboundPayments.return.post = function(id, httpOptions) {
+endpoint.testHelpers.treasury.outboundPayments.return.post = function(id, httpOptions) {
     if (!id) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [id].');
         return;
@@ -4744,7 +4742,7 @@ endpoint.v1.testHelpers.treasury.outboundPayments.return.post = function(id, htt
     return endpoint._post(options);
 };
 
-endpoint.v1.treasury.outboundPayments.get = function(id, httpOptions) {
+endpoint.treasury.outboundPayments.get = function(id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4770,14 +4768,14 @@ endpoint.v1.treasury.outboundPayments.get = function(id, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.treasury.outboundPayments.post = function(httpOptions) {
+endpoint.treasury.outboundPayments.post = function(httpOptions) {
     var url = parse('/v1/treasury/outbound_payments');
     sys.logs.debug('[stripe] POST from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._post(options);
 };
 
-endpoint.v1.treasury.outboundPayments.cancel.post = function(id, httpOptions) {
+endpoint.treasury.outboundPayments.cancel.post = function(id, httpOptions) {
     if (!id) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [id].');
         return;
@@ -4788,7 +4786,7 @@ endpoint.v1.treasury.outboundPayments.cancel.post = function(id, httpOptions) {
     return endpoint._post(options);
 };
 
-endpoint.v1.testHelpers.treasury.outboundTransfers.fail.post = function(outboundTransfer, httpOptions) {
+endpoint.testHelpers.treasury.outboundTransfers.fail.post = function(outboundTransfer, httpOptions) {
     if (!outboundTransfer) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [outboundTransfer].');
         return;
@@ -4799,7 +4797,7 @@ endpoint.v1.testHelpers.treasury.outboundTransfers.fail.post = function(outbound
     return endpoint._post(options);
 };
 
-endpoint.v1.testHelpers.treasury.outboundTransfers.post.post = function(outboundTransfer, httpOptions) {
+endpoint.testHelpers.treasury.outboundTransfers.post.post = function(outboundTransfer, httpOptions) {
     if (!outboundTransfer) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [outboundTransfer].');
         return;
@@ -4810,7 +4808,7 @@ endpoint.v1.testHelpers.treasury.outboundTransfers.post.post = function(outbound
     return endpoint._post(options);
 };
 
-endpoint.v1.testHelpers.treasury.outboundTransfers.return.post = function(outboundTransfer, httpOptions) {
+endpoint.testHelpers.treasury.outboundTransfers.return.post = function(outboundTransfer, httpOptions) {
     if (!outboundTransfer) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [outboundTransfer].');
         return;
@@ -4821,7 +4819,7 @@ endpoint.v1.testHelpers.treasury.outboundTransfers.return.post = function(outbou
     return endpoint._post(options);
 };
 
-endpoint.v1.treasury.outboundTransfers.get = function(outboundTransfer, httpOptions) {
+endpoint.treasury.outboundTransfers.get = function(outboundTransfer, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4847,14 +4845,14 @@ endpoint.v1.treasury.outboundTransfers.get = function(outboundTransfer, httpOpti
 	return endpoint._get(options);
 };
 
-endpoint.v1.treasury.outboundTransfers.post = function(httpOptions) {
+endpoint.treasury.outboundTransfers.post = function(httpOptions) {
     var url = parse('/v1/treasury/outbound_transfers');
     sys.logs.debug('[stripe] POST from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._post(options);
 };
 
-endpoint.v1.treasury.outboundTransfers.cancel.post = function(outboundTransfer, httpOptions) {
+endpoint.treasury.outboundTransfers.cancel.post = function(outboundTransfer, httpOptions) {
     if (!outboundTransfer) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [outboundTransfer].');
         return;
@@ -4865,14 +4863,14 @@ endpoint.v1.treasury.outboundTransfers.cancel.post = function(outboundTransfer, 
     return endpoint._post(options);
 };
 
-endpoint.v1.testHelpers.treasury.receivedCredits.post = function(httpOptions) {
+endpoint.testHelpers.treasury.receivedCredits.post = function(httpOptions) {
     var url = parse('/v1/test_helpers/treasury/received_credits');
     sys.logs.debug('[stripe] POST from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._post(options);
 };
 
-endpoint.v1.treasury.receivedCredits.get = function(id, httpOptions) {
+endpoint.treasury.receivedCredits.get = function(id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4898,14 +4896,14 @@ endpoint.v1.treasury.receivedCredits.get = function(id, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.testHelpers.treasury.receivedDebits.post = function(httpOptions) {
+endpoint.testHelpers.treasury.receivedDebits.post = function(httpOptions) {
     var url = parse('/v1/test_helpers/treasury/received_debits');
     sys.logs.debug('[stripe] POST from: ' + url);
     var options = checkHttpOptions(url, httpOptions);
     return endpoint._post(options);
 };
 
-endpoint.v1.treasury.receivedDebits.get = function(id, httpOptions) {
+endpoint.treasury.receivedDebits.get = function(id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4931,7 +4929,7 @@ endpoint.v1.treasury.receivedDebits.get = function(id, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.treasury.transactionEntries.get = function(id, httpOptions) {
+endpoint.treasury.transactionEntries.get = function(id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4957,7 +4955,7 @@ endpoint.v1.treasury.transactionEntries.get = function(id, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.treasury.transactions.get = function(id, httpOptions) {
+endpoint.treasury.transactions.get = function(id, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -4983,7 +4981,7 @@ endpoint.v1.treasury.transactions.get = function(id, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.webhookEndpoints.get = function(webhookEndpoint, httpOptions) {
+endpoint.webhookEndpoints.get = function(webhookEndpoint, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -5009,7 +5007,7 @@ endpoint.v1.webhookEndpoints.get = function(webhookEndpoint, httpOptions) {
 	return endpoint._get(options);
 };
 
-endpoint.v1.webhookEndpoints.post = function(webhookEndpoint, httpOptions) {
+endpoint.webhookEndpoints.post = function(webhookEndpoint, httpOptions) {
     if(!httpOptions){
         for (var i = 0 ; i < arguments.length; i++){
             if (isObject(arguments[i])){
@@ -5039,7 +5037,7 @@ endpoint.v1.webhookEndpoints.post = function(webhookEndpoint, httpOptions) {
 	return endpoint._post(options);
 };
 
-endpoint.v1.webhookEndpoints.delete = function(webhookEndpoint, httpOptions) {
+endpoint.webhookEndpoints.delete = function(webhookEndpoint, httpOptions) {
     if (!webhookEndpoint) {
         sys.logs.error('Invalid argument received. This helper should receive the following parameters as non-empty strings: [webhookEndpoint].');
         return;

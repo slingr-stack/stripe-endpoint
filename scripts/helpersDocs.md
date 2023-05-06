@@ -9,10 +9,10 @@ The Javascript API of the stripe endpoint has three pieces:
 ## HTTP requests
 You can make `POST`,`GET`,`DELETE` requests to the [stripe API](API_URL_HERE) like this:
 ```javascript
-var response = app.endpoints.stripe.post('/v1/issuing/disputes', body)
-var response = app.endpoints.stripe.post('/v1/issuing/disputes')
-var response = app.endpoints.stripe.get('/v1/treasury/received_credits')
-var response = app.endpoints.stripe.delete('/v1/webhook_endpoints/:webhook_endpoint')
+var response = app.endpoints.stripe.post('/v1/subscriptions/:subscription_exposed_id', body)
+var response = app.endpoints.stripe.post('/v1/subscriptions/:subscription_exposed_id')
+var response = app.endpoints.stripe.get('/v1/customers/:customer/cash_balance_transactions')
+var response = app.endpoints.stripe.delete('/v1/invoices/:invoice')
 ```
 
 Please take a look at the documentation of the [HTTP endpoint](https://github.com/slingr-stack/http-endpoint#javascript-api)
@@ -29,2257 +29,2257 @@ Instead of having to use the generic HTTP methods, you can (and should) make use
 * API URL: '/v1/account_links'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.accountLinks.post(body)
+app.endpoints.stripe.accountLinks.post(body)
 ```
 ---
 * API URL: '/v1/accounts'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.accounts.post(body)
+app.endpoints.stripe.accounts.post(body)
 ```
 ---
 * API URL: '/v1/accounts/:account'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.accounts.post(body)
+app.endpoints.stripe.accounts.post(body)
 ```
 ---
 * API URL: '/v1/accounts/:account/capabilities/:capability'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.accounts.capabilities.post(account, capability, body)
+app.endpoints.stripe.accounts.capabilities.post(account, capability, body)
 ```
 ---
 * API URL: '/v1/accounts/:account/external_accounts'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.accounts.externalAccounts.post(body)
+app.endpoints.stripe.accounts.externalAccounts.post(body)
 ```
 ---
 * API URL: '/v1/accounts/:account/external_accounts/:id'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.accounts.externalAccounts.post(account, body)
+app.endpoints.stripe.accounts.externalAccounts.post(account, body)
 ```
 ---
 * API URL: '/v1/accounts/:account/login_links'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.accounts.loginLinks.post(account, body)
+app.endpoints.stripe.accounts.loginLinks.post(account, body)
 ```
 ---
 * API URL: '/v1/accounts/:account/reject'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.accounts.reject.post(account, body)
+app.endpoints.stripe.accounts.reject.post(account, body)
 ```
 ---
 * API URL: '/v1/application_fees/:id/refund'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.applicationFees.refund.post(id, body)
+app.endpoints.stripe.applicationFees.refund.post(id, body)
 ```
 ---
 * API URL: '/v1/application_fees/:id/refunds'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.applicationFees.refunds.post(body)
+app.endpoints.stripe.applicationFees.refunds.post(body)
 ```
 ---
 * API URL: '/v1/application_fees/:fee/refunds/:id'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.applicationFees.refunds.post(fee, body)
+app.endpoints.stripe.applicationFees.refunds.post(fee, body)
 ```
 ---
 * API URL: '/v1/charges'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.charges.post(body)
+app.endpoints.stripe.charges.post(body)
 ```
 ---
 * API URL: '/v1/charges/:charge'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.charges.post(body)
+app.endpoints.stripe.charges.post(body)
 ```
 ---
 * API URL: '/v1/charges/:charge/capture'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.charges.capture.post(charge, body)
+app.endpoints.stripe.charges.capture.post(charge, body)
 ```
 ---
 * API URL: '/v1/checkout/sessions'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.checkout.sessions.post(body)
+app.endpoints.stripe.checkout.sessions.post(body)
 ```
 ---
 * API URL: '/v1/checkout/sessions/:session/expire'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.checkout.sessions.expire.post(session, body)
+app.endpoints.stripe.checkout.sessions.expire.post(session, body)
 ```
 ---
 * API URL: '/v1/coupons'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.coupons.post(body)
+app.endpoints.stripe.coupons.post(body)
 ```
 ---
 * API URL: '/v1/coupons/:coupon'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.coupons.post(body)
+app.endpoints.stripe.coupons.post(body)
 ```
 ---
 * API URL: '/v1/credit_notes'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.creditNotes.post(body)
+app.endpoints.stripe.creditNotes.post(body)
 ```
 ---
 * API URL: '/v1/credit_notes/:id'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.creditNotes.post(body)
+app.endpoints.stripe.creditNotes.post(body)
 ```
 ---
 * API URL: '/v1/credit_notes/:id/void'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.creditNotes.void.post(id, body)
+app.endpoints.stripe.creditNotes.void.post(id, body)
 ```
 ---
 * API URL: '/v1/customers/:customer/balance_transactions'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.customers.balanceTransactions.post(body)
+app.endpoints.stripe.customers.balanceTransactions.post(body)
 ```
 ---
 * API URL: '/v1/customers/:customer/balance_transactions/:transaction'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.customers.balanceTransactions.post(customer, body)
+app.endpoints.stripe.customers.balanceTransactions.post(customer, body)
 ```
 ---
 * API URL: '/v1/customers/:customer/cash_balance'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.customers.cashBalance.post(customer, body)
+app.endpoints.stripe.customers.cashBalance.post(customer, body)
 ```
 ---
 * API URL: '/v1/billing_portal/configurations'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.billingPortal.configurations.post(body)
+app.endpoints.stripe.billingPortal.configurations.post(body)
 ```
 ---
 * API URL: '/v1/billing_portal/configurations/:configuration'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.billingPortal.configurations.post(body)
+app.endpoints.stripe.billingPortal.configurations.post(body)
 ```
 ---
 * API URL: '/v1/billing_portal/sessions'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.billingPortal.sessions.post(body)
+app.endpoints.stripe.billingPortal.sessions.post(body)
 ```
 ---
 * API URL: '/v1/customers/:customer/tax_ids'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.customers.taxIds.post(customer, body)
+app.endpoints.stripe.customers.taxIds.post(customer, body)
 ```
 ---
 * API URL: '/v1/customers'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.customers.post(body)
+app.endpoints.stripe.customers.post(body)
 ```
 ---
 * API URL: '/v1/customers/:customer'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.customers.post(body)
+app.endpoints.stripe.customers.post(body)
 ```
 ---
 * API URL: '/v1/disputes/:dispute'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.disputes.post(dispute, body)
+app.endpoints.stripe.disputes.post(dispute, body)
 ```
 ---
 * API URL: '/v1/disputes/:dispute/close'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.disputes.close.post(dispute, body)
+app.endpoints.stripe.disputes.close.post(dispute, body)
 ```
 ---
 * API URL: '/v1/file_links'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.fileLinks.post(body)
+app.endpoints.stripe.fileLinks.post(body)
 ```
 ---
 * API URL: '/v1/file_links/:link'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.fileLinks.post(body)
+app.endpoints.stripe.fileLinks.post(body)
 ```
 ---
 * API URL: 'https://files.stripe.com/v1/files'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.files.post(body)
+app.endpoints.stripe.files.post(body)
 ```
 ---
 * API URL: '/v1/financial_connections/accounts/:account/disconnect'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.financialConnections.accounts.disconnect.post(account, body)
+app.endpoints.stripe.financialConnections.accounts.disconnect.post(account, body)
 ```
 ---
 * API URL: '/v1/financial_connections/accounts/:account/refresh'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.financialConnections.accounts.refresh.post(account, body)
+app.endpoints.stripe.financialConnections.accounts.refresh.post(account, body)
 ```
 ---
 * API URL: '/v1/financial_connections/sessions'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.financialConnections.sessions.post(body)
+app.endpoints.stripe.financialConnections.sessions.post(body)
 ```
 ---
 * API URL: '/v1/identity/verification_sessions'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.identity.verificationSessions.post(body)
+app.endpoints.stripe.identity.verificationSessions.post(body)
 ```
 ---
 * API URL: '/v1/identity/verification_sessions/:session'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.identity.verificationSessions.post(body)
+app.endpoints.stripe.identity.verificationSessions.post(body)
 ```
 ---
 * API URL: '/v1/identity/verification_sessions/:session/cancel'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.identity.verificationSessions.cancel.post(session, body)
+app.endpoints.stripe.identity.verificationSessions.cancel.post(session, body)
 ```
 ---
 * API URL: '/v1/identity/verification_sessions/:session/redact'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.identity.verificationSessions.redact.post(session, body)
+app.endpoints.stripe.identity.verificationSessions.redact.post(session, body)
 ```
 ---
 * API URL: '/v1/invoiceitems'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.invoiceitems.post(body)
+app.endpoints.stripe.invoiceitems.post(body)
 ```
 ---
 * API URL: '/v1/invoiceitems/:invoiceitem'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.invoiceitems.post(body)
+app.endpoints.stripe.invoiceitems.post(body)
 ```
 ---
 * API URL: '/v1/invoices'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.invoices.post(body)
+app.endpoints.stripe.invoices.post(body)
 ```
 ---
 * API URL: '/v1/invoices/:invoice'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.invoices.post(body)
+app.endpoints.stripe.invoices.post(body)
 ```
 ---
 * API URL: '/v1/invoices/:invoice/finalize'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.invoices.finalize.post(invoice, body)
+app.endpoints.stripe.invoices.finalize.post(invoice, body)
 ```
 ---
 * API URL: '/v1/invoices/:invoice/mark_uncollectible'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.invoices.markUncollectible.post(invoice, body)
+app.endpoints.stripe.invoices.markUncollectible.post(invoice, body)
 ```
 ---
 * API URL: '/v1/invoices/:invoice/pay'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.invoices.pay.post(invoice, body)
+app.endpoints.stripe.invoices.pay.post(invoice, body)
 ```
 ---
 * API URL: '/v1/invoices/:invoice/send'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.invoices.send.post(invoice, body)
+app.endpoints.stripe.invoices.send.post(invoice, body)
 ```
 ---
 * API URL: '/v1/invoices/:invoice/void'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.invoices.void.post(invoice, body)
+app.endpoints.stripe.invoices.void.post(invoice, body)
 ```
 ---
 * API URL: '/v1/issuing/authorizations/:authorization'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.issuing.authorizations.post(authorization, body)
+app.endpoints.stripe.issuing.authorizations.post(authorization, body)
 ```
 ---
 * API URL: '/v1/issuing/authorizations/:authorization/approve'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.issuing.authorizations.approve.post(authorization, body)
+app.endpoints.stripe.issuing.authorizations.approve.post(authorization, body)
 ```
 ---
 * API URL: '/v1/issuing/authorizations/:authorization/decline'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.issuing.authorizations.decline.post(authorization, body)
+app.endpoints.stripe.issuing.authorizations.decline.post(authorization, body)
 ```
 ---
 * API URL: '/v1/issuing/cardholders'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.issuing.cardholders.post(body)
+app.endpoints.stripe.issuing.cardholders.post(body)
 ```
 ---
 * API URL: '/v1/issuing/cardholders/:cardholder'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.issuing.cardholders.post(body)
+app.endpoints.stripe.issuing.cardholders.post(body)
 ```
 ---
 * API URL: '/v1/issuing/cards'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.issuing.cards.post(body)
+app.endpoints.stripe.issuing.cards.post(body)
 ```
 ---
 * API URL: '/v1/issuing/cards/:card'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.issuing.cards.post(body)
+app.endpoints.stripe.issuing.cards.post(body)
 ```
 ---
 * API URL: '/v1/test_helpers/issuing/cards/:card/shipping/fail'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.testHelpers.issuing.cards.shipping.fail.post(card, body)
+app.endpoints.stripe.testHelpers.issuing.cards.shipping.fail.post(card, body)
 ```
 ---
 * API URL: '/v1/test_helpers/issuing/cards/:card/shipping/return'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.testHelpers.issuing.cards.shipping.return.post(card, body)
+app.endpoints.stripe.testHelpers.issuing.cards.shipping.return.post(card, body)
 ```
 ---
 * API URL: '/v1/test_helpers/issuing/cards/:card/shipping/ship'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.testHelpers.issuing.cards.shipping.ship.post(card, body)
+app.endpoints.stripe.testHelpers.issuing.cards.shipping.ship.post(card, body)
 ```
 ---
 * API URL: '/v1/issuing/disputes'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.issuing.disputes.post(body)
+app.endpoints.stripe.issuing.disputes.post(body)
 ```
 ---
 * API URL: '/v1/issuing/disputes/:dispute'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.issuing.disputes.post(body)
+app.endpoints.stripe.issuing.disputes.post(body)
 ```
 ---
 * API URL: '/v1/issuing/disputes/:dispute/submit'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.issuing.disputes.submit.post(dispute, body)
+app.endpoints.stripe.issuing.disputes.submit.post(dispute, body)
 ```
 ---
 * API URL: '/v1/issuing/transactions/:transaction'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.issuing.transactions.post(transaction, body)
+app.endpoints.stripe.issuing.transactions.post(transaction, body)
 ```
 ---
 * API URL: '/v1/payment_intents'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.paymentIntents.post(body)
+app.endpoints.stripe.paymentIntents.post(body)
 ```
 ---
 * API URL: '/v1/payment_intents/:intent'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.paymentIntents.post(body)
+app.endpoints.stripe.paymentIntents.post(body)
 ```
 ---
 * API URL: '/v1/payment_intents/:intent/apply_customer_balance'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.paymentIntents.applyCustomerBalance.post(intent, body)
+app.endpoints.stripe.paymentIntents.applyCustomerBalance.post(intent, body)
 ```
 ---
 * API URL: '/v1/payment_intents/:intent/cancel'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.paymentIntents.cancel.post(intent, body)
+app.endpoints.stripe.paymentIntents.cancel.post(intent, body)
 ```
 ---
 * API URL: '/v1/payment_intents/:intent/capture'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.paymentIntents.capture.post(intent, body)
+app.endpoints.stripe.paymentIntents.capture.post(intent, body)
 ```
 ---
 * API URL: '/v1/payment_intents/:intent/confirm'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.paymentIntents.confirm.post(intent, body)
+app.endpoints.stripe.paymentIntents.confirm.post(intent, body)
 ```
 ---
 * API URL: '/v1/payment_intents/:intent/increment_authorization'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.paymentIntents.incrementAuthorization.post(intent, body)
+app.endpoints.stripe.paymentIntents.incrementAuthorization.post(intent, body)
 ```
 ---
 * API URL: '/v1/payment_intents/:intent/verify_microdeposits'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.paymentIntents.verifyMicrodeposits.post(intent, body)
+app.endpoints.stripe.paymentIntents.verifyMicrodeposits.post(intent, body)
 ```
 ---
 * API URL: '/v1/payment_links'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.paymentLinks.post(body)
+app.endpoints.stripe.paymentLinks.post(body)
 ```
 ---
 * API URL: '/v1/payment_links/:payment_link'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.paymentLinks.post(body)
+app.endpoints.stripe.paymentLinks.post(body)
 ```
 ---
 * API URL: '/v1/payment_methods'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.paymentMethods.post(body)
+app.endpoints.stripe.paymentMethods.post(body)
 ```
 ---
 * API URL: '/v1/payment_methods/:payment_method'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.paymentMethods.post(body)
+app.endpoints.stripe.paymentMethods.post(body)
 ```
 ---
 * API URL: '/v1/payment_methods/:payment_method/attach'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.paymentMethods.attach.post(paymentMethod, body)
+app.endpoints.stripe.paymentMethods.attach.post(paymentMethod, body)
 ```
 ---
 * API URL: '/v1/payment_methods/:payment_method/detach'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.paymentMethods.detach.post(paymentMethod, body)
+app.endpoints.stripe.paymentMethods.detach.post(paymentMethod, body)
 ```
 ---
 * API URL: '/v1/payouts'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.payouts.post(body)
+app.endpoints.stripe.payouts.post(body)
 ```
 ---
 * API URL: '/v1/payouts/:payout'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.payouts.post(body)
+app.endpoints.stripe.payouts.post(body)
 ```
 ---
 * API URL: '/v1/payouts/:payout/cancel'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.payouts.cancel.post(payout, body)
+app.endpoints.stripe.payouts.cancel.post(payout, body)
 ```
 ---
 * API URL: '/v1/payouts/:payout/reverse'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.payouts.reverse.post(payout, body)
+app.endpoints.stripe.payouts.reverse.post(payout, body)
 ```
 ---
 * API URL: '/v1/accounts/:account/persons'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.accounts.persons.post(body)
+app.endpoints.stripe.accounts.persons.post(body)
 ```
 ---
 * API URL: '/v1/accounts/:account/persons/:person'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.accounts.persons.post(account, body)
+app.endpoints.stripe.accounts.persons.post(account, body)
 ```
 ---
 * API URL: '/v1/prices'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.prices.post(body)
+app.endpoints.stripe.prices.post(body)
 ```
 ---
 * API URL: '/v1/prices/:price'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.prices.post(body)
+app.endpoints.stripe.prices.post(body)
 ```
 ---
 * API URL: '/v1/products'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.products.post(body)
+app.endpoints.stripe.products.post(body)
 ```
 ---
 * API URL: '/v1/products/:id'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.products.post(body)
+app.endpoints.stripe.products.post(body)
 ```
 ---
 * API URL: '/v1/promotion_codes'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.promotionCodes.post(body)
+app.endpoints.stripe.promotionCodes.post(body)
 ```
 ---
 * API URL: '/v1/promotion_codes/:promotion_code'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.promotionCodes.post(body)
+app.endpoints.stripe.promotionCodes.post(body)
 ```
 ---
 * API URL: '/v1/quotes'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.quotes.post(body)
+app.endpoints.stripe.quotes.post(body)
 ```
 ---
 * API URL: '/v1/quotes/:quote'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.quotes.post(body)
+app.endpoints.stripe.quotes.post(body)
 ```
 ---
 * API URL: '/v1/quotes/:quote/accept'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.quotes.accept.post(quote, body)
+app.endpoints.stripe.quotes.accept.post(quote, body)
 ```
 ---
 * API URL: '/v1/quotes/:quote/cancel'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.quotes.cancel.post(quote, body)
+app.endpoints.stripe.quotes.cancel.post(quote, body)
 ```
 ---
 * API URL: '/v1/quotes/:quote/finalize'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.quotes.finalize.post(quote, body)
+app.endpoints.stripe.quotes.finalize.post(quote, body)
 ```
 ---
 * API URL: '/v1/reviews/:review/approve'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.reviews.approve.post(review, body)
+app.endpoints.stripe.reviews.approve.post(review, body)
 ```
 ---
 * API URL: '/v1/radar/value_lists'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.radar.valueLists.post(body)
+app.endpoints.stripe.radar.valueLists.post(body)
 ```
 ---
 * API URL: '/v1/radar/value_lists/:value_list'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.radar.valueLists.post(body)
+app.endpoints.stripe.radar.valueLists.post(body)
 ```
 ---
 * API URL: '/v1/radar/value_list_items'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.radar.valueListItems.post(body)
+app.endpoints.stripe.radar.valueListItems.post(body)
 ```
 ---
 * API URL: '/v1/refunds'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.refunds.post(body)
+app.endpoints.stripe.refunds.post(body)
 ```
 ---
 * API URL: '/v1/refunds/:refund'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.refunds.post(body)
+app.endpoints.stripe.refunds.post(body)
 ```
 ---
 * API URL: '/v1/reporting/report_runs'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.reporting.reportRuns.post(body)
+app.endpoints.stripe.reporting.reportRuns.post(body)
 ```
 ---
 * API URL: '/v1/apps/secrets'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.apps.secrets.post(body)
+app.endpoints.stripe.apps.secrets.post(body)
 ```
 ---
 * API URL: '/v1/apps/secrets/delete'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.apps.secrets.delete.post(body)
+app.endpoints.stripe.apps.secrets.delete.post(body)
 ```
 ---
 * API URL: '/v1/setup_intents'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.setupIntents.post(body)
+app.endpoints.stripe.setupIntents.post(body)
 ```
 ---
 * API URL: '/v1/setup_intents/:intent'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.setupIntents.post(body)
+app.endpoints.stripe.setupIntents.post(body)
 ```
 ---
 * API URL: '/v1/setup_intents/:intent/cancel'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.setupIntents.cancel.post(intent, body)
+app.endpoints.stripe.setupIntents.cancel.post(intent, body)
 ```
 ---
 * API URL: '/v1/setup_intents/:intent/confirm'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.setupIntents.confirm.post(intent, body)
+app.endpoints.stripe.setupIntents.confirm.post(intent, body)
 ```
 ---
 * API URL: '/v1/setup_intents/:intent/verify_microdeposits'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.setupIntents.verifyMicrodeposits.post(intent, body)
+app.endpoints.stripe.setupIntents.verifyMicrodeposits.post(intent, body)
 ```
 ---
 * API URL: '/v1/shipping_rates'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.shippingRates.post(body)
+app.endpoints.stripe.shippingRates.post(body)
 ```
 ---
 * API URL: '/v1/shipping_rates/:shipping_rate_token'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.shippingRates.post(body)
+app.endpoints.stripe.shippingRates.post(body)
 ```
 ---
 * API URL: '/v1/skus'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.skus.post(body)
+app.endpoints.stripe.skus.post(body)
 ```
 ---
 * API URL: '/v1/skus/:id'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.skus.post(body)
+app.endpoints.stripe.skus.post(body)
 ```
 ---
 * API URL: '/v1/customers/:customer/sources'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.customers.sources.post(body)
+app.endpoints.stripe.customers.sources.post(body)
 ```
 ---
 * API URL: '/v1/customers/:customer/sources/:id'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.customers.sources.post(customer, body)
+app.endpoints.stripe.customers.sources.post(customer, body)
 ```
 ---
 * API URL: '/v1/customers/:customer/sources/:id/verify'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.customers.sources.verify.post(customer, id, body)
+app.endpoints.stripe.customers.sources.verify.post(customer, id, body)
 ```
 ---
 * API URL: '/v1/sources'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.sources.post(body)
+app.endpoints.stripe.sources.post(body)
 ```
 ---
 * API URL: '/v1/sources/:source'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.sources.post(body)
+app.endpoints.stripe.sources.post(body)
 ```
 ---
 * API URL: '/v1/subscription_items'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.subscriptionItems.post(body)
+app.endpoints.stripe.subscriptionItems.post(body)
 ```
 ---
 * API URL: '/v1/subscription_items/:item'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.subscriptionItems.post(body)
+app.endpoints.stripe.subscriptionItems.post(body)
 ```
 ---
 * API URL: '/v1/subscription_items/:subscription_item/usage_records'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.subscriptionItems.usageRecords.post(subscriptionItem, body)
+app.endpoints.stripe.subscriptionItems.usageRecords.post(subscriptionItem, body)
 ```
 ---
 * API URL: '/v1/subscription_schedules'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.subscriptionSchedules.post(body)
+app.endpoints.stripe.subscriptionSchedules.post(body)
 ```
 ---
 * API URL: '/v1/subscription_schedules/:schedule'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.subscriptionSchedules.post(body)
+app.endpoints.stripe.subscriptionSchedules.post(body)
 ```
 ---
 * API URL: '/v1/subscription_schedules/:schedule/cancel'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.subscriptionSchedules.cancel.post(schedule, body)
+app.endpoints.stripe.subscriptionSchedules.cancel.post(schedule, body)
 ```
 ---
 * API URL: '/v1/subscription_schedules/:schedule/release'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.subscriptionSchedules.release.post(schedule, body)
+app.endpoints.stripe.subscriptionSchedules.release.post(schedule, body)
 ```
 ---
 * API URL: '/v1/subscriptions'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.subscriptions.post(body)
+app.endpoints.stripe.subscriptions.post(body)
 ```
 ---
 * API URL: '/v1/subscriptions/:subscription_exposed_id'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.subscriptions.post(body)
+app.endpoints.stripe.subscriptions.post(body)
 ```
 ---
 * API URL: '/v1/tax_rates'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.taxRates.post(body)
+app.endpoints.stripe.taxRates.post(body)
 ```
 ---
 * API URL: '/v1/tax_rates/:tax_rate'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.taxRates.post(body)
+app.endpoints.stripe.taxRates.post(body)
 ```
 ---
 * API URL: '/v1/terminal/configurations'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.terminal.configurations.post(body)
+app.endpoints.stripe.terminal.configurations.post(body)
 ```
 ---
 * API URL: '/v1/terminal/configurations/:configuration'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.terminal.configurations.post(body)
+app.endpoints.stripe.terminal.configurations.post(body)
 ```
 ---
 * API URL: '/v1/terminal/connection_tokens'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.terminal.connectionTokens.post(body)
+app.endpoints.stripe.terminal.connectionTokens.post(body)
 ```
 ---
 * API URL: '/v1/terminal/locations'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.terminal.locations.post(body)
+app.endpoints.stripe.terminal.locations.post(body)
 ```
 ---
 * API URL: '/v1/terminal/locations/:location'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.terminal.locations.post(body)
+app.endpoints.stripe.terminal.locations.post(body)
 ```
 ---
 * API URL: '/v1/terminal/readers'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.terminal.readers.post(body)
+app.endpoints.stripe.terminal.readers.post(body)
 ```
 ---
 * API URL: '/v1/terminal/readers/:reader'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.terminal.readers.post(body)
+app.endpoints.stripe.terminal.readers.post(body)
 ```
 ---
 * API URL: '/v1/terminal/readers/:reader/cancel_action'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.terminal.readers.cancelAction.post(reader, body)
+app.endpoints.stripe.terminal.readers.cancelAction.post(reader, body)
 ```
 ---
 * API URL: '/v1/terminal/readers/:reader/process_payment_intent'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.terminal.readers.processPaymentIntent.post(reader, body)
+app.endpoints.stripe.terminal.readers.processPaymentIntent.post(reader, body)
 ```
 ---
 * API URL: '/v1/terminal/readers/:reader/process_setup_intent'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.terminal.readers.processSetupIntent.post(reader, body)
+app.endpoints.stripe.terminal.readers.processSetupIntent.post(reader, body)
 ```
 ---
 * API URL: '/v1/terminal/readers/:reader/set_reader_display'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.terminal.readers.setReaderDisplay.post(reader, body)
+app.endpoints.stripe.terminal.readers.setReaderDisplay.post(reader, body)
 ```
 ---
 * API URL: '/v1/test_helpers/terminal/readers/:reader/present_payment_method'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.testHelpers.terminal.readers.presentPaymentMethod.post(reader, body)
+app.endpoints.stripe.testHelpers.terminal.readers.presentPaymentMethod.post(reader, body)
 ```
 ---
 * API URL: '/v1/test_helpers/test_clocks'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.testHelpers.testClocks.post(body)
+app.endpoints.stripe.testHelpers.testClocks.post(body)
 ```
 ---
 * API URL: '/v1/test_helpers/test_clocks/:test_clock/advance'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.testHelpers.testClocks.advance.post(testClock, body)
+app.endpoints.stripe.testHelpers.testClocks.advance.post(testClock, body)
 ```
 ---
 * API URL: '/v1/tokens'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.tokens.post(body)
+app.endpoints.stripe.tokens.post(body)
 ```
 ---
 * API URL: '/v1/topups'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.topups.post(body)
+app.endpoints.stripe.topups.post(body)
 ```
 ---
 * API URL: '/v1/topups/:topup'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.topups.post(body)
+app.endpoints.stripe.topups.post(body)
 ```
 ---
 * API URL: '/v1/topups/:topup/cancel'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.topups.cancel.post(topup, body)
+app.endpoints.stripe.topups.cancel.post(topup, body)
 ```
 ---
 * API URL: '/v1/transfers/:id/reversals'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.transfers.reversals.post(body)
+app.endpoints.stripe.transfers.reversals.post(body)
 ```
 ---
 * API URL: '/v1/transfers/:transfer/reversals/:id'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.transfers.reversals.post(transfer, body)
+app.endpoints.stripe.transfers.reversals.post(transfer, body)
 ```
 ---
 * API URL: '/v1/transfers'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.transfers.post(body)
+app.endpoints.stripe.transfers.post(body)
 ```
 ---
 * API URL: '/v1/transfers/:transfer'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.transfers.post(body)
+app.endpoints.stripe.transfers.post(body)
 ```
 ---
 * API URL: '/v1/treasury/credit_reversals'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.treasury.creditReversals.post(body)
+app.endpoints.stripe.treasury.creditReversals.post(body)
 ```
 ---
 * API URL: '/v1/treasury/debit_reversals'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.treasury.debitReversals.post(body)
+app.endpoints.stripe.treasury.debitReversals.post(body)
 ```
 ---
 * API URL: '/v1/treasury/financial_accounts/:financial_account/features'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.treasury.financialAccounts.features.post(financialAccount, body)
+app.endpoints.stripe.treasury.financialAccounts.features.post(financialAccount, body)
 ```
 ---
 * API URL: '/v1/treasury/financial_accounts'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.treasury.financialAccounts.post(body)
+app.endpoints.stripe.treasury.financialAccounts.post(body)
 ```
 ---
 * API URL: '/v1/treasury/financial_accounts/:financial_account'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.treasury.financialAccounts.post(body)
+app.endpoints.stripe.treasury.financialAccounts.post(body)
 ```
 ---
 * API URL: '/v1/test_helpers/treasury/inbound_transfers/:id/fail'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.testHelpers.treasury.inboundTransfers.fail.post(id, body)
+app.endpoints.stripe.testHelpers.treasury.inboundTransfers.fail.post(id, body)
 ```
 ---
 * API URL: '/v1/test_helpers/treasury/inbound_transfers/:id/succeed'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.testHelpers.treasury.inboundTransfers.succeed.post(id, body)
+app.endpoints.stripe.testHelpers.treasury.inboundTransfers.succeed.post(id, body)
 ```
 ---
 * API URL: '/v1/treasury/inbound_transfers'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.treasury.inboundTransfers.post(body)
+app.endpoints.stripe.treasury.inboundTransfers.post(body)
 ```
 ---
 * API URL: '/v1/treasury/inbound_transfers/:inbound_transfer/cancel'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.treasury.inboundTransfers.cancel.post(inboundTransfer, body)
+app.endpoints.stripe.treasury.inboundTransfers.cancel.post(inboundTransfer, body)
 ```
 ---
 * API URL: '/v1/test_helpers/treasury/outbound_payments/:id/fail'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.testHelpers.treasury.outboundPayments.fail.post(id, body)
+app.endpoints.stripe.testHelpers.treasury.outboundPayments.fail.post(id, body)
 ```
 ---
 * API URL: '/v1/test_helpers/treasury/outbound_payments/:id/post'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.testHelpers.treasury.outboundPayments.post.post(id, body)
+app.endpoints.stripe.testHelpers.treasury.outboundPayments.post.post(id, body)
 ```
 ---
 * API URL: '/v1/test_helpers/treasury/outbound_payments/:id/return'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.testHelpers.treasury.outboundPayments.return.post(id, body)
+app.endpoints.stripe.testHelpers.treasury.outboundPayments.return.post(id, body)
 ```
 ---
 * API URL: '/v1/treasury/outbound_payments'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.treasury.outboundPayments.post(body)
+app.endpoints.stripe.treasury.outboundPayments.post(body)
 ```
 ---
 * API URL: '/v1/treasury/outbound_payments/:id/cancel'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.treasury.outboundPayments.cancel.post(id, body)
+app.endpoints.stripe.treasury.outboundPayments.cancel.post(id, body)
 ```
 ---
 * API URL: '/v1/test_helpers/treasury/outbound_transfers/:outbound_transfer/fail'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.testHelpers.treasury.outboundTransfers.fail.post(outboundTransfer, body)
+app.endpoints.stripe.testHelpers.treasury.outboundTransfers.fail.post(outboundTransfer, body)
 ```
 ---
 * API URL: '/v1/test_helpers/treasury/outbound_transfers/:outbound_transfer/post'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.testHelpers.treasury.outboundTransfers.post.post(outboundTransfer, body)
+app.endpoints.stripe.testHelpers.treasury.outboundTransfers.post.post(outboundTransfer, body)
 ```
 ---
 * API URL: '/v1/test_helpers/treasury/outbound_transfers/:outbound_transfer/return'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.testHelpers.treasury.outboundTransfers.return.post(outboundTransfer, body)
+app.endpoints.stripe.testHelpers.treasury.outboundTransfers.return.post(outboundTransfer, body)
 ```
 ---
 * API URL: '/v1/treasury/outbound_transfers'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.treasury.outboundTransfers.post(body)
+app.endpoints.stripe.treasury.outboundTransfers.post(body)
 ```
 ---
 * API URL: '/v1/treasury/outbound_transfers/:outbound_transfer/cancel'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.treasury.outboundTransfers.cancel.post(outboundTransfer, body)
+app.endpoints.stripe.treasury.outboundTransfers.cancel.post(outboundTransfer, body)
 ```
 ---
 * API URL: '/v1/test_helpers/treasury/received_credits'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.testHelpers.treasury.receivedCredits.post(body)
+app.endpoints.stripe.testHelpers.treasury.receivedCredits.post(body)
 ```
 ---
 * API URL: '/v1/test_helpers/treasury/received_debits'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.testHelpers.treasury.receivedDebits.post(body)
+app.endpoints.stripe.testHelpers.treasury.receivedDebits.post(body)
 ```
 ---
 * API URL: '/v1/webhook_endpoints'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.webhookEndpoints.post(body)
+app.endpoints.stripe.webhookEndpoints.post(body)
 ```
 ---
 * API URL: '/v1/webhook_endpoints/:webhook_endpoint'
 * HTTP Method: 'POST'
 ```javascript
-app.endpoints.stripe.v1.webhookEndpoints.post(body)
+app.endpoints.stripe.webhookEndpoints.post(body)
 ```
 ---
 * API URL: '/v1/accounts'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.accounts.get()
+app.endpoints.stripe.accounts.get()
 ```
 ---
 * API URL: '/v1/accounts/:account'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.accounts.get()
+app.endpoints.stripe.accounts.get()
 ```
 ---
 * API URL: '/v1/accounts/:account/capabilities'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.accounts.capabilities.get()
+app.endpoints.stripe.accounts.capabilities.get()
 ```
 ---
 * API URL: '/v1/accounts/:account/capabilities/:capability'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.accounts.capabilities.get(account)
+app.endpoints.stripe.accounts.capabilities.get(account)
 ```
 ---
 * API URL: '/v1/accounts/:account/external_accounts'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.accounts.externalAccounts.get()
+app.endpoints.stripe.accounts.externalAccounts.get()
 ```
 ---
 * API URL: '/v1/accounts/:account/external_accounts/:id'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.accounts.externalAccounts.get(account)
+app.endpoints.stripe.accounts.externalAccounts.get(account)
 ```
 ---
 * API URL: '/v1/application_fees/:id/refunds'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.applicationFees.refunds.get()
+app.endpoints.stripe.applicationFees.refunds.get()
 ```
 ---
 * API URL: '/v1/application_fees/:fee/refunds/:id'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.applicationFees.refunds.get(fee)
+app.endpoints.stripe.applicationFees.refunds.get(fee)
 ```
 ---
 * API URL: '/v1/application_fees'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.applicationFees.get()
+app.endpoints.stripe.applicationFees.get()
 ```
 ---
 * API URL: '/v1/application_fees/:id'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.applicationFees.get()
+app.endpoints.stripe.applicationFees.get()
 ```
 ---
 * API URL: '/v1/balance'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.balance.get()
+app.endpoints.stripe.balance.get()
 ```
 ---
 * API URL: '/v1/balance_transactions'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.balanceTransactions.get()
+app.endpoints.stripe.balanceTransactions.get()
 ```
 ---
 * API URL: '/v1/balance_transactions/:id'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.balanceTransactions.get()
+app.endpoints.stripe.balanceTransactions.get()
 ```
 ---
 * API URL: '/v1/charges'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.charges.get()
+app.endpoints.stripe.charges.get()
 ```
 ---
 * API URL: '/v1/charges/:charge'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.charges.get()
+app.endpoints.stripe.charges.get()
 ```
 ---
 * API URL: '/v1/charges/search'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.charges.search.get()
+app.endpoints.stripe.charges.search.get()
 ```
 ---
 * API URL: '/v1/checkout/sessions'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.checkout.sessions.get()
+app.endpoints.stripe.checkout.sessions.get()
 ```
 ---
 * API URL: '/v1/checkout/sessions/:session'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.checkout.sessions.get()
+app.endpoints.stripe.checkout.sessions.get()
 ```
 ---
 * API URL: '/v1/checkout/sessions/:session/line_items'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.checkout.sessions.lineItems.get(session)
+app.endpoints.stripe.checkout.sessions.lineItems.get(session)
 ```
 ---
 * API URL: '/v1/country_specs'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.countrySpecs.get()
+app.endpoints.stripe.countrySpecs.get()
 ```
 ---
 * API URL: '/v1/country_specs/:country'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.countrySpecs.get()
+app.endpoints.stripe.countrySpecs.get()
 ```
 ---
 * API URL: '/v1/coupons'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.coupons.get()
+app.endpoints.stripe.coupons.get()
 ```
 ---
 * API URL: '/v1/coupons/:coupon'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.coupons.get()
+app.endpoints.stripe.coupons.get()
 ```
 ---
 * API URL: '/v1/credit_notes'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.creditNotes.get()
+app.endpoints.stripe.creditNotes.get()
 ```
 ---
 * API URL: '/v1/credit_notes/:id'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.creditNotes.get()
+app.endpoints.stripe.creditNotes.get()
 ```
 ---
 * API URL: '/v1/credit_notes/preview'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.creditNotes.preview.get()
+app.endpoints.stripe.creditNotes.preview.get()
 ```
 ---
 * API URL: '/v1/credit_notes/preview/lines'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.creditNotes.preview.lines.get()
+app.endpoints.stripe.creditNotes.preview.lines.get()
 ```
 ---
 * API URL: '/v1/credit_notes/:credit_note/lines'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.creditNotes.lines.get(creditNote)
+app.endpoints.stripe.creditNotes.lines.get(creditNote)
 ```
 ---
 * API URL: '/v1/customers/:customer/balance_transactions'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.customers.balanceTransactions.get()
+app.endpoints.stripe.customers.balanceTransactions.get()
 ```
 ---
 * API URL: '/v1/customers/:customer/balance_transactions/:transaction'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.customers.balanceTransactions.get(customer)
+app.endpoints.stripe.customers.balanceTransactions.get(customer)
 ```
 ---
 * API URL: '/v1/customers/:customer/cash_balance'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.customers.cashBalance.get(customer)
+app.endpoints.stripe.customers.cashBalance.get(customer)
 ```
 ---
 * API URL: '/v1/customers/:customer/cash_balance_transactions'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.customers.cashBalanceTransactions.get()
+app.endpoints.stripe.customers.cashBalanceTransactions.get()
 ```
 ---
 * API URL: '/v1/customers/:customer/cash_balance_transactions/:transaction'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.customers.cashBalanceTransactions.get(customer)
+app.endpoints.stripe.customers.cashBalanceTransactions.get(customer)
 ```
 ---
 * API URL: '/v1/billing_portal/configurations'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.billingPortal.configurations.get()
+app.endpoints.stripe.billingPortal.configurations.get()
 ```
 ---
 * API URL: '/v1/billing_portal/configurations/:configuration'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.billingPortal.configurations.get()
+app.endpoints.stripe.billingPortal.configurations.get()
 ```
 ---
 * API URL: '/v1/customers/:customer/tax_ids'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.customers.taxIds.get()
+app.endpoints.stripe.customers.taxIds.get()
 ```
 ---
 * API URL: '/v1/customers/:customer/tax_ids/:id'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.customers.taxIds.get(customer)
+app.endpoints.stripe.customers.taxIds.get(customer)
 ```
 ---
 * API URL: '/v1/customers'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.customers.get()
+app.endpoints.stripe.customers.get()
 ```
 ---
 * API URL: '/v1/customers/:customer'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.customers.get()
+app.endpoints.stripe.customers.get()
 ```
 ---
 * API URL: '/v1/customers/search'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.customers.search.get()
+app.endpoints.stripe.customers.search.get()
 ```
 ---
 * API URL: '/v1/customers/:customer/payment_methods/:payment_method'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.customers.paymentMethods.get(customer)
+app.endpoints.stripe.customers.paymentMethods.get(customer)
 ```
 ---
 * API URL: '/v1/customers/:customer/payment_methods'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.customers.paymentMethods.get()
+app.endpoints.stripe.customers.paymentMethods.get()
 ```
 ---
 * API URL: '/v1/disputes'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.disputes.get()
+app.endpoints.stripe.disputes.get()
 ```
 ---
 * API URL: '/v1/disputes/:dispute'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.disputes.get()
+app.endpoints.stripe.disputes.get()
 ```
 ---
 * API URL: '/v1/events'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.events.get()
+app.endpoints.stripe.events.get()
 ```
 ---
 * API URL: '/v1/events/:id'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.events.get()
+app.endpoints.stripe.events.get()
 ```
 ---
 * API URL: '/v1/exchange_rates'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.exchangeRates.get()
+app.endpoints.stripe.exchangeRates.get()
 ```
 ---
 * API URL: '/v1/exchange_rates/:rate_id'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.exchangeRates.get()
+app.endpoints.stripe.exchangeRates.get()
 ```
 ---
 * API URL: '/v1/file_links'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.fileLinks.get()
+app.endpoints.stripe.fileLinks.get()
 ```
 ---
 * API URL: '/v1/file_links/:link'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.fileLinks.get()
+app.endpoints.stripe.fileLinks.get()
 ```
 ---
 * API URL: '/v1/files'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.files.get()
+app.endpoints.stripe.files.get()
 ```
 ---
 * API URL: '/v1/files/:file'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.files.get()
+app.endpoints.stripe.files.get()
 ```
 ---
 * API URL: '/v1/financial_connections/accounts'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.financialConnections.accounts.get()
+app.endpoints.stripe.financialConnections.accounts.get()
 ```
 ---
 * API URL: '/v1/financial_connections/accounts/:account'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.financialConnections.accounts.get()
+app.endpoints.stripe.financialConnections.accounts.get()
 ```
 ---
 * API URL: '/v1/financial_connections/sessions/:session'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.financialConnections.sessions.get(session)
+app.endpoints.stripe.financialConnections.sessions.get(session)
 ```
 ---
 * API URL: '/v1/identity/verification_reports'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.identity.verificationReports.get()
+app.endpoints.stripe.identity.verificationReports.get()
 ```
 ---
 * API URL: '/v1/identity/verification_reports/:report'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.identity.verificationReports.get()
+app.endpoints.stripe.identity.verificationReports.get()
 ```
 ---
 * API URL: '/v1/identity/verification_sessions'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.identity.verificationSessions.get()
+app.endpoints.stripe.identity.verificationSessions.get()
 ```
 ---
 * API URL: '/v1/identity/verification_sessions/:session'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.identity.verificationSessions.get()
+app.endpoints.stripe.identity.verificationSessions.get()
 ```
 ---
 * API URL: '/v1/invoiceitems'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.invoiceitems.get()
+app.endpoints.stripe.invoiceitems.get()
 ```
 ---
 * API URL: '/v1/invoiceitems/:invoiceitem'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.invoiceitems.get()
+app.endpoints.stripe.invoiceitems.get()
 ```
 ---
 * API URL: '/v1/invoices'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.invoices.get()
+app.endpoints.stripe.invoices.get()
 ```
 ---
 * API URL: '/v1/invoices/:invoice'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.invoices.get()
+app.endpoints.stripe.invoices.get()
 ```
 ---
 * API URL: '/v1/invoices/search'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.invoices.search.get()
+app.endpoints.stripe.invoices.search.get()
 ```
 ---
 * API URL: '/v1/invoices/upcoming'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.invoices.upcoming.get()
+app.endpoints.stripe.invoices.upcoming.get()
 ```
 ---
 * API URL: '/v1/invoices/upcoming/lines'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.invoices.upcoming.lines.get()
+app.endpoints.stripe.invoices.upcoming.lines.get()
 ```
 ---
 * API URL: '/v1/invoices/:invoice/lines'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.invoices.lines.get(invoice)
+app.endpoints.stripe.invoices.lines.get(invoice)
 ```
 ---
 * API URL: '/v1/issuing/authorizations'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.issuing.authorizations.get()
+app.endpoints.stripe.issuing.authorizations.get()
 ```
 ---
 * API URL: '/v1/issuing/authorizations/:authorization'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.issuing.authorizations.get()
+app.endpoints.stripe.issuing.authorizations.get()
 ```
 ---
 * API URL: '/v1/issuing/cardholders'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.issuing.cardholders.get()
+app.endpoints.stripe.issuing.cardholders.get()
 ```
 ---
 * API URL: '/v1/issuing/cardholders/:cardholder'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.issuing.cardholders.get()
+app.endpoints.stripe.issuing.cardholders.get()
 ```
 ---
 * API URL: '/v1/issuing/cards'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.issuing.cards.get()
+app.endpoints.stripe.issuing.cards.get()
 ```
 ---
 * API URL: '/v1/issuing/cards/:card'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.issuing.cards.get()
+app.endpoints.stripe.issuing.cards.get()
 ```
 ---
 * API URL: '/v1/issuing/disputes'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.issuing.disputes.get()
+app.endpoints.stripe.issuing.disputes.get()
 ```
 ---
 * API URL: '/v1/issuing/disputes/:dispute'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.issuing.disputes.get()
+app.endpoints.stripe.issuing.disputes.get()
 ```
 ---
 * API URL: '/v1/issuing/transactions'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.issuing.transactions.get()
+app.endpoints.stripe.issuing.transactions.get()
 ```
 ---
 * API URL: '/v1/issuing/transactions/:transaction'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.issuing.transactions.get()
+app.endpoints.stripe.issuing.transactions.get()
 ```
 ---
 * API URL: '/v1/mandates/:mandate'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.mandates.get(mandate)
+app.endpoints.stripe.mandates.get(mandate)
 ```
 ---
 * API URL: '/v1/payment_intents'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.paymentIntents.get()
+app.endpoints.stripe.paymentIntents.get()
 ```
 ---
 * API URL: '/v1/payment_intents/:intent'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.paymentIntents.get()
+app.endpoints.stripe.paymentIntents.get()
 ```
 ---
 * API URL: '/v1/payment_intents/search'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.paymentIntents.search.get()
+app.endpoints.stripe.paymentIntents.search.get()
 ```
 ---
 * API URL: '/v1/payment_links'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.paymentLinks.get()
+app.endpoints.stripe.paymentLinks.get()
 ```
 ---
 * API URL: '/v1/payment_links/:payment_link'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.paymentLinks.get()
+app.endpoints.stripe.paymentLinks.get()
 ```
 ---
 * API URL: '/v1/payment_links/:payment_link/line_items'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.paymentLinks.lineItems.get(paymentLink)
+app.endpoints.stripe.paymentLinks.lineItems.get(paymentLink)
 ```
 ---
 * API URL: '/v1/payment_methods'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.paymentMethods.get()
+app.endpoints.stripe.paymentMethods.get()
 ```
 ---
 * API URL: '/v1/payment_methods/:payment_method'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.paymentMethods.get()
+app.endpoints.stripe.paymentMethods.get()
 ```
 ---
 * API URL: '/v1/payouts'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.payouts.get()
+app.endpoints.stripe.payouts.get()
 ```
 ---
 * API URL: '/v1/payouts/:payout'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.payouts.get()
+app.endpoints.stripe.payouts.get()
 ```
 ---
 * API URL: '/v1/accounts/:account/persons'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.accounts.persons.get()
+app.endpoints.stripe.accounts.persons.get()
 ```
 ---
 * API URL: '/v1/accounts/:account/persons/:person'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.accounts.persons.get(account)
+app.endpoints.stripe.accounts.persons.get(account)
 ```
 ---
 * API URL: '/v1/prices'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.prices.get()
+app.endpoints.stripe.prices.get()
 ```
 ---
 * API URL: '/v1/prices/:price'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.prices.get()
+app.endpoints.stripe.prices.get()
 ```
 ---
 * API URL: '/v1/prices/search'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.prices.search.get()
+app.endpoints.stripe.prices.search.get()
 ```
 ---
 * API URL: '/v1/products'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.products.get()
+app.endpoints.stripe.products.get()
 ```
 ---
 * API URL: '/v1/products/:id'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.products.get()
+app.endpoints.stripe.products.get()
 ```
 ---
 * API URL: '/v1/products/search'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.products.search.get()
+app.endpoints.stripe.products.search.get()
 ```
 ---
 * API URL: '/v1/promotion_codes'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.promotionCodes.get()
+app.endpoints.stripe.promotionCodes.get()
 ```
 ---
 * API URL: '/v1/promotion_codes/:promotion_code'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.promotionCodes.get()
+app.endpoints.stripe.promotionCodes.get()
 ```
 ---
 * API URL: '/v1/quotes/:quote/computed_upfront_line_items'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.quotes.computedUpfrontLineItems.get(quote)
+app.endpoints.stripe.quotes.computedUpfrontLineItems.get(quote)
 ```
 ---
 * API URL: '/v1/quotes/:quote/line_items'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.quotes.lineItems.get(quote)
+app.endpoints.stripe.quotes.lineItems.get(quote)
 ```
 ---
 * API URL: '/v1/quotes'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.quotes.get()
+app.endpoints.stripe.quotes.get()
 ```
 ---
 * API URL: '/v1/quotes/:quote'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.quotes.get()
+app.endpoints.stripe.quotes.get()
 ```
 ---
 * API URL: '/v1/quotes/:quote/pdf'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.quotes.pdf.get(quote)
+app.endpoints.stripe.quotes.pdf.get(quote)
 ```
 ---
 * API URL: '/v1/radar/early_fraud_warnings'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.radar.earlyFraudWarnings.get()
+app.endpoints.stripe.radar.earlyFraudWarnings.get()
 ```
 ---
 * API URL: '/v1/radar/early_fraud_warnings/:early_fraud_warning'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.radar.earlyFraudWarnings.get()
+app.endpoints.stripe.radar.earlyFraudWarnings.get()
 ```
 ---
 * API URL: '/v1/reviews'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.reviews.get()
+app.endpoints.stripe.reviews.get()
 ```
 ---
 * API URL: '/v1/reviews/:review'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.reviews.get()
+app.endpoints.stripe.reviews.get()
 ```
 ---
 * API URL: '/v1/radar/value_lists'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.radar.valueLists.get()
+app.endpoints.stripe.radar.valueLists.get()
 ```
 ---
 * API URL: '/v1/radar/value_lists/:value_list'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.radar.valueLists.get()
+app.endpoints.stripe.radar.valueLists.get()
 ```
 ---
 * API URL: '/v1/radar/value_list_items'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.radar.valueListItems.get()
+app.endpoints.stripe.radar.valueListItems.get()
 ```
 ---
 * API URL: '/v1/radar/value_list_items/:item'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.radar.valueListItems.get()
+app.endpoints.stripe.radar.valueListItems.get()
 ```
 ---
 * API URL: '/v1/refunds'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.refunds.get()
+app.endpoints.stripe.refunds.get()
 ```
 ---
 * API URL: '/v1/refunds/:refund'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.refunds.get()
+app.endpoints.stripe.refunds.get()
 ```
 ---
 * API URL: '/v1/reporting/report_runs'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.reporting.reportRuns.get()
+app.endpoints.stripe.reporting.reportRuns.get()
 ```
 ---
 * API URL: '/v1/reporting/report_runs/:report_run'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.reporting.reportRuns.get()
+app.endpoints.stripe.reporting.reportRuns.get()
 ```
 ---
 * API URL: '/v1/reporting/report_types'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.reporting.reportTypes.get()
+app.endpoints.stripe.reporting.reportTypes.get()
 ```
 ---
 * API URL: '/v1/reporting/report_types/:report_type'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.reporting.reportTypes.get()
+app.endpoints.stripe.reporting.reportTypes.get()
 ```
 ---
 * API URL: '/v1/apps/secrets'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.apps.secrets.get()
+app.endpoints.stripe.apps.secrets.get()
 ```
 ---
 * API URL: '/v1/apps/secrets/find'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.apps.secrets.find.get()
+app.endpoints.stripe.apps.secrets.find.get()
 ```
 ---
 * API URL: '/v1/setup_attempts'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.setupAttempts.get()
+app.endpoints.stripe.setupAttempts.get()
 ```
 ---
 * API URL: '/v1/setup_intents'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.setupIntents.get()
+app.endpoints.stripe.setupIntents.get()
 ```
 ---
 * API URL: '/v1/setup_intents/:intent'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.setupIntents.get()
+app.endpoints.stripe.setupIntents.get()
 ```
 ---
 * API URL: '/v1/shipping_rates'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.shippingRates.get()
+app.endpoints.stripe.shippingRates.get()
 ```
 ---
 * API URL: '/v1/shipping_rates/:shipping_rate_token'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.shippingRates.get()
+app.endpoints.stripe.shippingRates.get()
 ```
 ---
 * API URL: '/v1/sigma/scheduled_query_runs'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.sigma.scheduledQueryRuns.get()
+app.endpoints.stripe.sigma.scheduledQueryRuns.get()
 ```
 ---
 * API URL: '/v1/sigma/scheduled_query_runs/:scheduled_query_run'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.sigma.scheduledQueryRuns.get()
+app.endpoints.stripe.sigma.scheduledQueryRuns.get()
 ```
 ---
 * API URL: '/v1/skus'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.skus.get()
+app.endpoints.stripe.skus.get()
 ```
 ---
 * API URL: '/v1/skus/:id'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.skus.get()
+app.endpoints.stripe.skus.get()
 ```
 ---
 * API URL: '/v1/customers/:customer/sources'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.customers.sources.get()
+app.endpoints.stripe.customers.sources.get()
 ```
 ---
 * API URL: '/v1/customers/:customer/sources/:id'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.customers.sources.get(customer)
+app.endpoints.stripe.customers.sources.get(customer)
 ```
 ---
 * API URL: '/v1/sources/:source'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.sources.get(source)
+app.endpoints.stripe.sources.get(source)
 ```
 ---
 * API URL: '/v1/subscription_items'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.subscriptionItems.get()
+app.endpoints.stripe.subscriptionItems.get()
 ```
 ---
 * API URL: '/v1/subscription_items/:item'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.subscriptionItems.get()
+app.endpoints.stripe.subscriptionItems.get()
 ```
 ---
 * API URL: '/v1/subscription_items/:subscription_item/usage_record_summaries'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.subscriptionItems.usageRecordSummaries.get(subscriptionItem)
+app.endpoints.stripe.subscriptionItems.usageRecordSummaries.get(subscriptionItem)
 ```
 ---
 * API URL: '/v1/subscription_schedules'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.subscriptionSchedules.get()
+app.endpoints.stripe.subscriptionSchedules.get()
 ```
 ---
 * API URL: '/v1/subscription_schedules/:schedule'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.subscriptionSchedules.get()
+app.endpoints.stripe.subscriptionSchedules.get()
 ```
 ---
 * API URL: '/v1/subscriptions'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.subscriptions.get()
+app.endpoints.stripe.subscriptions.get()
 ```
 ---
 * API URL: '/v1/subscriptions/:subscription_exposed_id'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.subscriptions.get()
+app.endpoints.stripe.subscriptions.get()
 ```
 ---
 * API URL: '/v1/subscriptions/search'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.subscriptions.search.get()
+app.endpoints.stripe.subscriptions.search.get()
 ```
 ---
 * API URL: '/v1/tax_rates'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.taxRates.get()
+app.endpoints.stripe.taxRates.get()
 ```
 ---
 * API URL: '/v1/tax_rates/:tax_rate'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.taxRates.get()
+app.endpoints.stripe.taxRates.get()
 ```
 ---
 * API URL: '/v1/terminal/configurations'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.terminal.configurations.get()
+app.endpoints.stripe.terminal.configurations.get()
 ```
 ---
 * API URL: '/v1/terminal/configurations/:configuration'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.terminal.configurations.get()
+app.endpoints.stripe.terminal.configurations.get()
 ```
 ---
 * API URL: '/v1/terminal/locations'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.terminal.locations.get()
+app.endpoints.stripe.terminal.locations.get()
 ```
 ---
 * API URL: '/v1/terminal/locations/:location'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.terminal.locations.get()
+app.endpoints.stripe.terminal.locations.get()
 ```
 ---
 * API URL: '/v1/terminal/readers'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.terminal.readers.get()
+app.endpoints.stripe.terminal.readers.get()
 ```
 ---
 * API URL: '/v1/terminal/readers/:reader'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.terminal.readers.get()
+app.endpoints.stripe.terminal.readers.get()
 ```
 ---
 * API URL: '/v1/test_helpers/test_clocks'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.testHelpers.testClocks.get()
+app.endpoints.stripe.testHelpers.testClocks.get()
 ```
 ---
 * API URL: '/v1/test_helpers/test_clocks/:test_clock'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.testHelpers.testClocks.get()
+app.endpoints.stripe.testHelpers.testClocks.get()
 ```
 ---
 * API URL: '/v1/tokens/:token'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.tokens.get(token)
+app.endpoints.stripe.tokens.get(token)
 ```
 ---
 * API URL: '/v1/topups'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.topups.get()
+app.endpoints.stripe.topups.get()
 ```
 ---
 * API URL: '/v1/topups/:topup'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.topups.get()
+app.endpoints.stripe.topups.get()
 ```
 ---
 * API URL: '/v1/transfers/:id/reversals'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.transfers.reversals.get()
+app.endpoints.stripe.transfers.reversals.get()
 ```
 ---
 * API URL: '/v1/transfers/:transfer/reversals/:id'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.transfers.reversals.get(transfer)
+app.endpoints.stripe.transfers.reversals.get(transfer)
 ```
 ---
 * API URL: '/v1/transfers'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.transfers.get()
+app.endpoints.stripe.transfers.get()
 ```
 ---
 * API URL: '/v1/transfers/:transfer'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.transfers.get()
+app.endpoints.stripe.transfers.get()
 ```
 ---
 * API URL: '/v1/treasury/credit_reversals'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.treasury.creditReversals.get()
+app.endpoints.stripe.treasury.creditReversals.get()
 ```
 ---
 * API URL: '/v1/treasury/credit_reversals/:credit_reversal'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.treasury.creditReversals.get()
+app.endpoints.stripe.treasury.creditReversals.get()
 ```
 ---
 * API URL: '/v1/treasury/debit_reversals'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.treasury.debitReversals.get()
+app.endpoints.stripe.treasury.debitReversals.get()
 ```
 ---
 * API URL: '/v1/treasury/debit_reversals/:debit_reversal'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.treasury.debitReversals.get()
+app.endpoints.stripe.treasury.debitReversals.get()
 ```
 ---
 * API URL: '/v1/treasury/financial_accounts/:financial_account/features'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.treasury.financialAccounts.features.get(financialAccount)
+app.endpoints.stripe.treasury.financialAccounts.features.get(financialAccount)
 ```
 ---
 * API URL: '/v1/treasury/financial_accounts'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.treasury.financialAccounts.get()
+app.endpoints.stripe.treasury.financialAccounts.get()
 ```
 ---
 * API URL: '/v1/treasury/financial_accounts/:financial_account'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.treasury.financialAccounts.get()
+app.endpoints.stripe.treasury.financialAccounts.get()
 ```
 ---
 * API URL: '/v1/treasury/inbound_transfers'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.treasury.inboundTransfers.get()
+app.endpoints.stripe.treasury.inboundTransfers.get()
 ```
 ---
 * API URL: '/v1/treasury/inbound_transfers/:id'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.treasury.inboundTransfers.get()
+app.endpoints.stripe.treasury.inboundTransfers.get()
 ```
 ---
 * API URL: '/v1/treasury/outbound_payments'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.treasury.outboundPayments.get()
+app.endpoints.stripe.treasury.outboundPayments.get()
 ```
 ---
 * API URL: '/v1/treasury/outbound_payments/:id'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.treasury.outboundPayments.get()
+app.endpoints.stripe.treasury.outboundPayments.get()
 ```
 ---
 * API URL: '/v1/treasury/outbound_transfers'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.treasury.outboundTransfers.get()
+app.endpoints.stripe.treasury.outboundTransfers.get()
 ```
 ---
 * API URL: '/v1/treasury/outbound_transfers/:outbound_transfer'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.treasury.outboundTransfers.get()
+app.endpoints.stripe.treasury.outboundTransfers.get()
 ```
 ---
 * API URL: '/v1/treasury/received_credits'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.treasury.receivedCredits.get()
+app.endpoints.stripe.treasury.receivedCredits.get()
 ```
 ---
 * API URL: '/v1/treasury/received_credits/:id'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.treasury.receivedCredits.get()
+app.endpoints.stripe.treasury.receivedCredits.get()
 ```
 ---
 * API URL: '/v1/treasury/received_debits'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.treasury.receivedDebits.get()
+app.endpoints.stripe.treasury.receivedDebits.get()
 ```
 ---
 * API URL: '/v1/treasury/received_debits/:id'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.treasury.receivedDebits.get()
+app.endpoints.stripe.treasury.receivedDebits.get()
 ```
 ---
 * API URL: '/v1/treasury/transaction_entries'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.treasury.transactionEntries.get()
+app.endpoints.stripe.treasury.transactionEntries.get()
 ```
 ---
 * API URL: '/v1/treasury/transaction_entries/:id'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.treasury.transactionEntries.get()
+app.endpoints.stripe.treasury.transactionEntries.get()
 ```
 ---
 * API URL: '/v1/treasury/transactions'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.treasury.transactions.get()
+app.endpoints.stripe.treasury.transactions.get()
 ```
 ---
 * API URL: '/v1/treasury/transactions/:id'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.treasury.transactions.get()
+app.endpoints.stripe.treasury.transactions.get()
 ```
 ---
 * API URL: '/v1/webhook_endpoints'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.webhookEndpoints.get()
+app.endpoints.stripe.webhookEndpoints.get()
 ```
 ---
 * API URL: '/v1/webhook_endpoints/:webhook_endpoint'
 * HTTP Method: 'GET'
 ```javascript
-app.endpoints.stripe.v1.webhookEndpoints.get()
+app.endpoints.stripe.webhookEndpoints.get()
 ```
 ---
 * API URL: '/v1/accounts/:account'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.accounts.delete(account)
+app.endpoints.stripe.accounts.delete(account)
 ```
 ---
 * API URL: '/v1/accounts/:account/external_accounts/:id'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.accounts.externalAccounts.delete(account, id)
+app.endpoints.stripe.accounts.externalAccounts.delete(account, id)
 ```
 ---
 * API URL: '/v1/coupons/:coupon'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.coupons.delete(coupon)
+app.endpoints.stripe.coupons.delete(coupon)
 ```
 ---
 * API URL: '/v1/customers/:customer/tax_ids/:id'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.customers.taxIds.delete(customer, id)
+app.endpoints.stripe.customers.taxIds.delete(customer, id)
 ```
 ---
 * API URL: '/v1/customers/:customer'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.customers.delete(customer)
+app.endpoints.stripe.customers.delete(customer)
 ```
 ---
 * API URL: '/v1/customers/:customer/discount'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.customers.discount.delete(customer)
+app.endpoints.stripe.customers.discount.delete(customer)
 ```
 ---
 * API URL: '/v1/invoiceitems/:invoiceitem'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.invoiceitems.delete(invoiceitem)
+app.endpoints.stripe.invoiceitems.delete(invoiceitem)
 ```
 ---
 * API URL: '/v1/invoices/:invoice'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.invoices.delete(invoice)
+app.endpoints.stripe.invoices.delete(invoice)
 ```
 ---
 * API URL: '/v1/accounts/:account/persons/:person'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.accounts.persons.delete(account, person)
+app.endpoints.stripe.accounts.persons.delete(account, person)
 ```
 ---
 * API URL: '/v1/products/:id'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.products.delete(id)
+app.endpoints.stripe.products.delete(id)
 ```
 ---
 * API URL: '/v1/radar/value_lists/:value_list'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.radar.valueLists.delete(valueList)
+app.endpoints.stripe.radar.valueLists.delete(valueList)
 ```
 ---
 * API URL: '/v1/radar/value_list_items/:item'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.radar.valueListItems.delete(item)
+app.endpoints.stripe.radar.valueListItems.delete(item)
 ```
 ---
 * API URL: '/v1/skus/:id'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.skus.delete(id)
+app.endpoints.stripe.skus.delete(id)
 ```
 ---
 * API URL: '/v1/customers/:customer/sources/:id'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.customers.sources.delete(customer, id)
+app.endpoints.stripe.customers.sources.delete(customer, id)
 ```
 ---
 * API URL: '/v1/subscription_items/:item'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.subscriptionItems.delete(item)
+app.endpoints.stripe.subscriptionItems.delete(item)
 ```
 ---
 * API URL: '/v1/subscriptions/:subscription_exposed_id'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.subscriptions.delete(subscriptionExposedId)
+app.endpoints.stripe.subscriptions.delete(subscriptionExposedId)
 ```
 ---
 * API URL: '/v1/subscriptions/:subscription_exposed_id/discount'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.subscriptions.discount.delete(subscriptionExposedId)
+app.endpoints.stripe.subscriptions.discount.delete(subscriptionExposedId)
 ```
 ---
 * API URL: '/v1/terminal/configurations/:configuration'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.terminal.configurations.delete(configuration)
+app.endpoints.stripe.terminal.configurations.delete(configuration)
 ```
 ---
 * API URL: '/v1/terminal/locations/:location'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.terminal.locations.delete(location)
+app.endpoints.stripe.terminal.locations.delete(location)
 ```
 ---
 * API URL: '/v1/terminal/readers/:reader'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.terminal.readers.delete(reader)
+app.endpoints.stripe.terminal.readers.delete(reader)
 ```
 ---
 * API URL: '/v1/test_helpers/test_clocks/:test_clock'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.testHelpers.testClocks.delete(testClock)
+app.endpoints.stripe.testHelpers.testClocks.delete(testClock)
 ```
 ---
 * API URL: '/v1/webhook_endpoints/:webhook_endpoint'
 * HTTP Method: 'DELETE'
 ```javascript
-app.endpoints.stripe.v1.webhookEndpoints.delete(webhookEndpoint)
+app.endpoints.stripe.webhookEndpoints.delete(webhookEndpoint)
 ```
 ---
 
@@ -2425,7 +2425,7 @@ Generic flow step for full use of the entire endpoint and its services.
     </tr>
     <tr>
         <td>File name</td>
-       <td>text</td>
+        <td>text</td>
         <td>no</td>
         <td></td>
         <td> overrideSettings </td>
