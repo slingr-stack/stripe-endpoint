@@ -85,7 +85,8 @@
         {
             "label": "Webhooks secret alternative",
             "name": "webhooksSecretAlternative",
-            "type": "password"
+            "type": "password",
+            "required": false
         },
         {
             "label": "Max Concurrent Calls",
