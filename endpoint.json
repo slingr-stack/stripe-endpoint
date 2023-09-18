@@ -85,7 +85,8 @@
             "label": "Webhooks secret",
             "name": "webhooksSecret",
             "type": "password",
-            "required": "config.checkWebhooksSign==true"
+            "required": "config.checkWebhooksSign==true",
+            "multiplicity": "many"
         },
         {
             "label": "Max Concurrent Calls",

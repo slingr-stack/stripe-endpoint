@@ -18,6 +18,7 @@ import io.slingr.endpoints.ws.exchange.WebServiceResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.List;
 import java.util.concurrent.Semaphore;
 
 import static java.lang.Integer.*;
@@ -50,7 +51,7 @@ public class StripeEndpoint extends HttpEndpoint {
     private Boolean checkWebhooksSign;
 
     @EndpointProperty
-    private String webhooksSecret;
+    private List<String> webhooksSecret;
 
     @EndpointProperty
     private String maxConcurrentCalls;
@@ -92,7 +93,9 @@ public class StripeEndpoint extends HttpEndpoint {
                 if (sigHeader == null) {
                     sigHeader = request.getHeader("stripe-signature");
                 }
-                Webhook.Signature.verifyHeader(payload, sigHeader, webhooksSecret, 300L);
+                for (String secret : webhooksSecret ){
+                    Webhook.Signature.verifyHeader(payload, sigHeader, secret, 300L);
+                }
             }
 
             final Json json = HttpService.defaultWebhookConverter(request);
