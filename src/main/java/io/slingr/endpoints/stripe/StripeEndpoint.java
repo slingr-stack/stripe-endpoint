@@ -48,9 +48,10 @@ public class StripeEndpoint extends HttpEndpoint {
 
     @EndpointProperty
     private Boolean checkWebhooksSign;
-
     @EndpointProperty
     private String webhooksSecret;
+    @EndpointProperty
+    private String webhooksSecretAlternative;
 
     @EndpointProperty
     private String maxConcurrentCalls;
@@ -87,12 +88,32 @@ public class StripeEndpoint extends HttpEndpoint {
         try {
 
             if (Boolean.TRUE.equals(checkWebhooksSign)) {
+                SignatureVerificationException exception = null;
                 String payload = request.getRawBody();
                 String sigHeader = request.getHeader("Stripe-Signature");
                 if (sigHeader == null) {
                     sigHeader = request.getHeader("stripe-signature");
                 }
-                Webhook.Signature.verifyHeader(payload, sigHeader, webhooksSecret, 300L);
+                try {
+                    Webhook.Signature.verifyHeader(payload, sigHeader, webhooksSecret, 300L);
+                } catch (SignatureVerificationException e) {
+                    exception = e;
+                }
+                if (exception != null && !webhooksSecretAlternative.isEmpty()) {
+                    try {
+                        Webhook.Signature.verifyHeader(payload, sigHeader, webhooksSecretAlternative, 300L);
+                    } catch (SignatureVerificationException e) {
+                        exception = e;
+                    }
+                }
+                if (exception != null) {
+                    Json json = Json.map();
+                    json.set("type", "error");
+                    json.set("code", 400);
+                    json.set("message", exception.getMessage());
+                    events().send(HttpService.WEBHOOK_EVENT, json);
+                    return HttpService.defaultWebhookResponse();
+                }
             }
 
             final Json json = HttpService.defaultWebhookConverter(request);
@@ -100,19 +121,8 @@ public class StripeEndpoint extends HttpEndpoint {
                 if (request.getBody() != null) {
                     json.set("body", request.getBody());
                 }
-
-                // send the webhook event
                 events().send(HttpService.WEBHOOK_EVENT, json);
-
             }
-
-        } catch (SignatureVerificationException e) {
-            // Invalid signature
-            Json json = Json.map();
-            json.set("type", "error");
-            json.set("code", 400);
-            json.set("message", e.getMessage());
-            events().send(HttpService.WEBHOOK_EVENT, json);
         } catch (Exception ex) {
             // Invalid payload
             Json json = Json.map();
