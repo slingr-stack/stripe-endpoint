@@ -51,7 +51,7 @@ public class StripeEndpoint extends HttpEndpoint {
     private Boolean checkWebhooksSign;
 
     @EndpointProperty
-    private List<String> webhooksSecret;
+    private Json webhooksSecret;
 
     @EndpointProperty
     private String maxConcurrentCalls;
@@ -69,6 +69,7 @@ public class StripeEndpoint extends HttpEndpoint {
 
     @Override
     public void endpointStarted() {
+        logger.info(webhooksSecret.toPrettyString());
         if (maxConcurrentCalls == null || maxConcurrentCalls.trim().isEmpty()) {
             MAX_CONCURRENT_CALLS = 3;
         } else {
@@ -93,9 +94,9 @@ public class StripeEndpoint extends HttpEndpoint {
                 if (sigHeader == null) {
                     sigHeader = request.getHeader("stripe-signature");
                 }
-                for (String secret : webhooksSecret ){
-                    Webhook.Signature.verifyHeader(payload, sigHeader, secret, 300L);
-                }
+
+                Webhook.Signature.verifyHeader(payload, sigHeader, "", 300L);
+
             }
 
             final Json json = HttpService.defaultWebhookConverter(request);
